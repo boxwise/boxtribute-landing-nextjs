@@ -1,3 +1,68 @@
 @tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
 @tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
 @tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+
+
+/* make the map full screen */
+#map {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+  
+  /* invert the background, so the sea is white and land is black, and use brightness on each side to adjust the black and white points, and sepia to colorize it orange, and hue-rotate to change the hue to be a pale mossy blue instead of sepia orange */
+  .toner-background {
+    filter: brightness(70%) invert() sepia() brightness(30%) hue-rotate(130deg);
+  }
+  .toner-lines {
+    filter: invert() sepia() brightness(50%) saturate(210%) hue-rotate(-280deg);
+  }
+  .toner-labels {
+    filter: invert() sepia() brightness(50%) saturate(560%) hue-rotate(-220deg);
+  }
+
+  .blur {
+    filter: blur(4px);
+  -webkit-filter: blur(4px);
+  }
+
+  .cta-button-hero-section-home {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 5.0vh;
+  }
+  h3 {
+    font-size: 3.0vh;
+  }
+  p {
+    font-size: 2.5vh;
+  }
+  ul {
+    list-style-type: disc;
+  }
+  
+
+.social-snippet:last-child {
+    border: none;
+}
+
