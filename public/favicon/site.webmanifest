@@ -1,6 +1,6 @@
 {
-  "name": "Next.js",
-  "short_name": "Next.js",
+  "name": "Boxtribute: The Landing Page",
+  "short_name": "Boxtribute-Landing",
   "icons": [
     {
       "src": "/favicons/android-chrome-192x192.png",
@@ -13,7 +13,8 @@
       "type": "image/png"
     }
   ],
+  "start_url":"https://www.boxtribute.org",
   "theme_color": "#000000",
   "background_color": "#000000",
-  "display": "standalone"
+  "display": "browser"
 }
