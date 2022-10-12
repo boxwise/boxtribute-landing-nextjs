@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
   theme: {
@@ -33,6 +35,10 @@ module.exports = {
         '6xl': '2.75rem',
         '7xl': '4.5rem',
         '8xl': '7rem',
+      },
+      fontFamily: {
+        'sans': ['Open Sans', ...defaultTheme.fontFamily.sans],
+        'chivo': ['Chivo', 'Open Sans', ...defaultTheme.fontFamily.sans],
       },
     },
   },

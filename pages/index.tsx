@@ -57,12 +57,7 @@ type Props = {
 const Index = ({ homeData, allNews }: Props) => {
   return (
     <>
-    {/* TODO: move head out to layout */}
-      <Head>
-        <title>Boxtribute</title>
-      </Head>
       <HeroSection heroSectionData={homeData} />
-
       <section className="md:p-16 md:mx-16">
         <TextBlock text_justify="center">
           {homeData.short_description}
