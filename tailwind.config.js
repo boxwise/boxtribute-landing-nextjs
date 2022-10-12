@@ -5,19 +5,16 @@ module.exports = {
       colors: {
         red: '#EF4049',
         navy: '#29335F',
-        blue: '#ABCFE3',
-        gray: '#EAEAED',
-        success: '#0070f3',
-        cyan: '#79FFE1',
+        lightblue: '#AACFE3',
+        black: '#000000',
+        white: '#FFFFFF',
+        yellow: '#F4E6A0',
       },
       screens: {
         sm: '480px',
         md: '768px',
         lg: '976px',
         xl: '1440px',
-      },
-      spacing: {
-        28: '7rem',
       },
       letterSpacing: {
         tighter: '-.04em',
@@ -27,8 +24,10 @@ module.exports = {
       },
       // TODO: unify with styles/index.css definitions
       fontSize: {
-        'md':'1rem',
-        'xl': '1.25',
+        'sm': '0.875rem',
+        'md': '1rem',
+        'lg': '1.125rem',
+        'xl': '1.25rem',
         '2xl': '1.5rem',
         '5xl': '2.5rem',
         '6xl': '2.75rem',
