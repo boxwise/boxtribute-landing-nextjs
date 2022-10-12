@@ -72,12 +72,6 @@ sections:
   match: "**/*"
   templates:
   - contact-us
-- type: document
-  path: _sections/aboutus/team-member.md
-  label: team-member
-- type: document
-  path: _sections/hero-section.md
-  label: Hero1
 upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''
