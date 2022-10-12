@@ -25,6 +25,7 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
+      // TODO: unify with styles/index.css definitions
       fontSize: {
         'md':'1rem',
         'xl': '1.25',
