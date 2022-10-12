@@ -1,0 +1,199 @@
+---
+label: get involved
+hide_body: true
+fields:
+- name: hero_image
+  type: file
+  config:
+    maxSize: 64
+  label: hero image
+- name: image_description
+  type: text
+  config:
+    required: false
+  label: image description
+- name: page_title
+  type: text
+  config:
+    required: false
+  label: page title
+- name: cta_button
+  type: text
+  config:
+    required: false
+  label: CTA button
+- name: cta_link
+  type: text
+  config:
+    required: false
+  label: CTA link
+- name: main_subtitle
+  type: text
+  config:
+    required: false
+  label: main subtitle
+- name: paragraphs_group
+  type: field_group_list
+  fields:
+  - name: paragraph
+    type: text
+    config:
+      required: false
+    label: paragraph
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: paragraphs group
+- name: image_1
+  type: file
+  config:
+    maxSize: 64
+  label: image_1
+- name: image_1_description
+  type: text
+  config:
+    required: false
+  label: image_1_description
+- name: description_1
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: description_1
+- name: help_possibilities
+  type: field_group_list
+  fields:
+  - name: step_number
+    type: number
+    label: step number
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: description
+    type: text
+    config:
+      required: false
+    label: description
+  - name: link
+    type: text
+    config:
+      required: false
+    label: link
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: help possibilities
+- name: headline_2
+  type: text
+  config:
+    required: false
+  label: headline_2
+- name: description_2_list
+  type: field_group_list
+  fields:
+  - name: paragraph
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: paragraph
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: description_2_list
+- name: headline_3
+  type: text
+  config:
+    required: false
+  label: headline_3
+- name: list_of_items
+  type: field_group_list
+  fields:
+  - name: paragraph
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: bullet item
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: list of items
+- name: image_3
+  type: file
+  config:
+    maxSize: 64
+  label: image_3
+- name: image_3_description
+  type: text
+  config:
+    required: false
+  label: image_3_description
+- name: description_4
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: description_4
+- name: list_of_looked_for
+  type: field_group_list
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: image
+  - name: image_description
+    type: text
+    config:
+      required: false
+    label: image_description
+  - name: title
+    type: text
+    config:
+      required: false
+    label: title
+  - name: description
+    type: field_group_list
+    fields:
+    - name: paragraph
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: paragraph
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: description
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: list of looked for
+pages:
+- data/getinvolved/get_involved_data.md

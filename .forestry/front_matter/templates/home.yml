@@ -1,0 +1,106 @@
+---
+label: home
+hide_body: true
+fields:
+- name: main_heading
+  type: text
+  config:
+    required: false
+  label: main heading
+- name: hero_image_description
+  type: text
+  config:
+    required: false
+  label: hero image description
+- name: subtitles_hero
+  type: field_group_list
+  fields:
+  - name: text_for_typing
+    type: text
+    config:
+      required: false
+    label: text for typing
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: subtitles hero
+- name: hero_image
+  type: file
+  config:
+    maxSize: 64
+  label: hero_image
+- name: cta_button
+  type: text
+  config:
+    required: false
+  label: CTA button
+- name: cta_link
+  type: text
+  config:
+    required: false
+  label: CTA link
+- name: short_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: short description
+- name: facts_in_numbers
+  type: field_group_list
+  fields:
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: icon
+  - name: description
+    type: text
+    config:
+      required: false
+    label: description
+  - name: number
+    type: number
+    label: number
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: color
+    type: text
+    config:
+      required: false
+    label: color
+  - name: image_description
+    type: text
+    config:
+      required: false
+    label: image_description
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: facts in numbers
+- name: title_of_news_section
+  type: text
+  config:
+    required: false
+  label: title of news section
+- name: text_news_button
+  type: text
+  config:
+    required: false
+  label: text news button
+- name: image_news_button
+  type: file
+  config:
+    maxSize: 64
+  label: image news button
+pages:
+- data/home/home_data.md

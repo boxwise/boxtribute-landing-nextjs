@@ -1,0 +1,43 @@
+---
+label: contact us
+hide_body: true
+fields:
+- name: page_title
+  type: text
+  config:
+    required: false
+  label: page title
+- name: headline
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: headline
+- name: title_1
+  type: text
+  config:
+    required: false
+  label: title 1
+- name: paragraphs_group
+  type: field_group_list
+  fields:
+  - name: paragraph
+    type: text
+    config:
+      required: false
+    label: paragraph
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: paragraphs_group
+- name: form_title
+  type: text
+  config:
+    required: false
+  label: form title
+pages:
+- data/contactus/contact_us_data.md

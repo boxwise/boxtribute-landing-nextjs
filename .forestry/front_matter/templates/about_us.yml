@@ -1,0 +1,174 @@
+---
+label: about_us
+hide_body: true
+fields:
+- name: title_of_the_page
+  type: text
+  config:
+    required: false
+  label: title of the page
+- name: hero_images_with_description
+  type: field_group_list
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: image
+  - name: description
+    type: text
+    config:
+      required: false
+    label: description
+    description: description for accessibility
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: hero images with description
+- name: title_of_the_story
+  type: text
+  config:
+    required: false
+  label: title of the story section
+- name: text_with_picture_for_the_story
+  type: field_group_list
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    description: image for the story
+    label: image
+  - name: description_for_the_image
+    type: text
+    config:
+      required: false
+    label: description of the image
+    description: description of the image for accessibility
+  - name: paragraph_s_group
+    type: field_group_list
+    fields:
+    - name: paragraph
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: paragraph
+      description: paragraph for the story
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: paragraph's group
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: text with picture for the story
+- name: text_block_1
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: 1 text block
+- name: full_width_picture
+  type: file
+  config:
+    maxSize: 64
+  label: full width picture
+- name: full_width_image_description
+  type: text
+  config:
+    required: false
+  label: full width image description
+- name: text_block_2
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: 2 text block
+- name: text_block_3
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: 3 text block
+- name: text_legal
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: text legal
+- name: title_for_the_team_section
+  type: text
+  config:
+    required: false
+  label: title for the team section
+- name: text_for_team_section
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: text for team section
+- name: team_member
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: name
+  - name: surname
+    type: text
+    config:
+      required: false
+    label: surname
+  - name: role
+    type: text
+    config:
+      required: false
+    label: role
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: image
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: description
+  - name: link
+    type: text
+    config:
+      required: false
+    label: link
+    description: link to social media (github/linkedin)
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: team member

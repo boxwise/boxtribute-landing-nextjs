@@ -1,17 +1,92 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
-sections: 
-upload_dir: uploads
+sections:
+- type: directory
+  path: data/home
+  label: home - main
+  create: all
+  match: "*"
+  templates:
+  - home
+- type: directory
+  path: data/home/news
+  label: news
+  create: all
+  match: "*"
+  templates:
+  - news-snippet
+- type: directory
+  path: data/home/social
+  label: 'social media '
+  create: all
+  match: "*"
+  templates:
+  - social-media-snippet
+- type: heading
+  label: Our Mission
+- type: directory
+  path: data/ourimpact
+  label: our mission
+  create: all
+  match: "*"
+  templates:
+  - our-mission
+- type: heading
+  label: Our Impact
+- type: directory
+  path: data/our_impact
+  label: Map
+  create: all
+  match: "**/*"
+  templates:
+  - markers-on-map
+- type: heading
+  label: Get Involved
+- type: directory
+  path: data/getinvolved
+  label: get involved
+  create: all
+  match: "**/*"
+  templates:
+  - get-involved
+- type: heading
+  label: About Us
+- type: directory
+  path: data/aboutus
+  label: about us
+  create: all
+  match: "*"
+  templates:
+  - about_us
+- type: heading
+  label: Partners
+- type: heading
+  label: Contact
+- type: directory
+  path: data/contactus
+  label: contact us
+  create: all
+  match: "**/*"
+  templates:
+  - contact-us
+- type: document
+  path: _sections/aboutus/team-member.md
+  label: team-member
+- type: document
+  path: _sections/hero-section.md
+  label: Hero1
+upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  install_dependencies_command: npm install
+  preview_output_directory: public
+  install_dependencies_command: 'yarn '
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run develop
+  instant_preview_command: yarn dev

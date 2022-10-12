@@ -1,0 +1,32 @@
+---
+label: social media snippet
+hide_body: true
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: image
+- name: image_description
+  type: text
+  config:
+    required: false
+  label: image description
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 200
+  label: text
+pages:
+- data/home/social/did-you-know.md
+- data/home/social/march-hackathon.md

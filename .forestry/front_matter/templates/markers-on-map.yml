@@ -1,0 +1,56 @@
+---
+label: markers on map
+hide_body: false
+fields:
+- name: map_pointers
+  type: field_group_list
+  fields:
+  - name: nameplace
+    type: text
+    config:
+      required: false
+    label: name of the place
+  - name: nameorganisation
+    type: text
+    config:
+      required: false
+    label: name of the organisation
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: description of the project
+  - name: lat
+    type: number
+    label: 'GPS coordinates: latitude (first value)'
+    description: 'to get the coordinates hold mouse/finger in the google maps on the
+      place you want to add and copy first of the number, an example: <strong>51.989464</strong><br>'
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+      required: true
+  - name: long
+    type: number
+    label: 'GPS coordinates: longitude (second value)'
+    description: the same like in the latitude but here paste the second value of
+      the GPS coordinates
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+      required: true
+  config:
+    min: 
+    max: 
+    labelField: nameplace
+  description: a form for placing a new pointer on the map
+  label: pointer on the map

@@ -1,0 +1,91 @@
+---
+label: our mission
+hide_body: true
+fields:
+- name: title_of_the_page
+  type: text
+  config:
+    required: false
+  label: title of the page
+- name: intro_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: intro text
+- name: subtitle_1
+  type: text
+  config:
+    required: false
+  label: subtitle_1
+- name: text_with_picture
+  type: field_group_list
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: image
+  - name: image_description
+    type: text
+    config:
+      required: false
+    label: image description
+  - name: title
+    type: text
+    config:
+      required: false
+    label: title
+  - name: paragraphs
+    type: field_group_list
+    fields:
+    - name: paragraph
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: paragraph
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: paragraphs_group
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: text with picture
+- name: subtitle_2
+  type: text
+  config:
+    required: false
+  label: subtitle_2
+- name: text_block_1
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: text block 1
+- name: subtitle_3
+  type: text
+  config:
+    required: false
+  label: subtitle_3
+- name: text_block_2
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: text block 2
