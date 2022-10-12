@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import CTAButton from "./CTAButton";
 import HamburgerMenu  from "./HamburgerMenu";
 import { useMediaQuery } from "./MediaQuery";
 
@@ -30,7 +31,7 @@ export const Navbar = () => {
       {isBreakpoint ? (
         <HamburgerMenu />
       ) : (
-        <ul className="flex justify-end items-center">
+        <ul className="flex justify-end items-center text-navy text-xl">
           {navLinks.map((link, i) => (
             <li className="list-none" key={i}>
               <Link href={link.path}>
@@ -42,7 +43,9 @@ export const Navbar = () => {
               </Link>
             </li>
           ))}
-          {/* TODO: Add CTA Button */}
+          <li>
+            <CTAButton cta_link={"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url"} cta_button={"Donate"} no_md_break={true} />
+          </li>
         </ul>
       )}
     </nav>
