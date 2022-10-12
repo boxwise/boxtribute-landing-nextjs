@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import CTAButton from "./CTAButton";
 import { navLinks } from "./Navbar";
 
 export const HamburgerMenu = () => {
@@ -11,7 +12,7 @@ export const HamburgerMenu = () => {
     <div className="flex items-center">
       {!hamburgerOpen ? (
         <div
-          className="flex flex-col justify-between align-middle w-10 h-8"
+          className="flex flex-col justify-between align-middle w-12 h-8"
           onClick={toggleHamburger}
         >
           <div className="w-12 h-1 rounded transition-all bg-black" />
@@ -20,11 +21,11 @@ export const HamburgerMenu = () => {
         </div>
       ) : (
         <div className="bg-navy w-screen h-screen z-20 absolute inset-0">
-          <div onClick={toggleHamburger} className="flex justify-end mx-2 my-6">
+          <div onClick={toggleHamburger} className="flex justify-end px-2 py-6">
             <img src="/assets/svg/close_icon.svg" />
           </div>
           <div>
-          <ul className="flex-col text-blue mt-auto text-center">
+          <ul className="flex-col text-white text-xl text-center">
             {navLinks.map((link, i) => (
               <li className="p-4" onClick={toggleHamburger} key={i}>
                 <Link href={link.path}>
@@ -36,6 +37,9 @@ export const HamburgerMenu = () => {
                 </Link>
               </li>
             ))}
+            <li className="p-4" onClick={toggleHamburger} key="CTA">
+              <CTAButton cta_link={""} cta_button={"Donate"} />
+            </li>
           </ul>
           </div>
         </div>

@@ -23,12 +23,9 @@ export const Navbar = () => {
   const router = useRouter();
   const isBreakpoint = useMediaQuery(768);
   return (
-    <nav className="flex justify-between my-4 mx-8 z-10">
+    <nav className="flex justify-between py-4 px-8 z-10">
       <Link href="/">
-        <a className="flex items-center">
-          <img className="h-14" src="/assets/img/boxtribute-logo.png" alt="boxtribute logo"/>
-          <h3 className="uppercase text-xl md:text-2xl font-semibold">boxtribute</h3>
-        </a>
+          <img className="h-14" src="/assets/img/boxtribute-logo.webp" alt="boxtribute logo"/>
       </Link>
       {isBreakpoint ? (
         <HamburgerMenu />
