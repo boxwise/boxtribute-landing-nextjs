@@ -57,6 +57,7 @@ type Props = {
 const Index = ({ homeData, allNews }: Props) => {
   return (
     <>
+    {/* TODO: move head out to layout */}
       <Head>
         <title>Boxtribute</title>
       </Head>
