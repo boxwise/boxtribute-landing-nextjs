@@ -2,15 +2,28 @@ import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
 
-const postsDirectory = join(process.cwd(), '_posts')
+const dataDirectory = join(process.cwd(), 'data')
 
-export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory)
+// TODO: How to read richtext
+export function getDataBySlug(slug: string) {
+  const realSlug = slug.replace(/\.md$/, '')
+  const fullPath = join(dataDirectory, `${realSlug}.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const { data, content } = matter(fileContents)
+
+  return data;
 }
 
-export function getPostBySlug(slug: string, fields: string[] = []) {
-  const realSlug = slug.replace(/\.md$/, '')
-  const fullPath = join(postsDirectory, `${realSlug}.md`)
+
+const newsDirectory = join(process.cwd(), 'data/home/news')
+
+export function getNewsSlugs() {
+  return fs.readdirSync(newsDirectory)
+}
+
+export function getNewsBySlug(slug: string, fields: string[] = []) {
+  const newsSlug = slug.replace(/\.md$/, '')
+  const fullPath = join(newsDirectory, `${newsSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
@@ -23,7 +36,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {
     if (field === 'slug') {
-      items[field] = realSlug
+      items[field] = newsSlug
     }
     if (field === 'content') {
       items[field] = content
@@ -37,10 +50,10 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   return items
 }
 
-export function getAllPosts(fields: string[] = []) {
-  const slugs = getPostSlugs()
+export function getAllNews(fields: string[] = []) {
+  const slugs = getNewsSlugs()
   const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields))
+    .map((slug) => getNewsBySlug(slug, fields))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   return posts
