@@ -75,5 +75,7 @@ main_heading: Boxtribute
 title_of_news_section: News
 text_news_button: Next
 image_news_button: "/uploads/arrow.svg"
+hero_image_desktop: "/uploads/hero_picture_desktop.webp"
+hero_image_mobile: "/uploads/hero_picture_mobile.webp"
 
 ---
