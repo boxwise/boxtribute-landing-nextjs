@@ -25,11 +25,12 @@ fields:
     max: 
     labelField: 
   label: subtitles hero
-- name: hero_image
+- name: hero_image_desktop
   type: file
   config:
     maxSize: 64
-  label: hero_image
+  label: hero_image Desktop
+  description: 'The image needs to have a width of 1200px and a height of 675px '
 - name: cta_button
   type: text
   config:
@@ -102,5 +103,11 @@ fields:
   config:
     maxSize: 64
   label: image news button
+- name: hero_image_mobile
+  type: file
+  config:
+    maxSize: 64
+  description: The image needs to have a width of  800px and a height of 1200px
+  label: hero_image Mobile
 pages:
 - data/home/home_data.md
