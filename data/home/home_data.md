@@ -6,8 +6,8 @@ subtitles_hero:
 - text_for_typing: 2By aid workers, for aid workers!
 - text_for_typing: By aid workers, for aid workers!
 hero_image: "/uploads/hero_picture.png"
-cta_button: Get Involved
-short_description: Boxtribute is a digital system  that works hand in hand with our
+cta_button: Support Us
+short_description: Boxtribute is a digital system that works hand in hand with our
   partners to deliver humanitarian aid quickly and fairly.
 facts_in_numbers:
 - icon: "/uploads/handshake.png"
@@ -70,7 +70,7 @@ more_info:
     December mission a few months ago?
   image_description: people on a rescue boat
   link: https://wyborcza.pl/0,0.html
-cta_link: "/aboutus"
+cta_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url
 main_heading: Boxtribute
 title_of_news_section: News
 text_news_button: Next
