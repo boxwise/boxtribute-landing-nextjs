@@ -26,19 +26,11 @@ module.exports = {
       },
       // TODO: unify with styles/index.css definitions
       fontSize: {
-        'sm': '0.875rem',
         'md': '1rem',
-        'lg': '1.125rem',
-        'xl': '1.25rem',
-        '2xl': '1.5rem',
-        '5xl': '2.5rem',
-        '6xl': '2.75rem',
-        '7xl': '4.5rem',
-        '8xl': '7rem',
       },
       fontFamily: {
-        'sans': ['Open Sans', ...defaultTheme.fontFamily.sans],
-        'chivo': ['Chivo', 'Open Sans', ...defaultTheme.fontFamily.sans],
+        'sans': ['"Open Sans"', ...defaultTheme.fontFamily.sans],
+        'chivo': ['Chivo', '"Open Sans"', ...defaultTheme.fontFamily.sans],
       },
     },
   },
