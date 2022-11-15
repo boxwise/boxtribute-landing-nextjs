@@ -31,7 +31,7 @@ export const Navbar = () => {
       {isBreakpoint ? (
         <HamburgerMenu />
       ) : (
-        <ul className="flex justify-end items-center text-navy text-xl">
+        <ul className="flex justify-end items-center text-xl">
           {navLinks.map((link, i) => (
             <li className="list-none" key={i}>
               <Link href={link.path}>
@@ -43,7 +43,7 @@ export const Navbar = () => {
               </Link>
             </li>
           ))}
-          <li>
+          <li className="list-none">
             <CTAButton cta_link={"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url"} cta_button={"Donate"} no_md_break={true} />
           </li>
         </ul>
