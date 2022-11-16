@@ -2,11 +2,19 @@
 label: news snippet
 hide_body: true
 fields:
-- name: image
+- name: banner
   type: file
   config:
     maxSize: 64
-  label: image
+  description: 'This image should have a banner size of 2,5:1. It should be at least
+    320px high and 800px wide '
+  label: Banner
+- name: image_mobile
+  type: file
+  config:
+    maxSize: 64
+  label: Preview Image mobile
+  description: Please upload a quadratic image of 320px.
 - name: image_description
   type: text
   config:
@@ -48,5 +56,30 @@ fields:
     schema:
       format: html-blocks
   label: blog text
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+- name: created_date
+  type: datetime
+  label: Created Date
+  description: ''
+  config:
+    required: false
+    date_format: DD-MM-YYYY
+    time_format: 
+    display_utc: false
+    export_format: DD-MM-YYYY
+- name: position_in_preview
+  type: number
+  label: Position in Preview
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 pages:
 - data/home/news/news-from-the-field-serbia.md
