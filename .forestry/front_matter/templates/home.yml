@@ -91,20 +91,5 @@ fields:
     max: 
     labelField: 
   label: facts in numbers
-- name: title_of_news_section
-  type: text
-  config:
-    required: false
-  label: title of news section
-- name: text_news_button
-  type: text
-  config:
-    required: false
-  label: text news button
-- name: image_news_button
-  type: file
-  config:
-    maxSize: 64
-  label: image news button
 pages:
 - data/home/home_data.md
