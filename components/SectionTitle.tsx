@@ -1,13 +1,12 @@
 type Props = {
-  title: string
+  title: string;
+  color: string;
 };
 
-const SectionTitle = ({ title }: Props) => {
+const SectionTitle = ({ title, color }: Props) => {
   return (
-    <div>
-      <h2 className="bg-blue pt-4 lg:pt-6 lg:pb-2 px-4 lg:px-0 font-bold capitalize">
-        {title}
-      </h2>
+    <div className={`width-full bg-${color} p-4 pb-2 md:px-16 md:pt-6`}>
+      <h3>{title}</h3>
     </div>
   );
 };

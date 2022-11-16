@@ -9,7 +9,7 @@ interface ITypewriterText {
   text_for_typing: string;
 }
 
-export interface HeroSectionData {
+export interface IHeroSectionData {
   hero_image_mobile: string;
   hero_image_desktop: string;
   hero_image_description: string;
@@ -20,7 +20,7 @@ export interface HeroSectionData {
 }
 
 interface Props {
-  heroSectionData: HeroSectionData;
+  heroSectionData: IHeroSectionData;
 }
 
 // TODO: Image must be full width

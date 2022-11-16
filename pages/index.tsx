@@ -1,7 +1,5 @@
 import { getAllNews, getDataBySlug } from "../lib/api";
-import Head from "next/head";
 import React from "react";
-import TextBlock from "../components/TextBlock";
 import NewsPreview from "../components/NewsPreview";
 import FactInNumbersContainer from "../components/FactInNumbersContainer";
 import SectionTitle from "../components/SectionTitle";
@@ -66,7 +64,7 @@ const Index = ({ homeData, allNews }: Props) => {
         <FactInNumbersContainer factInNumbers={homeData.facts_in_numbers} />
       </section>
 
-      <SectionTitle title="News" />
+      <SectionTitle title="News" color="lightblue" />
       {allNews.map((e, i) => (
         <NewsPreview key={i} newsHeaderData={e} order={i % 2} />
       ))}
