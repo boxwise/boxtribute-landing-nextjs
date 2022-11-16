@@ -29,7 +29,7 @@ fields:
   type: file
   config:
     maxSize: 64
-  description: The image needs to have a width of  800px and a height of 1200px
+  description: The image needs to be quadratic and have a width and height of 800px
   label: hero_image Mobile
 - name: hero_image_desktop
   type: file
@@ -64,6 +64,8 @@ fields:
     config:
       maxSize: 64
     label: icon
+    description: Please only upload either a quadratic image of 96px or a quadratic
+      svg!
   - name: description
     type: text
     config:
@@ -79,11 +81,6 @@ fields:
       min: 
       max: 
       step: 
-  - name: color
-    type: text
-    config:
-      required: false
-    label: color
   - name: image_description
     type: text
     config:
@@ -94,20 +91,5 @@ fields:
     max: 
     labelField: 
   label: facts in numbers
-- name: title_of_news_section
-  type: text
-  config:
-    required: false
-  label: title of news section
-- name: text_news_button
-  type: text
-  config:
-    required: false
-  label: text news button
-- name: image_news_button
-  type: file
-  config:
-    maxSize: 64
-  label: image news button
 pages:
 - data/home/home_data.md
