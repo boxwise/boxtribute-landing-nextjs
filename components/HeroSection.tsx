@@ -38,13 +38,14 @@ export const HeroSection = ({ heroSectionData }: Props) => {
           className="blur z-0"
         />
       ) : (
-        <div className="flex justify-center max-h-[675px]">
+        <div className="flex justify-center max-h-[675px] relative">
           <Image
             src={heroSectionData.hero_image_desktop}
             alt={heroSectionData.hero_image_description}
-            width="1200px"
-            height="675px"
-            // layout="fill"
+            width="2400px"
+            height="1350px"
+            objectFit="cover"
+            objectPosition={"bottom"}
             priority
             className="blur z-0"
           />
