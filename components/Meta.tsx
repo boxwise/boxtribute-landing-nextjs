@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 const Meta = () => {
   return (
@@ -17,7 +17,7 @@ const Meta = () => {
       <link
         rel="icon"
         type="image/png"
-        sizes="16x16" 
+        sizes="16x16"
         href="/favicon/favicon-16x16.png"
       />
       <link rel="manifest" href="/favicon/site.webmanifest" />
@@ -36,12 +36,9 @@ const Meta = () => {
         content={`Boxtribute is a digital system  that works hand in hand with our partners to deliver humanitarian aid quickly and fairly.`}
       />
       {/* <meta property="og:image" content={HOME_OG_IMAGE_URL} /> */}
-
-      <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;900&display=swap" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
       <title>Boxtribute</title>
     </Head>
-  )
-}
+  );
+};
 
-export default Meta
+export default Meta;
