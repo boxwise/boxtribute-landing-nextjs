@@ -3,13 +3,15 @@ import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import CTAButton from "./CTAButton";
 import PageTitle from "./PageTitle";
+import { useMediaQuery } from "./MediaQuery";
 
 interface ITypewriterText {
   text_for_typing: string;
 }
 
 export interface HeroSectionData {
-  hero_image: string;
+  hero_image_mobile: string;
+  hero_image_desktop: string;
   hero_image_description: string;
   page_title: string;
   subtitles_hero: ITypewriterText[];
@@ -23,23 +25,35 @@ interface Props {
 
 // TODO: Image must be full width
 export const HeroSection = ({ heroSectionData }: Props) => {
+  const isBreakpoint = useMediaQuery(768);
   return (
     <section className="w-screen h-auto relative">
-      <div>
+      {isBreakpoint ? (
         <Image
-          src={heroSectionData.hero_image}
+          src={heroSectionData.hero_image_mobile}
           alt={heroSectionData.hero_image_description}
-          width="100%"
-          height="100%"
-          layout="responsive"
-          objectFit="contain"
+          width="800px"
+          height="800px"
           z-0
+          priority
           className="blur"
         />
-      </div>
-      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 ">
+      ) : (
+        <div className="flex justify-center">
+          <Image
+            src={heroSectionData.hero_image_desktop}
+            alt={heroSectionData.hero_image_description}
+            width="1200px"
+            height="675px"
+            z-0
+            priority
+            className="blur"
+          />
+        </div>
+      )}
+      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2">
         <PageTitle title={heroSectionData.page_title} />
-        <h2 className="text-2xl z-10 leading-none text-center">
+        <h4 className="z-10 leading-none text-center bg-lightblue">
           <Typewriter
             options={{
               strings: heroSectionData.subtitles_hero.map(
@@ -49,13 +63,14 @@ export const HeroSection = ({ heroSectionData }: Props) => {
               loop: true,
             }}
           />
-        </h2>
+        </h4>
       </div>
-      <div className="cta-button-hero-section-home">
+      <div className="absolute top-1/4 left-1/2 transform translate-y-32 -translate-x-1/2">
         <CTAButton
-          cta_button={heroSectionData.cta_button}
-          cta_link={heroSectionData.cta_link} 
-          no_md_break={false}        />
+          ctaButton={heroSectionData.cta_button}
+          ctaLink={heroSectionData.cta_link}
+          noMdBreak={false}
+        />
       </div>
     </section>
   );
