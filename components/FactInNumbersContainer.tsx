@@ -2,6 +2,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import FactInNumbers, { IFactInNumbers } from "./FactInNumbers";
 import { useMediaQuery } from "./MediaQuery";
+import Image from "next/image";
 
 type Props = {
   factInNumbers: IFactInNumbers[];
@@ -22,8 +23,54 @@ const FactInNumbersContainer = ({ factInNumbers }: Props) => {
 
   // TODO: styling of the carousel
   return (
-    <div >
-      {isBreakpoint ? <Carousel infiniteLoop showArrows={true}>{allFacts}</Carousel> : <div className="flex md:flex-wrap">{allFacts}</div>}
+    <div className="my-8 md:my-16">
+      {isBreakpoint ? (
+        <Carousel
+          statusFormatter={() => ""}
+          renderIndicator={() => ""}
+          renderArrowPrev={(onClickHandler, hasPrev, label) =>
+            hasPrev && (
+              <button
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+                className="absolute top-1/2 z-10"
+              >
+                <Image
+                  src="/assets/svg/arrow_red_bg.svg"
+                  width="40px"
+                  height="40px"
+                  className="rotate-90"
+                />
+              </button>
+            )
+          }
+          renderArrowNext={(onClickHandler, hasNext, label) =>
+            hasNext && (
+              <button
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+                className="absolute top-1/2 right-0 z-10"
+              >
+                <Image
+                  src="/assets/svg/arrow_red_bg.svg"
+                  width="40px"
+                  height="40px"
+                  className="-rotate-90"
+                />
+              </button>
+            )
+          }
+          infiniteLoop
+          showArrows={true}
+          className="my-8"
+        >
+          {allFacts}
+        </Carousel>
+      ) : (
+        <div className="flex flex-wrap gap-16">{allFacts}</div>
+      )}
     </div>
   );
 };
