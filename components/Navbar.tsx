@@ -24,7 +24,7 @@ export const Navbar = () => {
   const router = useRouter();
   const isBreakpoint = useMediaQuery(768);
   return (
-    <nav className="flex justify-between py-4 px-8 z-10">
+    <nav className="flex justify-between my-4 mx-8 z-10">
       <Link href="/">
         <img
           className="h-14"
@@ -40,9 +40,9 @@ export const Navbar = () => {
             <li className="list-none" key={i}>
               <Link href={link.path}>
                 {router.pathname === link.path ? (
-                  <a className="font-bold p-2">{link.name}</a>
+                  <a className="font-bold m-2">{link.name}</a>
                 ) : (
-                  <a className="p-2">{link.name}</a>
+                  <a className="m-2">{link.name}</a>
                 )}
               </Link>
             </li>

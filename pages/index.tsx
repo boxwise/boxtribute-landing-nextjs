@@ -40,7 +40,8 @@ interface IInfo {
 interface IHomeData {
   page_title: string;
   subtitles_hero: ITypewriterText[];
-  hero_image: string;
+  hero_image_mobile: string;
+  hero_image_desktop: string;
   hero_image_description: string;
   cta_button: string;
   cta_link: string;
@@ -58,8 +59,8 @@ const Index = ({ homeData, allNews }: Props) => {
   return (
     <>
       <HeroSection heroSectionData={homeData} />
-      <section className="w-full min-[1200px]:w-[1200px] px-4 md:px-16 ">
-        <p className="py-4 text-center md:py-16 md:text-2xl max-w-[1200px] mx-auto">
+      <section className="w-full px-4 md:px-16 max-w-[1200px] mx-auto">
+        <p className="my-8 text-center md:my-16 md:text-2xl">
           {homeData.short_description}
         </p>
         <FactInNumbersContainer factInNumbers={homeData.facts_in_numbers} />

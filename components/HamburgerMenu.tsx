@@ -27,7 +27,7 @@ export const HamburgerMenu = () => {
           <div>
           <ul className="flex-col text-white text-xl text-center">
             {navLinks.map((link, i) => (
-              <li className="p-4" onClick={toggleHamburger} key={i}>
+              <li className="m-4 list-none" onClick={toggleHamburger} key={i}>
                 <Link href={link.path}>
                   {router.pathname === link.path ? (
                     <a className="font-bold">{link.name}</a>
@@ -37,7 +37,7 @@ export const HamburgerMenu = () => {
                 </Link>
               </li>
             ))}
-            <li className="p-4" onClick={toggleHamburger} key="CTA">
+            <li className="m-4 list-none" onClick={toggleHamburger} key="CTA">
               <CTAButton ctaLink={"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url"} ctaButton={"Donate"} noMdBreak={true}/>
             </li>
           </ul>
