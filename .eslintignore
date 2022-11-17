@@ -1,0 +1,16 @@
+.vscode
+.forestry
+.next
+@types
+data
+js
+node_modules
+public
+# temporarily disable eslint on the current code
+components/*.tsx
+interfaces
+lib
+pages/*.tsx
+styles.css
+types
+*.config.js
