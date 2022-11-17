@@ -18,15 +18,6 @@ interface IFactCell {
   image_description: string;
 }
 
-interface IBlogPostData {
-  image: string;
-  image_description: string;
-  title: string;
-  headline: string;
-  text: string;
-  content: string;
-}
-
 interface IInfo {
   image: string;
   title: string;
@@ -80,11 +71,15 @@ export const getStaticProps = async () => {
   const allNews = getAllNews([
     "title",
     "headline",
-    "shortText",
-    "blogText",
+    "short_text",
+    "blog_text",
     "slug",
-    "image",
+    "banner",
+    "image_mobile",
     "image_description",
+    "author",
+    "created_date",
+    "position_in_preview",
   ]);
 
   const homeData = getDataBySlug("home/home_data");

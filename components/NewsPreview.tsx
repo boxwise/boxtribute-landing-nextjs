@@ -1,36 +1,27 @@
 import Link from "next/link";
 import ImageText5050 from "./ImageText5050";
 import NewsHeader from "./NewsHeader";
-
-interface INewsHeaderData {
-  title: string;
-  headline: string;
-  shortText: string;
-  slug: string;
-  image: string;
-  image_description: string
-  bg_color: string
-}
+import { INewsData } from "../interfaces/global";
 
 type Props = {
-  newsHeaderData: INewsHeaderData;
+  newsHeaderData: INewsData;
   order: number
 };
 
 const NewsPreview = ({ newsHeaderData, order }: Props) => {
   return (
     <ImageText5050
-      image={newsHeaderData.image}
-      image_description={newsHeaderData.image_description}
-      bg_color="gray"
+      imageMobile={newsHeaderData.image_mobile}
+      banner={newsHeaderData.banner}
+      imageDescription={newsHeaderData.image_description}
       order={order}
     >
       <NewsHeader newsHeaderData={newsHeaderData} />
 
       <Link href={`/posts/${newsHeaderData.slug}`} >
-        <div className="flex text-red text-5xl mt-8 ">
-          <h3 className="mr-16 capitalize">read more</h3>
-          <img className='w-8 lg:w-12' src="/uploads/arrow.svg" />
+        <div className="flex text-red mt-8 ">
+          <h3 className="mr-4 capitalize">read more</h3>
+          <img className='w-8 lg:w-12' src="/assets/svg/arrow.svg" />
         </div>
       </Link>
       

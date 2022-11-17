@@ -1,11 +1,14 @@
 export interface INewsData {
     title: string;
     headline: string;
-    shortText: string;
-    blogText: string;
-    image: string;
+    short_text: string;
+    blog_text: string;
+    image_mobile: string;
+    banner: string;
     image_description: string;
     slug: string;
-    bg_color: string;
+    author: string;
+    created_date: string;
+    position_in_preview: number;
   }
   

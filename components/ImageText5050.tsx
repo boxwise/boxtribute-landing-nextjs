@@ -1,36 +1,49 @@
 import Image from "next/image";
+import { useMediaQuery } from "./MediaQuery";
 
 type Props = {
-  image: string;
-  image_description: string;
-  bg_color: string;
+  imageMobile: string;
+  banner: string;
+  imageDescription: string;
   order?: number;
   children: React.ReactNode;
-  position?: string;
+  imageGrowPosition?: string;
 };
 
 const ImageText5050 = ({
-  image,
-  image_description,
-  bg_color,
+  imageMobile,
+  banner,
+  imageDescription,
   order,
   children,
-  position,
+  imageGrowPosition: position,
 }: Props) => {
+  const isBreakpoint = useMediaQuery(480);
   return (
-    <div className={`flex flex-col lg:flex-row bg-${bg_color}`}>
-      <div className={`w-full h-80 lg:w-1/2 lg:h-auto relative lg:order-${order}`}>
+      <div className={`flex flex-col lg:flex-row bg-lightgrey`}>
+      <div className={`flex w-full aspect-square max-h-[320px] relative lg:w-1/2 lg:order-${order}`}>
+      {isBreakpoint ? (
         <Image
-          layout="fill"
-          src={image}
-          alt={image_description}
+          src={imageMobile}
+          alt={imageDescription}
+          width="480px"
+          height="480px"
+          objectFit='cover'
+        />
+        ): (
+          <Image
+          src={banner}
+          alt={imageDescription}
+          width="976px"
+          height="320px"
           objectFit='cover'
           objectPosition={position}
         />
+        )}
       </div>
-      <div className="w-full px-4 lg:w-1/2 lg:px-20 py-8 ">{children}</div>
+      <div className="flex flex-col w-full h-auto p-4 lg:w-1/2 lg:px-20">{children}</div>
     </div>
-  );
+    );
 };
 
 export default ImageText5050;
