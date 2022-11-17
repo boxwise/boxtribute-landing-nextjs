@@ -11,6 +11,7 @@ module.exports = {
         black: '#000000',
         white: '#FFFFFF',
         yellow: '#F4E6A0',
+        lightgray: '#EAEBED'
       },
       screens: {
         sm: '480px',

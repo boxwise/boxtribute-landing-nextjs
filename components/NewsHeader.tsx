@@ -1,22 +1,15 @@
-export interface INewsHeaderData {
+type Props = {
   title: string;
   headline: string;
   shortText: string;
-  bg_color: string
-}
-
-type Props = {
-  newsHeaderData: INewsHeaderData;
 };
 
-const NewsHeader = ({ newsHeaderData }: Props) => {
+const NewsHeader = ({ title, headline, shortText }: Props) => {
   return (
-    <div className={`flex bg-${newsHeaderData.bg_color} lg:py-10`}>
-      <div className="flex flex-col">
-        <h2 className="font-bold uppercase">{newsHeaderData.title}</h2>
-        <h3>{newsHeaderData.headline}</h3>
-        <h4>{newsHeaderData.shortText}</h4>
-      </div>
+    <div>
+      <h3 className="capitalize">{title}</h3>
+      <h4 className="mb-3">{headline}</h4>
+      <p className="text-justify">{shortText}</p>
     </div>
   );
 };

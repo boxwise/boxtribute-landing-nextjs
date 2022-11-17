@@ -49,15 +49,13 @@ const Index = ({ homeData, allNews }: Props) => {
     <>
       <HeroSection heroSectionData={homeData} />
       <section className="w-full px-4 md:px-16 max-w-[1200px] mx-auto">
-        <p className="my-8 text-center md:my-16 md:text-2xl">
-          {homeData.short_description}
-        </p>
+        <p className="my-8 text-center md:my-16 md:text-2xl">{homeData.short_description}</p>
         <FactInNumbersContainer factInNumbers={homeData.facts_in_numbers} />
       </section>
 
       <SectionTitle title="News" color="lightblue" />
       {allNews.map((e, i) => (
-        <NewsPreview key={i} newsHeaderData={e} order={i % 2} />
+        <NewsPreview key={i} newsData={e} order={i % 2} />
       ))}
 
       {/* <SocialMediaSnippet socialMediaData={homeData.more_info} /> */}

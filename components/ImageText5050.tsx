@@ -20,30 +20,30 @@ const ImageText5050 = ({
 }: Props) => {
   const isBreakpoint = useMediaQuery(480);
   return (
-      <div className={`flex flex-col lg:flex-row bg-lightgrey`}>
-      <div className={`flex w-full aspect-square max-h-[320px] relative lg:w-1/2 lg:order-${order}`}>
-      {isBreakpoint ? (
-        <Image
-          src={imageMobile}
-          alt={imageDescription}
-          width="480px"
-          height="480px"
-          objectFit='cover'
-        />
-        ): (
+    <div className="max-lg:flex max-lg:flex-row lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:auto-rows-min">
+      <div className={`flex flex-row relative max-h-[320px] lg:max-h-[640px] lg:order-${order}`}>
+        {isBreakpoint ? (
           <Image
-          src={banner}
-          alt={imageDescription}
-          width="976px"
-          height="320px"
-          objectFit='cover'
-          objectPosition={position}
-        />
+            src={imageMobile}
+            alt={imageDescription}
+            width="640px"
+            height="640px"
+            objectFit="cover"
+          />
+        ) : (
+          <Image
+            src={banner}
+            alt={imageDescription}
+            width="1600px"
+            height="640px"
+            objectFit="cover"
+            objectPosition={position}
+          />
         )}
       </div>
-      <div className="flex flex-col w-full h-auto p-4 lg:w-1/2 lg:px-20">{children}</div>
+      <div className="h-fit p-4 md:p-16 bg-lightgray">{children}</div>
     </div>
-    );
+  );
 };
 
 export default ImageText5050;
