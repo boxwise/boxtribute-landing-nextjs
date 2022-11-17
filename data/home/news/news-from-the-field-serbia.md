@@ -1,9 +1,8 @@
 ---
 image: "/uploads/people_on_boat.png"
 image_description: people on the rescue boat
-title: news from the field - serbia
-headline: Did you know that one of our Boxtribute volunteers was part of the Sea-Eye
-  December mission a few months ago?
+title: Our cooperation with aid-collecting organisations
+headline: An Impact Highlight from 2021
 text: Sea-Eye is a civil rescue NGO working in the Mediterranean Sea and has been
   active since 2015. With the rescue organisation, Sophie assisted people on the move
   as a Rhib communicator, which essentially means she was the first point of contact
@@ -13,13 +12,26 @@ button_image: "/uploads/arrow.svg"
 short_text: Sea-Eye is a civil rescue NGO working in the Mediterranean Sea and has
   been active since 2015. With the rescue organisation, Sophie assisted people on
   the move as a ...
-blog_text: |-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
-
-  Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
-
-  ## Lorem Ipsum
-
-  Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+blog_text: '<p>Humanitarian actors experienced the knock-on effects of 2021 global
+  supply chain constraints, which created bottlenecks in the Euro area at historically
+  high levels¹. These constraints had a direct physical impact of intensifying aid
+  shortages in the field. In addition, the ongoing effects of COVID-19 through the
+  year, combined with health guidelines restricting gatherings of people, made it
+  difficult for many charities to physically operate and distribute aid.</p><p><img
+  src="/uploads/chart-1.png" title="warehouse statistics" alt="How many items of aid
+  were moved through our partners warehouses by product category and year"><br><em>Figure
+  1: How many items of aid were moved through our partners warehouses by product category
+  and year.</em></p><p>Therefore, our focus this year moved from expanding end distribution
+  capabilities to securing critical aid supplies in the field. We made four new partners
+  with charities situated in Germany and the UK, who had many of the needed supplies
+  due to their strong network of local aid collection in their home cities, collecting
+  over 390,000 items in 2021. By working with those partners, we were able to both
+  improve their internal aid collection processes, as well as facilitate smooth and
+  rapid outward deliveries to crisis hotspots in the field.</p><p><img src="/uploads/2102-gw-desktop-1.jpg"></p>'
+banner: ''
+image_mobile: ''
+author: ''
+created_date: 
+position_in_preview: 
 
 ---
