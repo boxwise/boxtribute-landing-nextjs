@@ -1,5 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import AnimatedNumber from "react-animated-number";
 
 export type IFactInNumbers = {
@@ -25,13 +23,6 @@ const FactInNumbers = ({
           value={number}
           duration={1500}
           formatValue={(n: number) => n.toFixed(0)}
-          configs={(index: number) => {
-            return {
-              mass: 1,
-              tension: 230 * (index + 1),
-              friction: 140,
-            };
-          }}
         />
       </h1>
       <p className="text-center">{description}</p>
