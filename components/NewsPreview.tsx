@@ -23,7 +23,7 @@ const NewsPreview = ({ newsData, order }: Props) => {
       />
 
       <Link href={`/posts/${newsData.slug}`}>
-        <div className="flex text-red mt-3 ">
+        <div className="flex text-red mt-3 cursor-pointer">
           <h3 className="mr-4 capitalize">read more</h3>
           <img className="w-8 lg:w-12" alt="arrow" src="/assets/svg/arrow.svg" />
         </div>
