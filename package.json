@@ -10,6 +10,8 @@
     "format:write": "prettier --write \"src/**/*.{js,jsx,json,scss,md,ts,tsx}\""
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.4",
+    "@heroicons/react": "^2.0.13",
     "@types/leaflet": "^1.7.8",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
