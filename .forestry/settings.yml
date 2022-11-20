@@ -74,10 +74,11 @@ sections:
   - contact-us
 - type: heading
   label: Admin
-- type: document
-  path: data/admin/footer.md
+- type: directory
+  path: data/footer
   label: Footer
-  match: "**/*"
+  create: all
+  match: "*"
 upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''
