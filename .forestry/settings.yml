@@ -72,6 +72,8 @@ sections:
   match: "**/*"
   templates:
   - contact-us
+- type: heading
+  label: Admin
 upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''
