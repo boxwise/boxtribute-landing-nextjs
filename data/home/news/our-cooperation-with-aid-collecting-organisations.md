@@ -45,7 +45,7 @@ image_mobile: "/uploads/2102_news_aid_collecting_orgs_gw_masks.webp"
 author:
   name: Hans Peter Gürtner
   picture: "/uploads/hans_thumbnail.webp"
-created_date: 28-09-2022
+created_date: 2022-09-27
 position_in_preview: 1
 
 ---
