@@ -56,11 +56,6 @@ fields:
     schema:
       format: html-blocks
   label: blog text
-- name: author
-  type: text
-  config:
-    required: false
-  label: Author
 - name: created_date
   type: datetime
   label: Created Date
@@ -81,5 +76,21 @@ fields:
     min: 
     max: 
     step: 
+- name: author
+  type: field_group
+  config: {}
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: picture
+    type: file
+    config:
+      maxSize: 64
+    label: Picture
+    description: 48px  x 48px
+  label: Author
 pages:
 - data/home/news/our-cooperation-with-aid-collecting-organisations.md
