@@ -1,18 +1,16 @@
 import Navbar from "./Navbar";
-import Footer from "./Footer";
 import Meta from "./Meta";
 
-interface Props {
+interface IProps {
   children: React.ReactNode;
 }
 
-export default function Layout({ children }: Props) {
+export default function Layout({ children }: IProps) {
   return (
     <div>
       <Meta />
       <Navbar />
       <main>{children}</main>
-      <Footer />
     </div>
   );
 }

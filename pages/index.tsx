@@ -5,6 +5,7 @@ import FactInNumbersContainer from "../components/FactInNumbersContainer";
 import SectionTitle from "../components/SectionTitle";
 import { HeroSection } from "../components/HeroSection";
 import { INewsData } from "../interfaces/global";
+import Footer, { IFooterData } from "../components/Footer";
 
 interface ITypewriterText {
   text_for_typing: string;
@@ -42,9 +43,10 @@ interface IHomeData {
 type Props = {
   homeData: IHomeData;
   allNews: INewsData[];
+  footerData: IFooterData;
 };
 
-const Index = ({ homeData, allNews }: Props) => {
+const Index = ({ homeData, allNews, footerData }: Props) => {
   return (
     <>
       <HeroSection heroSectionData={homeData} />
@@ -59,6 +61,7 @@ const Index = ({ homeData, allNews }: Props) => {
       ))}
 
       {/* <SocialMediaSnippet socialMediaData={homeData.more_info} /> */}
+      <Footer footerData={footerData} />
     </>
   );
 };
@@ -81,8 +84,9 @@ export const getStaticProps = async () => {
   ]);
 
   const homeData = getDataBySlug("home/home_data");
+  const footerData = getDataBySlug("footer/footer");
 
   return {
-    props: { homeData, allNews },
+    props: { homeData, allNews, footerData },
   };
 };
