@@ -79,6 +79,8 @@ sections:
   label: Footer
   create: all
   match: "*"
+  templates:
+  - footer
 upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''
