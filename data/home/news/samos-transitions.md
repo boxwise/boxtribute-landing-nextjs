@@ -26,7 +26,7 @@ blog_text: '<p>Samos is a Greek Islands, close to the Turkish coast, and therefo
   secure a continuous availability of distributions without any interruptions. We
   consulted all three organisations throughout the transition processes, transferring
   about 1,200 boxes (about 100,000 aid items) and data on former distributions each
-  time.</p><p></p><p></p><hr><p><strong>¹ Marion MacGregor, </strong><a href="https://www.infomigrants.net/en/post/41291/jungle-to-prison-for-migrants-on-samos-island"
+  time.</p><p></p><hr><p><strong>¹ Marion MacGregor, </strong><a href="https://www.infomigrants.net/en/post/41291/jungle-to-prison-for-migrants-on-samos-island"
   target="_blank"><strong>"''Jungle'' to ''prison'' for migrants on Samos island"</strong></a>,
   InfoMigrants (InfoMigrants), June 17, 2022</p><p class="_04xlpA direction-ltr align-justify
   para-style-body"><strong>² </strong><a href="https://www.dw.com/en/greece-opens-first-refugee-holding-camp-on-samos-island/a-59225924#:~:text=Greece%20on%20Saturday%20inaugurated%20its,about%20overcrowding%20and%20squalid%20conditions."
