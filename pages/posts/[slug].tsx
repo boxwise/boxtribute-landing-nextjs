@@ -4,6 +4,8 @@ import Avatar from "../../components/Avatar";
 import PostTitle from "../../components/PostTitle";
 import Image from "next/image";
 import Footer, { IFooterData } from "../../components/Footer";
+import SectionTitle from "../../components/SectionTitle";
+import NewsPreview from "../../components/NewsPreview";
 // import DateFormatter from "../../components/DateFormatter";
 
 import PostBody from "../../components/PostBody";
@@ -15,10 +17,11 @@ import type { INewsData } from "../../interfaces/global";
 
 type Props = {
   newsData: INewsData;
+  allNews: INewsData[];
   footerData: IFooterData;
 };
 
-export default function Post({ newsData, footerData }: Props) {
+export default function Post({ newsData, allNews, footerData }: Props) {
   const router = useRouter();
 
   if (!router.isFallback && !newsData?.slug) {
@@ -31,7 +34,7 @@ export default function Post({ newsData, footerData }: Props) {
           <h1>Loading…</h1>
         ) : (
           <>
-            <article className="my-12">
+            <article className="mt-12 mb-16">
               <Head>
                 <title>{newsData.title}</title>
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
@@ -41,12 +44,12 @@ export default function Post({ newsData, footerData }: Props) {
               <div className="hidden md:block md:mb-12">
                 <Avatar name={newsData.author.name} picture={newsData.author.picture} />
               </div>
-              <div className="mb-8 md:mb-16 sm:mx-0 max-h-[630px] w-full">
+              <div className="mb-8 md:mb-16 sm:mx-0 max-h-[640px] w-full">
                 <Image
                   src={newsData.banner}
                   alt={`Cover Image for ${newsData.title}`}
-                  width={1300}
-                  height={630}
+                  width={1600}
+                  height={640}
                   objectFit="cover"
                 />
               </div>
@@ -64,6 +67,10 @@ export default function Post({ newsData, footerData }: Props) {
           </>
         )}
       </div>
+      <SectionTitle title="Other News" color="lightblue" />
+      {allNews.map((e, i) => (
+        <NewsPreview key={i} newsData={e} order={i % 2} />
+      ))}
       <Footer footerData={footerData} />
     </>
   );
@@ -76,7 +83,7 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const newsData = getNewsBySlug(params.slug, [
+  const newsKeys = [
     "title",
     "headline",
     "short_text",
@@ -88,11 +95,14 @@ export async function getStaticProps({ params }: Params) {
     "author",
     // "created_date", Date conversion from string does not work
     "position_in_preview",
-  ]);
+  ];
+
+  const newsData = getNewsBySlug(params.slug, newsKeys);
 
   // We do not need to converse markdown to html since forestry can save text as html
   // const blogText = await markdownToHtml(newsData.blog_text || "");
 
+  const allNews = getAllNews(newsKeys);
   const footerData = getDataBySlug("footer/footer");
 
   return {
@@ -102,6 +112,7 @@ export async function getStaticProps({ params }: Params) {
         // blogText,
       },
       footerData,
+      allNews,
     },
   };
 }
