@@ -6,15 +6,15 @@ fields:
   type: file
   config:
     maxSize: 64
-  description: 'This image should have a banner size of 2,5:1. It should be at least
-    320px high and 800px wide '
+  description: This image should have a banner size of 2,5:1. It should be at least
+    640px high and 1600px wide
   label: Banner
 - name: image_mobile
   type: file
   config:
     maxSize: 64
   label: Preview Image mobile
-  description: Please upload a quadratic image of 320px.
+  description: Please upload a quadratic image of 640px.
 - name: image_description
   type: text
   config:
