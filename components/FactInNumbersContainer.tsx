@@ -26,6 +26,7 @@ const FactInNumbersContainer = ({ factInNumbers }: Props) => {
     <div className="my-8 md:my-16">
       {isBreakpoint ? (
         <Carousel
+          showThumbs={false}
           statusFormatter={() => ""}
           renderIndicator={() => ""}
           renderArrowPrev={(onClickHandler, hasPrev, label) =>
