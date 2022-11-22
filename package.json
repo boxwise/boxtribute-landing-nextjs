@@ -19,6 +19,7 @@
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
     "install": "^0.13.0",
+    "isomorphic-dompurify": "^0.24.0",
     "leaflet": "^1.7.1",
     "leaflet-defaulticon-compatibility": "^0.1.1",
     "leaflet-geosearch": "^3.6.0",

@@ -76,7 +76,7 @@ export const getStaticProps = async () => {
     "image_mobile",
     "image_description",
     "author",
-    "created_date",
+    // "created_date",
     "position_in_preview",
   ]);
 
