@@ -72,6 +72,13 @@ sections:
   match: "**/*"
   templates:
   - contact-us
+- type: heading
+  label: Admin
+- type: directory
+  path: data/footer
+  label: Footer
+  create: all
+  match: "*"
 upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''
