@@ -1,5 +1,5 @@
 ---
-position_in_preview: 0
+position_in_preview: 2
 banner: "/uploads/free_shop_news_banner.webp"
 image_mobile: "/uploads/free_shop_news_mobile.webp"
 image_description: The Free Shop Lebanon Team
