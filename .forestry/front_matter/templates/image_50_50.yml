@@ -2,9 +2,6 @@
 label: image_50_50
 hide_body: true
 fields:
-- type: text
-  name: position_in_preview
-  label: position_in_preview
 - type: file
   name: banner
   label: banner
@@ -14,3 +11,7 @@ fields:
 - type: text
   name: image_description
   label: image_description
+- name: left
+  type: boolean
+  label: left
+  default: true
