@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { textChangeRangeIsUnchanged } from "typescript";
-import { useMediaQuery } from "./MediaQuery";
+import FooterDropDown from "../components/FooterDropDown";
 
 // TODO: Put correct links in
 type ISocialMedia = {
@@ -9,93 +8,101 @@ type ISocialMedia = {
   link: string;
 };
 
-interface IFooterData {
-  boxtribute_logo: string;
-  social_media_icons: ISocialMedia[];
-  boxtribute_trademark: string;
+interface IFooterStaticData {
+  boxtributeLogo: string;
+  socialMediaIcons: ISocialMedia[];
+  boxtributeTrademark: string;
 }
 
-export interface PropsFooter {
+export interface IReport {
+  year: string;
+  report: string;
+}
+
+export interface IFooterData {
+  articles_of_association: string;
+  policy_plan: string;
+  remuneration_policy: string;
+  annual_reports: IReport[];
+  financial_reports: IReport[];
+}
+
+type IProps = {
   footerData: IFooterData;
-}
+};
 
-export const Footer = () => {
-  const isBreakpoint = useMediaQuery(768);
-  const footerData: IFooterData = {
-    boxtribute_trademark: "© Boxtribute, Inc. 2022.",
-    boxtribute_logo: "/uploads/boxtribute_white.png",
-    social_media_icons: [
+export const Footer = ({ footerData }: IProps) => {
+  const footerStaticData: IFooterStaticData = {
+    boxtributeTrademark: "© 2022 Boxtribute, All rights reserved.",
+    boxtributeLogo: "/assets/svg/boxtribute_white_vertical.svg",
+    socialMediaIcons: [
       {
-        image: "/uploads/github.svg",
-        description: "github icon",
-        link: "https://wyborcza.pl/0,0.html",
+        image: "/assets/svg/github.svg",
+        description: "Github",
+        link: "https://github.com/boxwise",
       },
       {
-        image: "/uploads/instagram.svg",
-        description: "instagram icon",
-        link: "https://wyborcza.pl/0,0.html",
+        image: "/assets/svg/instagram.svg",
+        description: "Instagram",
+        link: "https://www.instagram.com/boxtribute_ngo/",
       },
       {
-        image: "/uploads/facebook.svg",
-        description: "facebook icon",
-        link: "https://wyborcza.pl/0,0.html",
+        image: "/assets/svg/facebook.svg",
+        description: "Facebook",
+        link: "https://www.facebook.com/boxtribute/",
       },
       {
-        image: "/uploads/linkedin.svg",
-        description: "linkedin icon",
-        link: "https://wyborcza.pl/0,0.html",
+        image: "/assets/svg/linkedin.svg",
+        description: "LinkedIn",
+        link: "https://www.linkedin.com/company/boxtribute",
       },
     ],
   };
-  return (
-    <section className="bg-navy py-16 px-8">
-      <div className="flex  flex-col items-center md:items-stretch">
-        <div className="flex md:pb-8 md:border-b-2 border-blue md:mx-2 md:items-end justify-between">
-          <div>
-          <img className="h-24 md:h-42 mr-4" src={footerData.boxtribute_logo} />
-          </div>
-          {!isBreakpoint ? (
-            <div className="text-white flex justify-between  flex-1 gap-3 mb-0.9">
-              <Link href="/">
-                <a>Articles of Association</a>
-              </Link>
-              <Link href="/">
-                <a>Data Policy</a>
-              </Link>
-              <Link href="/">
-                <a>Annual Report 2020</a>
-              </Link>
-              <Link href="/">
-                <a>Financial Report 2020</a>
-              </Link>
-              <Link href="/">
-                <a>Privacy Plan</a>
-              </Link>
-            </div>
-         ) : null} 
-        </div>
-        <div className="flex flex-col md:items-end mt-10">
-          <div className="flex gap-6 mb-4">
-            {footerData.social_media_icons.map((e, i) => (
-              <Link href={e.link} key={i} >
-                <a>
-                  <img
-                    className="h-12 md:h-18"
-                    alt={e.description}
-                    src={e.image}
-                  />
-                </a>
-              </Link>
-            ))}
-          </div>
 
-          <h3 className="text-white text-center text-md md:text-xl">
-            {footerData.boxtribute_trademark}
-          </h3>
+  return (
+    <section>
+      <div className="flex flex-col items-center gap-8 bg-navy text-white px-8 py-16">
+        <img className="h-24 md:h-42" src={footerStaticData.boxtributeLogo} />
+        <div className="flex flex-wrap justify-center gap-x-2 text-sm md:text-base">
+          <Link href="contactus">Imprint</Link>
+          <div>&middot;</div>
+          <Link href={footerData.articles_of_association} passHref>
+            <a target="_blank" rel="noopener noreferrer">
+              Articles of Association
+            </a>
+          </Link>
+          <div>&middot;</div>
+          <Link href={footerData.policy_plan} passHref>
+            <a target="_blank" rel="noopener noreferrer">
+              Policy Plan
+            </a>
+          </Link>
+          <div>&middot;</div>
+          <Link href={footerData.remuneration_policy} passHref>
+            <a target="_blank" rel="noopener noreferrer">
+              Remuneration Policy
+            </a>
+          </Link>
+          <div>&middot;</div>
+          <FooterDropDown title="Annual Reports" reports={footerData.annual_reports} />
+          <div>&middot;</div>
+          <FooterDropDown title="Financial Reports" reports={footerData.financial_reports} />
         </div>
+        <div className="flex gap-6">
+          {footerStaticData.socialMediaIcons.map((e, i) => (
+            <Link href={e.link} key={i}>
+              <a>
+                <img className="h-12 md:h-18" alt={e.description} src={e.image} />
+              </a>
+            </Link>
+          ))}
+        </div>
+        <p className="text-xs md:text-sm">{footerStaticData.boxtributeTrademark}</p>
       </div>
+      <p className="text-center text-sm md:text-base text-navy p-4">
+        Data privacy: We store <b>no</b> data about your website visit.
+      </p>
     </section>
   );
 };
-
 export default Footer;
