@@ -57,3 +57,5 @@ fields:
     max: 
     labelField: 
   label: Financial Reports
+pages:
+- data/footer/footer.md
