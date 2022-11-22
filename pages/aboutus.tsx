@@ -6,6 +6,7 @@ import TextBlock from "../components/TextBlock";
 import { TeamMember } from "../components/TeamMember";
 import markdownToHtml from "../lib/markdownToHtml";
 import { Carousel } from "react-responsive-carousel";
+import Footer, { IFooterData } from "../components/Footer";
 
 // TODO: centralize type definitions
 type ITextAndImage = {
@@ -49,6 +50,7 @@ type Props = {
   text_for_team_section: string;
   text_block_2: string;
   text_block_3: string;
+  footerData: IFooterData;
 };
 
 export const AboutUs = ({
@@ -57,6 +59,7 @@ export const AboutUs = ({
   text_for_team_section,
   text_block_2,
   text_block_3,
+  footerData,
 }: Props) => {
   const handleDragStart = (e: any) => e.preventDefault();
 
@@ -89,17 +92,14 @@ export const AboutUs = ({
               bg_color="blue"
               image={aboutUsData.text_with_picture_for_the_story[0].image}
               image_description={
-                aboutUsData.text_with_picture_for_the_story[0]
-                  .description_for_the_image
+                aboutUsData.text_with_picture_for_the_story[0].description_for_the_image
               }
             >
-              {aboutUsData.text_with_picture_for_the_story[0].paragraph_s_group.map(
-                (e, i) => (
-                  <p className="lg:pb-6 pb-4" key={i}>
-                    {e.paragraph}
-                  </p>
-                )
-              )}
+              {aboutUsData.text_with_picture_for_the_story[0].paragraph_s_group.map((e, i) => (
+                <p className="lg:pb-6 pb-4" key={i}>
+                  {e.paragraph}
+                </p>
+              ))}
             </ImageText5050>
           </div>
         </div>
@@ -117,17 +117,14 @@ export const AboutUs = ({
             bg_color="white"
             image={aboutUsData.text_with_picture_for_the_story[1].image}
             image_description={
-              aboutUsData.text_with_picture_for_the_story[1]
-                .description_for_the_image
+              aboutUsData.text_with_picture_for_the_story[1].description_for_the_image
             }
           >
-            {aboutUsData.text_with_picture_for_the_story[1].paragraph_s_group.map(
-              (e, i) => (
-                <p className="lg:pb-6 pb-4" key={i}>
-                  {e.paragraph}
-                </p>
-              )
-            )}
+            {aboutUsData.text_with_picture_for_the_story[1].paragraph_s_group.map((e, i) => (
+              <p className="lg:pb-6 pb-4" key={i}>
+                {e.paragraph}
+              </p>
+            ))}
           </ImageText5050>
         </div>
         <TextBlock text_justify="left" bg_color="navy" text_color="white">
@@ -138,17 +135,14 @@ export const AboutUs = ({
             bg_color="white"
             image={aboutUsData.text_with_picture_for_the_story[2].image}
             image_description={
-              aboutUsData.text_with_picture_for_the_story[2]
-                .description_for_the_image
+              aboutUsData.text_with_picture_for_the_story[2].description_for_the_image
             }
           >
-            {aboutUsData.text_with_picture_for_the_story[2].paragraph_s_group.map(
-              (e, i) => (
-                <p className="lg:pb-6 pb-4" key={i}>
-                  {e.paragraph}
-                </p>
-              )
-            )}
+            {aboutUsData.text_with_picture_for_the_story[2].paragraph_s_group.map((e, i) => (
+              <p className="lg:pb-6 pb-4" key={i}>
+                {e.paragraph}
+              </p>
+            ))}
           </ImageText5050>
         </div>
       </section>
@@ -160,14 +154,9 @@ export const AboutUs = ({
       </TextBlock>
       {/* team section */}
       <section>
-        <h2 className="mx-32 text-4xl p-8 text-center">
-          {aboutUsData.title_for_the_team_section}
-        </h2>
+        <h2 className="mx-32 text-4xl p-8 text-center">{aboutUsData.title_for_the_team_section}</h2>
 
-        <p
-          className="p-4"
-          dangerouslySetInnerHTML={{ __html: text_for_team_section }}
-        ></p>
+        <p className="p-4" dangerouslySetInnerHTML={{ __html: text_for_team_section }}></p>
 
         <div className="flex flex-wrap justify-center mx-8">
           {aboutUsData.team_member.map((e, i) => (
@@ -175,6 +164,7 @@ export const AboutUs = ({
           ))}
         </div>
       </section>
+      <Footer footerData={footerData} />
     </>
   );
 };
@@ -187,9 +177,8 @@ export const getStaticProps = async () => {
   const text_block_2 = await markdownToHtml(aboutUsData.text_block_2 || "");
   const text_block_3 = await markdownToHtml(aboutUsData.text_block_3 || "");
 
-  const text_for_team_section = await markdownToHtml(
-    aboutUsData.text_for_team_section || ""
-  );
+  const text_for_team_section = await markdownToHtml(aboutUsData.text_for_team_section || "");
+  const footerData = getDataBySlug("footer/footer");
 
   return {
     props: {
@@ -198,6 +187,7 @@ export const getStaticProps = async () => {
       text_block_2,
       text_block_3,
       text_for_team_section,
+      footerData,
     },
   };
 };
