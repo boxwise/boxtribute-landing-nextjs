@@ -1,4 +1,22 @@
 ---
 label: footer
 hide_body: true
-fields: []
+fields:
+- name: articles_of_association
+  type: file
+  config:
+    maxSize: 64
+  label: Articles of Association
+- name: policy_plan
+  type: file
+  config:
+    maxSize: 64
+  label: Policy Plan
+- name: annual_reports
+  type: image_gallery
+  config: {}
+  label: Annual Reports
+- name: financial_reports
+  type: image_gallery
+  config: {}
+  label: Financial Reports
