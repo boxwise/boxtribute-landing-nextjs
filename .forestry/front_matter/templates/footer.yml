@@ -18,18 +18,42 @@ fields:
     maxSize: 64
   label: Remuneration Policy
 - name: annual_reports
-  type: blocks
-  label: Annual Reports
-  template_types:
-  - report
+  type: field_group_list
+  fields:
+  - name: year
+    type: text
+    config:
+      required: true
+    label: Year
+  - name: annual_report
+    type: file
+    config:
+      maxSize: 64
+    label: Annual Report
+    description: Please be aware that the name of the pdf will be the same for the
+      user.
   config:
-    min: 
+    min: 1
     max: 
+    labelField: 
+  label: Annual reports
 - name: financial_reports
-  type: blocks
-  label: Financial Reports
-  template_types:
-  - report
+  type: field_group_list
+  fields:
+  - name: year
+    type: text
+    config:
+      required: true
+    label: Year
+  - name: financial_report
+    type: file
+    config:
+      maxSize: 64
+    description: Please be aware that the name of the pdf will be the same for the
+      user.
+    label: Financial Report
   config:
-    min: 
+    min: 1
     max: 
+    labelField: 
+  label: Financial Reports
