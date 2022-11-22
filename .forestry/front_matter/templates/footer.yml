@@ -18,12 +18,12 @@ fields:
     maxSize: 64
   label: Remuneration Policy
 - name: annual_reports
-  type: image_gallery
+  type: include
   config: {}
+  template: annual-report
   label: Annual Reports
 - name: financial_reports
-  type: image_gallery
+  type: include
   config: {}
+  template: annual-report
   label: Financial Reports
-pages:
-- data/footer/footer.md
