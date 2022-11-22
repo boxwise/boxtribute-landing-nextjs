@@ -25,7 +25,7 @@ fields:
     config:
       required: true
     label: Year
-  - name: annual_report
+  - name: report
     type: file
     config:
       maxSize: 64
@@ -45,7 +45,7 @@ fields:
     config:
       required: true
     label: Year
-  - name: financial_report
+  - name: report
     type: file
     config:
       maxSize: 64
