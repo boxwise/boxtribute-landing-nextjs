@@ -18,12 +18,18 @@ fields:
     maxSize: 64
   label: Remuneration Policy
 - name: annual_reports
-  type: include
-  config: {}
-  template: annual-report
+  type: blocks
   label: Annual Reports
+  template_types:
+  - report
+  config:
+    min: 
+    max: 
 - name: financial_reports
-  type: include
-  config: {}
-  template: annual-report
+  type: blocks
   label: Financial Reports
+  template_types:
+  - report
+  config:
+    min: 
+    max: 
