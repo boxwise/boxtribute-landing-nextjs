@@ -16,12 +16,13 @@ blog_text: <p>In August 2021, The Free Shop Lebanon started their operations. Fo
   contact details and collecting distribution data are all things they couldn't do
   without Boxtribute technology. We were deeply involved in the setup process, supporting
   them with frequent calls to set them up for success as they became completely independent.</p><p><img
-  src="/uploads/img_0193.webp"> <img src="/uploads/thefreeshoplebanon-16508037072860-1.webp"></p><p><em>"Without
-  Boxtribute The Free Shop would not be where it is today. We were visited recently
-  by our core funder (Choose Love) who said we were the most organized project they
-  met in Lebanon! They were so impressed with how we know our warehouse stock and
-  store the phone numbers of over 2,000 Syrian families safely."<br>-</em> Khaled,
-  The Free Shop Manager</p>
+  src="/uploads/img_0193.webp" title="Khaled, The Free Shop Manager" alt="Khaled,
+  The Free Shop Manager"></p><p><em>"Without Boxtribute The Free Shop would not be
+  where it is today. We were visited recently by our core funder (Choose Love) who
+  said we were the most organized project they met in Lebanon! They were so impressed
+  with how we know our warehouse stock and store the phone numbers of over 2,000 Syrian
+  families safely."<br>-</em> Khaled, The Free Shop Manager</p><p><img src="/uploads/thefreeshoplebanon-16508037072860.webp"
+  title="A customer at the Free Shop" alt="A customer at the Free Shop"></p>
 created_date: 2022-08-29
 author:
   name: Alice Corrigan
