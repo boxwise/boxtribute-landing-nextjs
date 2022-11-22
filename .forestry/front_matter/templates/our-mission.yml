@@ -8,13 +8,9 @@ fields:
     required: false
   label: Title
 - name: intro_text
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: html-blocks
+  type: include
+  config: {}
+  template: text-block
   label: Intro Text
 - name: section_1
   type: field_group
@@ -30,6 +26,11 @@ fields:
     config: {}
     template: image_50_50
     label: Image Text 50 50
+  - name: text
+    type: include
+    config: {}
+    template: text-block
+    label: Text
   label: Section 1
 - name: text_with_picture
   type: field_group_list
