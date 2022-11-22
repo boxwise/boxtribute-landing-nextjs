@@ -93,4 +93,5 @@ fields:
     description: 48px  x 48px
   label: Author
 pages:
+- data/home/news/a-new-charity-shop-opens.md
 - data/home/news/our-cooperation-with-aid-collecting-organisations.md
