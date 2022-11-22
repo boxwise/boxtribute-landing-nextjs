@@ -12,6 +12,11 @@ fields:
   config:
     maxSize: 64
   label: Policy Plan
+- name: remuneration_policy
+  type: file
+  config:
+    maxSize: 64
+  label: Remuneration Policy
 - name: annual_reports
   type: image_gallery
   config: {}
