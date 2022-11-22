@@ -25,3 +25,5 @@ fields:
   type: image_gallery
   config: {}
   label: Financial Reports
+pages:
+- data/footer/footer.md
