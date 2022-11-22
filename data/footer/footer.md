@@ -4,9 +4,9 @@ policy_plan: "/uploads/2021-2022-boxtribute-policy-plan.pdf"
 remuneration_policy: "/uploads/remuneration-policy-2021-2022.pdf"
 annual_reports:
 - year: "2020"
-  annual_report: "/uploads/stichting-boxwise-2020-report-of-activities.pdf"
+  report: "/uploads/stichting-boxwise-2020-report-of-activities.pdf"
 financial_reports:
 - year: "2020"
-  financial_report: "/uploads/stichting-boxwise-2020-financial-report.pdf"
+  report: "/uploads/stichting-boxwise-2020-financial-report.pdf"
 
 ---
