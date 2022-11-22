@@ -34,11 +34,9 @@ const FooterDropDown = ({ title, reports }: IFooterDropDownData) => {
               {reports.map((e, i) => (
                 <Menu.Item key={i}>
                   {() => (
-                    <Link href={e.report} passHref>
-                      <a target="_blank" rel="noopener noreferrer">
-                        {e.year}
-                      </a>
-                    </Link>
+                    <a target="_blank" href={e.report} rel="noopener noreferrer">
+                      {e.year}
+                    </a>
                   )}
                 </Menu.Item>
               ))}
