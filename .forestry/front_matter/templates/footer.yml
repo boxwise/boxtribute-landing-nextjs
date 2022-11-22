@@ -27,5 +27,3 @@ fields:
   config: {}
   template: annual-report
   label: Financial Reports
-pages:
-- data/footer/footer.md
