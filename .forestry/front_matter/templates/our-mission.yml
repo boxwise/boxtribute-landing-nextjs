@@ -100,3 +100,8 @@ fields:
     schema:
       format: markdown
   label: text block 2
+- name: test
+  type: include
+  config: {}
+  template: text-block
+  label: test
