@@ -1,0 +1,41 @@
+---
+label: image_50_50
+hide_body: true
+fields:
+- type: text
+  name: position_in_preview
+  label: position_in_preview
+- type: file
+  name: banner
+  label: banner
+- type: file
+  name: image_mobile
+  label: image_mobile
+- type: text
+  name: image_description
+  label: image_description
+- type: text
+  name: title
+  label: title
+- type: text
+  name: headline
+  label: headline
+- type: textarea
+  name: short_text
+  label: short_text
+- type: textarea
+  name: blog_text
+  label: blog_text
+- type: datetime
+  name: created_date
+  label: created_date
+- type: field_group
+  name: author
+  label: author
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: file
+    name: picture
+    label: picture
