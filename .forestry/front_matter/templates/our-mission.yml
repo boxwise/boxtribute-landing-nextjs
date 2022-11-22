@@ -2,11 +2,11 @@
 label: our mission
 hide_body: true
 fields:
-- name: title_of_the_page
+- name: title
   type: text
   config:
     required: false
-  label: title of the page
+  label: Title
 - name: intro_text
   type: textarea
   default: ''
@@ -15,12 +15,22 @@ fields:
     wysiwyg: true
     schema:
       format: html-blocks
-  label: intro text
-- name: subtitle_1
-  type: text
-  config:
-    required: false
-  label: subtitle_1
+  label: Intro Text
+- name: section_1
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: image_text_50_50
+    type: include
+    config: {}
+    template: image_50_50
+    label: Image Text 50 50
+  label: Section 1
 - name: text_with_picture
   type: field_group_list
   fields:
