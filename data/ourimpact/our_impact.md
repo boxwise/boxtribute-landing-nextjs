@@ -16,7 +16,7 @@ section_2:
     image_mobile: "/uploads/20171121-dsc_4692-edit.webp"
     image_description: Man in warehouse
     text: "<p><strong>Especially, we want to:</strong></p><ul><li><p>Get critical
-      help to people in crisis faster and more efficiently </p></li><li><p>Legitimize
+      help to people in crisis faster and more efficiently</p></li><li><p>Legitimize
       dignity in aid for the most vulnerable</p></li><li><p>Increase responsiveness
       and and resilience in the humanitarian sector</p></li></ul>"
     bg_color: inherit
@@ -41,8 +41,8 @@ section_3:
     align: left
     color: black
     bg_color: inherit
-    banner: "/uploads/two_men_buidling_together.png"
-    image_mobile: "/uploads/two_men_buidling_together.png"
+    banner: "/uploads/two_men_buidling_together.webp"
+    image_mobile: "/uploads/two_men_buidling_together.webp"
     image_description: two man building a floor
 
 ---
