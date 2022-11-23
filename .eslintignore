@@ -6,3 +6,12 @@ data
 js
 node_modules
 public
+pages/aboutus.tsx
+pages/getinvolved.tsx
+pages/map.tsx
+pages/partners.tsx
+components/TeamSection.tsx
+components/TeamMemberModal.tsx
+components/RenderingMap.tsx
+components/MapSection.tsx
+components/Map.tsx

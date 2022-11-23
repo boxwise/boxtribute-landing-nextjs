@@ -25,22 +25,28 @@ export const HamburgerMenu = () => {
             <img src="/assets/svg/close_icon.svg" />
           </div>
           <div>
-          <ul className="flex-col text-white text-xl text-center">
-            {navLinks.map((link, i) => (
-              <li className="m-4 list-none" onClick={toggleHamburger} key={i}>
-                <Link href={link.path}>
-                  {router.pathname === link.path ? (
-                    <a className="font-bold">{link.name}</a>
-                  ) : (
-                    <a>{link.name}</a>
-                  )}
-                </Link>
+            <ul className="flex-col text-white text-xl text-center">
+              {navLinks.map((link, i) => (
+                <li className="m-4 list-none" onClick={toggleHamburger} key={i}>
+                  <Link href={link.path}>
+                    {router.pathname === link.path ? (
+                      <a className="font-bold">{link.name}</a>
+                    ) : (
+                      <a>{link.name}</a>
+                    )}
+                  </Link>
+                </li>
+              ))}
+              <li className="m-4 list-none" onClick={toggleHamburger} key="CTA">
+                <CTAButton
+                  ctaLink={
+                    "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url"
+                  }
+                  ctaButton={"Donate"}
+                  noMdBreak={true}
+                />
               </li>
-            ))}
-            <li className="m-4 list-none" onClick={toggleHamburger} key="CTA">
-              <CTAButton ctaLink={"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url"} ctaButton={"Donate"} noMdBreak={true}/>
-            </li>
-          </ul>
+            </ul>
           </div>
         </div>
       )}

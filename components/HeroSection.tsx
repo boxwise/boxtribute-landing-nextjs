@@ -19,12 +19,12 @@ export interface IHeroSectionData {
   cta_link: string;
 }
 
-interface Props {
+interface IProps {
   heroSectionData: IHeroSectionData;
 }
 
 // TODO: Image must be full width
-export const HeroSection = ({ heroSectionData }: Props) => {
+export const HeroSection = ({ heroSectionData }: IProps) => {
   const isBreakpoint = useMediaQuery(768);
   return (
     <section className="w-screen h-auto relative">
@@ -56,9 +56,7 @@ export const HeroSection = ({ heroSectionData }: Props) => {
         <h4 className="z-10 leading-none text-center bg-lightblue">
           <Typewriter
             options={{
-              strings: heroSectionData.subtitles_hero.map(
-                (e) => e.text_for_typing
-              ),
+              strings: heroSectionData.subtitles_hero.map((e) => e.text_for_typing),
               autoStart: true,
               loop: true,
             }}

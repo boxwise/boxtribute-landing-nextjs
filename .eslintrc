@@ -47,7 +47,7 @@
     "react/jsx-one-expression-per-line": "off",
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
-    "camelcase": ["error"],
+    "camelcase": ["warn"],
     "react/jsx-indent": ["error", 2],
     "react/jsx-indent-props": ["error", 2],
     "import/no-unresolved": [2, { "caseSensitive": true }],
@@ -92,6 +92,7 @@
     "import/no-unresolve": "off",
     "import/no-unused-modules": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/ban-ts-comment": "warn",
     "lines-between-class-members": "off",
     // react hook rules
     "react-hooks/rules-of-hooks": "error",
