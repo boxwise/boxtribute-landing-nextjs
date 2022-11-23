@@ -51,6 +51,11 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
   - name: image_text_50_50
     type: field_group
     config: {}
