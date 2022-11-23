@@ -49,8 +49,8 @@ section_1:
     in need today.</p><p>Boxtribute empowers local grassroot actors and everyday people
     at all levels to run large-scale cooperative relief operations. By using technology
     we close the gap between what is needed and what is provided.</p>"
-  color: inherit
-  bg_color: inherit
+  color: ''
+  bg_color: ''
 section_2:
   title: Goals
   image_text_50_50:
