@@ -13,7 +13,7 @@ export interface IHeroSectionData {
   hero_image_mobile: string;
   hero_image_desktop: string;
   hero_image_description: string;
-  page_title: string;
+  main_heading: string;
   subtitles_hero: ITypewriterText[];
   cta_button: string;
   cta_link: string;
@@ -52,7 +52,7 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
         </div>
       )}
       <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2">
-        <PageTitle title={heroSectionData.page_title} />
+        <PageTitle title={heroSectionData.main_heading} />
         <h4 className="z-10 leading-none text-center bg-lightblue">
           <Typewriter
             options={{
