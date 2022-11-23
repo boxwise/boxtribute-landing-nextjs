@@ -14,10 +14,12 @@ fields:
 - name: color
   type: text
   config:
-    required: false
+    required: true
   label: Text Color
+  default: inherit
 - name: bg_color
   type: text
   config:
-    required: false
+    required: true
   label: Background Color
+  default: inherit
