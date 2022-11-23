@@ -5,6 +5,8 @@ fields:
 - type: file
   name: banner
   label: banner
+  description: This image should have a banner size of 2,5:1. It should be at least
+    640px high and 1600px wide
 - type: file
   name: image_mobile
   label: image_mobile
@@ -15,12 +17,3 @@ fields:
   type: boolean
   label: Picture left?
   default: true
-- name: text
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: html-blocks
-  label: Text
