@@ -61,9 +61,9 @@ section_2:
       help to people in crisis faster and more efficiently </p></li><li><p>Legitimize
       dignity in aid for the most vulnerable</p></li><li><p>Increase responsiveness
       and and resilience in the humanitarian sector</p></li></ul>"
-    bg_color: lightgray
+    bg_color: ''
     color: black
-    align: left
+    align: ''
   text:
     text: "<p>We work with our partners to improve the situation of vulnerable people
       in crisis situations. What’s more, we work to capacity build -- making sure
