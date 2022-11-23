@@ -11,28 +11,16 @@ fields:
     schema:
       format: html-blocks
   label: Text
-- name: color
-  type: text
-  config:
-    required: false
-  label: Text Color
-  default: ''
-  description: Options are:<br>- inherit <br>- red<br>- navy<br>- lightblue<br>- black<br>-
-    white<br>- yellow<br>- lightgray<br><br>
-- name: bg_color
-  type: text
-  config:
-    required: false
-  label: Background Color
-  default: ''
-  description: Options are:<br>- inherit <br>- red<br>- navy<br>- lightblue<br>- black<br>-
-    white<br>- yellow<br>- lightgray
 - name: align
   type: select
   default: []
   config:
     required: false
-    options: []
+    options:
+    - center
+    - left
+    - right
+    - justify
     source:
       type: simple
       section: 
@@ -40,3 +28,43 @@ fields:
       path: 
   label: Text Align
   description: '"center" | "left" | "right" | "justify"'
+- name: color
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - inherit
+    - red
+    - navy
+    - lightblue
+    - black
+    - white
+    - yellow
+    - lightgray
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Text Color
+- name: bg_color
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - inherit
+    - red
+    - navy
+    - lightblue
+    - black
+    - white
+    - yellow
+    - lightgray
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Color
