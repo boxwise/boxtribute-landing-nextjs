@@ -10,6 +10,7 @@ fields:
 - type: file
   name: image_mobile
   label: image_mobile
+  description: Please upload a quadratic image of 640px.
 - type: text
   name: image_description
   label: image_description
@@ -17,3 +18,8 @@ fields:
   type: boolean
   label: Picture left?
   default: true
+- name: text
+  type: include
+  config: {}
+  template: text-block
+  label: Text
