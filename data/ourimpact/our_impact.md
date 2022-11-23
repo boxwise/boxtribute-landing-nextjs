@@ -53,5 +53,8 @@ section_3:
     align: left
     color: black
     bg_color: inherit
+    banner: "/uploads/two_men_buidling_together.png"
+    image_mobile: "/uploads/two_men_buidling_together.png"
+    image_description: two man building a floor
 
 ---
