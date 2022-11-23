@@ -2,11 +2,11 @@
 label: contact us
 hide_body: true
 fields:
-- name: page_title
+- name: title
   type: text
   config:
     required: false
-  label: page title
+  label: Title
 - name: headline
   type: textarea
   default: ''
@@ -15,29 +15,36 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: headline
-- name: title_1
-  type: text
-  config:
-    required: false
-  label: title 1
-- name: paragraphs_group
-  type: field_group_list
+  label: Headline
+- name: section_1
+  type: field_group
+  config: {}
   fields:
-  - name: paragraph
+  - name: title
     type: text
     config:
       required: false
-    label: paragraph
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: paragraphs_group
-- name: form_title
-  type: text
-  config:
-    required: false
-  label: form title
+    label: Title
+  label: Section 1
+- name: section_2
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: text
+    type: field_group
+    config: {}
+    fields:
+    - name: text
+      type: include
+      config: {}
+      template: text-block
+      label: Text
+    label: Text
+  label: Section 2
 pages:
 - data/contactus/contact_us_data.md
