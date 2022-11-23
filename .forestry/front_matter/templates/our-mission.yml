@@ -1,5 +1,5 @@
 ---
-label: our mission
+label: our_mission
 hide_body: true
 fields:
 - name: title
@@ -7,11 +7,6 @@ fields:
   config:
     required: false
   label: Title
-- name: intro_text
-  type: include
-  config: {}
-  template: text-block
-  label: Intro Text
 - name: section_1
   type: field_group
   config: {}
