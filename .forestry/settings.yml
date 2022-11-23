@@ -26,7 +26,7 @@ sections:
   templates:
   - social-media-snippet
 - type: heading
-  label: Our Mission
+  label: Our Impact
 - type: directory
   path: data/ourimpact
   label: our mission
@@ -34,8 +34,6 @@ sections:
   match: "*"
   templates:
   - our-mission
-- type: heading
-  label: Our Impact
 - type: directory
   path: data/our_impact
   label: Map
@@ -43,15 +41,6 @@ sections:
   match: "**/*"
   templates:
   - markers-on-map
-- type: heading
-  label: Get Involved
-- type: directory
-  path: data/getinvolved
-  label: get involved
-  create: all
-  match: "**/*"
-  templates:
-  - get-involved
 - type: heading
   label: About Us
 - type: directory
@@ -61,6 +50,15 @@ sections:
   match: "*"
   templates:
   - about_us
+- type: heading
+  label: Get Involved
+- type: directory
+  path: data/getinvolved
+  label: get involved
+  create: all
+  match: "**/*"
+  templates:
+  - get-involved
 - type: heading
   label: Partners
 - type: heading
