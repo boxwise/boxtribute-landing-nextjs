@@ -31,7 +31,7 @@ section_2:
       help to people in crisis faster and more efficiently </p></li><li><p>Legitimize
       dignity in aid for the most vulnerable</p></li><li><p>Increase responsiveness
       and and resilience in the humanitarian sector</p></li></ul>"
-    bg_color: lightgray
+    bg_color: inherit
     color: black
     align: left
   text:
