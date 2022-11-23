@@ -46,5 +46,3 @@ fields:
       label: Text
     label: Text
   label: Section 2
-pages:
-- data/contactus/contact_us_data.md
