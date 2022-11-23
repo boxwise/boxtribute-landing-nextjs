@@ -69,5 +69,6 @@ section_2:
       that the solutions we put in place are effective, sustainable, and replicable.</p>"
     color: lightblue
     bg_color: navy
+    align: center
 
 ---
