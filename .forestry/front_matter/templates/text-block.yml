@@ -14,12 +14,29 @@ fields:
 - name: color
   type: text
   config:
-    required: true
+    required: false
   label: Text Color
-  default: inherit
+  default: ''
+  description: Options are:<br>- inherit <br>- red<br>- navy<br>- lightblue<br>- black<br>-
+    white<br>- yellow<br>- lightgray<br><br>
 - name: bg_color
   type: text
   config:
-    required: true
+    required: false
   label: Background Color
-  default: inherit
+  default: ''
+  description: Options are:<br>- inherit <br>- red<br>- navy<br>- lightblue<br>- black<br>-
+    white<br>- yellow<br>- lightgray
+- name: align
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Text Align
+  description: '"center" | "left" | "right" | "justify"'
