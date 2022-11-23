@@ -1,68 +1,69 @@
-type PropsContactForm = {
-  form_title: string;
-};
+import React from "react";
+import axios from "axios";
+import { useForm, SubmitHandler } from "react-hook-form";
 
-const ContactForm = ({ form_title }: PropsContactForm) => {
+interface IContactUsFormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+export default function ContactForm() {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<IContactUsFormData>();
+
+  const onSubmit: SubmitHandler<IContactUsFormData> = async (data) => {
+    const webhookUrl =
+      "https://hooks.slack.com/workflows/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";
+    const res = await axios.post(webhookUrl, JSON.stringify(data), {
+      withCredentials: false,
+    });
+    if (res.status === 200) {
+      alert("Message was succesfully sent.");
+      reset();
+    } else {
+      alert("There was an error. Please try again later.");
+    }
+  };
+
   return (
-    <form className="flex flex-col" action="/api/form" method="post">
-      <h2 className="text-5xl mb-2">{form_title}</h2>
-      <label htmlFor="topic"></label>
+    <form
+      className="mt-4 mb-16 px-4 md:px-16 flex flex-col gap-4"
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <input
-        className="border px-4 text-lg py-4 my-4"
+        aria-label="Your Name"
         type="text"
-        id="first"
-        name="first"
-        required
-        placeholder="Topic"
+        id="name"
+        className="border-2 rounded-none border-black focus:border-yellow active:border-yellow p-2"
+        {...register("name", { required: true })}
+        placeholder="Your Name"
       />
-      <div className="flex w-full my-4">
-        <label htmlFor="first name"></label>
-        <input
-          className="border w-1/2 px-4 text-lg py-4"
-          type="text"
-          id="first name"
-          name="first name"
-          required
-          placeholder="First name"
-        />
-
-        <label htmlFor="last name"></label>
-        <input
-          className="border w-1/2 px-4 text-lg py-4 border-l-0"
-          type="text"
-          id="last name"
-          name="last name"
-          required
-          placeholder="Last name"
-        />
-      </div>
-      <label htmlFor="email"></label>
+      {errors.name && errors.name.type === "required" && <span>Please enter your name</span>}
       <input
-        className="border px-4 text-lg py-4 my-4"
+        aria-label="Your Email"
         type="email"
         id="email"
-        name="email"
-        required
-        placeholder="Email address"
+        className="border-2 rounded-none border-black focus:border-yellow active:border-yellow p-2"
+        {...register("email", { required: true })}
+        placeholder="Your Email"
       />
-      <label htmlFor="message"></label>
+      {errors.email && errors.email.type === "required" && <span>Please enter an email</span>}
       <textarea
-        className="border px-4 text-lg py-4 mb-8 mt-4"
-        rows={8}
+        aria-label="What did you want to talk about?"
         id="message"
-        name="message"
-        required
-        placeholder="Message"
+        className="border-2 rounded-none border-black focus:border-yellow active:border-yellow p-2"
+        {...register("message", { required: true })}
+        placeholder="What did you want to talk about?"
       />
-
-      <button
-        className="bg-red rounded-lg px-8 py-2 text-white text-lg ml-auto"
-        type="submit"
-      >
-        Submit
+      {errors.message && errors.message.type === "required" && <span>Please add a message</span>}
+      <button className="bg-lightblue p-2" type="submit">
+        Send us a message
       </button>
     </form>
   );
-};
-
-export default ContactForm;
+}

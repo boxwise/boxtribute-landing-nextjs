@@ -1,19 +1,24 @@
-import dynamic from "next/dynamic";
-// import { MapSectionData } from "../components/MapSection";
 import { getDataBySlug } from "../lib/api";
-// import ContactForm from "../components/ContactForm";
+import TextBlock, { ITextBlockData } from "../components/TextBlock";
+import ContactForm from "../components/ContactForm";
+import SectionTitle from "../components/SectionTitle";
 import Footer, { IFooterData } from "../components/Footer";
+import PageTitle from "../components/PageTitle";
 
-interface IParagraph {
-  paragraph: IParagraph;
+interface ISection1Data {
+  title: string;
+}
+
+interface ISection2Data {
+  title: string;
+  text: ITextBlockData;
 }
 
 interface IContactUsData {
-  page_title: string;
+  title: string;
   headline: string;
-  title_1: string;
-  paragraphs_group: IParagraph[];
-  form_title: string;
+  section_1: ISection1Data;
+  section_2: ISection2Data;
 }
 
 type Props = {
@@ -24,26 +29,31 @@ type Props = {
 const ContactUs = ({ contactUsData, footerData }: Props) => {
   return (
     <>
-      <section className="md:mx-32 mx-4 my-8 md:my-24">
-        <div className="flex flex-col items-center text-center">
-          <h1 className="md:text-8xl leading-none mb-8">{contactUsData.page_title}</h1>
-          <h2 className="md:text-5xl mb-12">{contactUsData.headline}</h2>
-        </div>
-        <div className="flex flex-col md:flex-row gap-12  md:items-start">
-          <div className="border md:w-3/5 px-12 py-12">
-            {/* TODO: add email */}
-            {/* <ContactForm form_title={contactUsData.form_title} /> */}
+      <div className="max-w-screen-lg mx-auto">
+        <section className="container my-8 md:my-12 mx-auto px-4 md:px-16">
+          <div className="mb-4 md:mb-6">
+            <PageTitle title={contactUsData.title} />
           </div>
-          <div>
-            <h3 className="text-2xl uppercase mb-4">{contactUsData.title_1}</h3>
-            {contactUsData.paragraphs_group.map((e, i) => (
-              <p className="mb-2" key={i}>
-                {/* {e.paragraph} */}
-              </p>
-            ))}
+          <h4 className="text-center">{contactUsData.headline}</h4>
+        </section>
+
+        <section className="container mx-auto">
+          <SectionTitle title={contactUsData.section_1.title} color="inherit" />
+          <ContactForm />
+        </section>
+
+        <section className="container  mx-auto mb-16">
+          <SectionTitle title={contactUsData.section_2.title} color="inherit" />
+          <div className="px-4 md:px-16">
+            <TextBlock
+              text={contactUsData.section_2.text.text}
+              color={contactUsData.section_2.text.color}
+              bg_color={contactUsData.section_2.text.bg_color}
+              align={contactUsData.section_2.text.align}
+            />
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <Footer footerData={footerData} />
     </>
   );
