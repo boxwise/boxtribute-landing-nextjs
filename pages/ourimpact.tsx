@@ -1,78 +1,96 @@
 import { getDataBySlug } from "../lib/api";
 import PageTitle from "../components/PageTitle";
-import TextBlock from "../components/TextBlock";
+import TextBlock, { ITextBlockData } from "../components/TextBlock";
 import SectionTitle from "../components/SectionTitle";
 import ImageText5050 from "../components/ImageText5050";
-import BlockWithBulletPoints from "../components/BlockWithBulletPoints";
-import markdownToHtml from "../lib/markdownToHtml";
 import Footer, { IFooterData } from "../components/Footer";
+import { IImageText5050Data } from "../interfaces/global";
 
-export type ITextBlock = {
-  title?: string;
-  paragraphs: IParagraph[];
-};
+interface ISection2Data {
+  title: string;
+  image_text_50_50: IImageText5050Data;
+  text: ITextBlockData;
+}
 
-type ITextAndImage = {
-  image: string;
-  image_description: string;
-  textBlock: ITextBlock;
-};
-
-type IParagraph = {
-  paragraph: string;
-};
+interface ISection3Data {
+  title: string;
+  image_text_50_50: IImageText5050Data;
+}
 
 interface IOurImpactData {
-  title_of_the_page: string;
-  subtitle_1: string;
-  text_with_picture: ITextAndImage[];
-  subtitle_2: string;
-  text_block_1: string;
-  subtitle_3: string;
+  title: string;
+  section_1: ITextBlockData;
+  section_2: ISection2Data;
+  section_3: ISection3Data;
 }
 
 type Props = {
   ourImpactData: IOurImpactData;
-  intro_text: string;
-  text_block_2: string;
   footerData: IFooterData;
 };
 
-export const OurImpact = ({ ourImpactData, intro_text, text_block_2, footerData }: Props) => {
+export const OurImpact = ({ ourImpactData, footerData }: Props) => {
   return (
     <>
-      <PageTitle title={ourImpactData.title_of_the_page} />
-      <TextBlock text_justify="left">
-        <div dangerouslySetInnerHTML={{ __html: intro_text }}></div>
-      </TextBlock>
-      <SectionTitle title={ourImpactData.subtitle_1} />
-      <ImageText5050
-        imageGrowPosition="top"
-        bg_color="gray"
-        image={ourImpactData.text_with_picture[0].image}
-        image_description={ourImpactData.text_with_picture[0].image_description}
-        order={2}
-      >
-        <BlockWithBulletPoints
-          blockWithBulletPointsData={ourImpactData.text_with_picture[0].textBlock}
+      <section className="my-8 md:my-12">
+        <PageTitle title={ourImpactData.title} />
+      </section>
+      <section className="container my-8 md:my-12 mx-auto px-4 md:px-16 md:text-2xl">
+        <TextBlock
+          text={ourImpactData.section_1.text}
+          color={ourImpactData.section_1.color}
+          bg_color={ourImpactData.section_1.bg_color}
+          align={ourImpactData.section_1.align}
         />
-      </ImageText5050>
-      <TextBlock text_justify="left" bg_color="navy" text_color="blue">
-        {ourImpactData.text_block_1}
-      </TextBlock>
-      <SectionTitle title={ourImpactData.subtitle_2} />
-      <ImageText5050
-        bg_color="gray"
-        image={ourImpactData.text_with_picture[1].image}
-        image_description={ourImpactData.text_with_picture[1].image_description}
-      >
-        <BlockWithBulletPoints
-          blockWithBulletPointsData={ourImpactData.text_with_picture[1].textBlock}
-        />
-      </ImageText5050>
-      <TextBlock text_justify="left">
-        <div dangerouslySetInnerHTML={{ __html: text_block_2 }}></div>
-      </TextBlock>
+      </section>
+
+      <section>
+        <SectionTitle title={ourImpactData.section_2.title} color="lightblue" />
+        <ImageText5050
+          imageMobile={ourImpactData.section_2.image_text_50_50.image_mobile}
+          banner={ourImpactData.section_2.image_text_50_50.banner}
+          imageDescription={ourImpactData.section_2.image_text_50_50.image_description}
+          order={ourImpactData.section_2.image_text_50_50.picture_left ? 1 : 2}
+        >
+          <TextBlock
+            text={ourImpactData.section_2.image_text_50_50.text}
+            color={ourImpactData.section_2.image_text_50_50.color}
+            bg_color={ourImpactData.section_2.image_text_50_50.bg_color}
+            align={ourImpactData.section_2.image_text_50_50.align}
+            allowedTags={["ul", "li", "strong"]}
+          />
+        </ImageText5050>
+        <div className="bg-navy">
+          <div className="container mx-auto p-4 md:p-16">
+            <TextBlock
+              text={ourImpactData.section_2.text.text}
+              color="white"
+              bg_color={ourImpactData.section_2.text.bg_color}
+              align={ourImpactData.section_2.text.align}
+              className="markdownNoMY"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <SectionTitle title={ourImpactData.section_3.title} color="lightblue" />
+        <ImageText5050
+          imageMobile={ourImpactData.section_3.image_text_50_50.image_mobile}
+          banner={ourImpactData.section_3.image_text_50_50.banner}
+          imageDescription={ourImpactData.section_3.image_text_50_50.image_description}
+          order={ourImpactData.section_3.image_text_50_50.picture_left ? 0 : 1}
+          imageGrowPosition="right"
+        >
+          <TextBlock
+            text={ourImpactData.section_3.image_text_50_50.text}
+            color={ourImpactData.section_3.image_text_50_50.color}
+            bg_color={ourImpactData.section_3.image_text_50_50.bg_color}
+            align={ourImpactData.section_3.image_text_50_50.align}
+            allowedTags={["ul", "li", "strong"]}
+          />
+        </ImageText5050>
+      </section>
       <Footer footerData={footerData} />
     </>
   );
@@ -83,11 +101,9 @@ export default OurImpact;
 // TODO: unify markdownToHtml with getdata functions
 export const getStaticProps = async () => {
   const ourImpactData = getDataBySlug("ourimpact/our_impact");
-  const text_block_2 = await markdownToHtml(ourImpactData.text_block_2 || "");
-  const intro_text = await markdownToHtml(ourImpactData.intro_text || "");
   const footerData = getDataBySlug("footer/footer");
 
   return {
-    props: { ourImpactData, text_block_2, intro_text, footerData },
+    props: { ourImpactData, footerData },
   };
 };
