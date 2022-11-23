@@ -1,17 +1,5 @@
 ---
-title_of_the_page: Our Mission
-intro_text: "<p>Our purpose is to truly make a difference for vulnerable people by
-  addressing the fundamental issues that prevent humanitarian aid from effectively
-  aiding those in need today. </p><p>Boxtribute empowers local grassroot actors and
-  everyday people at all levels to run large-scale cooperative relief operations.
-  By using technology we close the gap between what is needed and what is provided.</p>"
-subtitle_1: goals
 title: Our Mission
-text: "<p>Our purpose is to truly make a difference for vulnerable people by addressing
-  the fundamental issues that prevent humanitarian aid from effectively aiding those
-  in need today.</p><p>Boxtribute empowers local grassroot actors and everyday people
-  at all levels to run large-scale cooperative relief operations. By using technology
-  we close the gap between what is needed and what is provided.</p>"
 section_1:
   text: "<p>Our purpose is to truly make a difference for vulnerable people by addressing
     the fundamental issues that prevent humanitarian aid from effectively aiding those
