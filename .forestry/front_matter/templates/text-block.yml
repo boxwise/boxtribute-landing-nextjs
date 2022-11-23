@@ -27,7 +27,6 @@ fields:
       file: 
       path: 
   label: Text Align
-  description: '"center" | "left" | "right" | "justify"'
 - name: color
   type: select
   default: []
