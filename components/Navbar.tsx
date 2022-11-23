@@ -7,13 +7,14 @@ import { useMediaQuery } from "./MediaQuery";
 export const navLinks = [
   { name: "Home", path: "/" },
   {
-    name: "About Us",
-    path: "/aboutus",
-  },
-  {
     name: "Our Impact",
     path: "/ourimpact",
   },
+  {
+    name: "About Us",
+    path: "/aboutus",
+  },
+
   {
     name: "Contact Us",
     path: "/contactus",
@@ -26,11 +27,7 @@ export const Navbar = () => {
   return (
     <nav className="flex justify-between my-4 mx-8 z-10">
       <Link href="/">
-        <img
-          className="h-14"
-          src="/assets/img/boxtribute-logo.webp"
-          alt="boxtribute logo"
-        />
+        <img className="h-14" src="/assets/img/boxtribute-logo.webp" alt="boxtribute logo" />
       </Link>
       {isBreakpoint ? (
         <HamburgerMenu />
