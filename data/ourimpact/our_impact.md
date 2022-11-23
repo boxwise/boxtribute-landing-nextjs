@@ -63,6 +63,7 @@ section_2:
       and and resilience in the humanitarian sector</p></li></ul>"
     bg_color: lightgray
     color: black
+    align: left
   text:
     text: "<p>We work with our partners to improve the situation of vulnerable people
       in crisis situations. What’s more, we work to capacity build -- making sure
