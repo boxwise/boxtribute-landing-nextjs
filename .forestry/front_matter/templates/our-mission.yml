@@ -47,71 +47,18 @@ fields:
       label: Text
     label: Text
   label: Section 2
-- name: text_with_picture
-  type: field_group_list
+- name: section_3
+  type: field_group
+  config: {}
   fields:
-  - name: image
-    type: file
-    config:
-      maxSize: 64
-    label: image
-  - name: image_description
-    type: text
-    config:
-      required: false
-    label: image description
-  - name: title
-    type: text
-    config:
-      required: false
-    label: title
-  - name: paragraphs
-    type: field_group_list
+  - name: image_text_50_50
+    type: field_group
+    config: {}
     fields:
-    - name: paragraph
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
-        schema:
-          format: markdown
-      label: paragraph
-    config:
-      min: 
-      max: 
-      labelField: 
-    label: paragraphs_group
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: text with picture
-- name: subtitle_2
-  type: text
-  config:
-    required: false
-  label: subtitle_2
-- name: text_block_1
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: text block 1
-- name: subtitle_3
-  type: text
-  config:
-    required: false
-  label: subtitle_3
-- name: text_block_2
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: text block 2
+    - name: image_text_50_50
+      type: include
+      config: {}
+      template: image_50_50
+      label: Image Text 50 50
+    label: Image Text 50 50
+  label: Section 3

@@ -13,6 +13,7 @@ section_1:
     we close the gap between what is needed and what is provided.</p>"
   color: ''
   bg_color: ''
+  align: center
 section_2:
   title: Goals
   image_text_50_50:
