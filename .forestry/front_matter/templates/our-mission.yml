@@ -11,22 +11,42 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: image_text_50_50
-    type: include
-    config: {}
-    template: image_50_50
-    label: Image Text 50 50
   - name: text
     type: include
     config: {}
     template: text-block
     label: Text
   label: Section 1
+- name: section_2
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: image_text_50_50
+    type: field_group
+    config: {}
+    fields:
+    - name: image_text_50_50
+      type: include
+      config: {}
+      template: image_50_50
+      label: Image Text 50 50
+    label: Image Text 50 50
+  - name: text
+    type: field_group
+    config: {}
+    fields:
+    - name: text
+      type: include
+      config: {}
+      template: text-block
+      label: Text
+    label: Text
+  label: Section 2
 - name: text_with_picture
   type: field_group_list
   fields:
@@ -95,8 +115,3 @@ fields:
     schema:
       format: markdown
   label: text block 2
-- name: test
-  type: include
-  config: {}
-  template: text-block
-  label: test
