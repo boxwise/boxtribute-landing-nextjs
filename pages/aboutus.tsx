@@ -1,4 +1,5 @@
 import { getDataBySlug } from "../lib/api";
+import PageTitle from "../components/PageTitle";
 import Image from "next/image";
 import SectionTitle from "../components/SectionTitle";
 import ImageText5050 from "../components/ImageText5050";
@@ -77,9 +78,10 @@ export const AboutUs = ({
 
   return (
     <>
-      <section>
-        {/* TODO:replace with PageTitle */}
-        <h1 className="text-center">{aboutUsData.title_of_the_page}</h1>
+      {/* <section>
+        <div className="my-8 md:my-12">
+          <PageTitle title={ourImpactData.title} />
+        </div>
         <Carousel infiniteLoop showArrows={true}>
           {carouselItems}
         </Carousel>
@@ -152,7 +154,7 @@ export const AboutUs = ({
       <TextBlock text_justify="center" bg_color="blue">
         {aboutUsData.text_legal}
       </TextBlock>
-      {/* team section */}
+    
       <section>
         <h2 className="mx-32 text-4xl p-8 text-center">{aboutUsData.title_for_the_team_section}</h2>
 
@@ -163,7 +165,7 @@ export const AboutUs = ({
             <TeamMember teamMemberData={e} />
           ))}
         </div>
-      </section>
+      </section> */}
       <Footer footerData={footerData} />
     </>
   );
