@@ -55,10 +55,10 @@ sections:
 - type: heading
   label: Partners
 - type: directory
-  path: data/our_impact
+  path: data/map
   label: Map
   create: all
-  match: "**/*"
+  match: "*"
   templates:
   - markers-on-map
 - type: heading
