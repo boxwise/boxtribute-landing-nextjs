@@ -94,3 +94,5 @@ fields:
     max: 
     labelField: nameplace
   label: Base Markers on Map
+pages:
+- data/map/map.md
