@@ -1,5 +1,5 @@
 ---
-label: markers_on_map
+label: map
 hide_body: true
 fields:
 - name: center
@@ -65,30 +65,6 @@ fields:
       schema:
         format: markdown
     label: Description of the Project
-  - name: lat
-    type: number
-    label: 'GPS coordinates: latitude (first value)'
-    description: 'to get the coordinates hold mouse/finger in the google maps on the
-      place you want to add and copy first of the number, an example: <strong>51.989464</strong><br>'
-    default: 0
-    required: true
-    config:
-      min: 
-      max: 
-      step: 
-      required: true
-  - name: long
-    type: number
-    label: 'GPS coordinates: longitude (second value)'
-    description: the same like in the latitude but here paste the second value of
-      the GPS coordinates
-    default: 0
-    required: true
-    config:
-      min: 
-      max: 
-      step: 
-      required: true
   - name: position
     type: field_group
     config: {}
