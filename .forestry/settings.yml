@@ -34,13 +34,6 @@ sections:
   match: "*"
   templates:
   - our-mission
-- type: directory
-  path: data/our_impact
-  label: Map
-  create: all
-  match: "**/*"
-  templates:
-  - markers-on-map
 - type: heading
   label: About Us
 - type: directory
@@ -61,6 +54,13 @@ sections:
   - get-involved
 - type: heading
   label: Partners
+- type: directory
+  path: data/our_impact
+  label: Map
+  create: all
+  match: "**/*"
+  templates:
+  - markers-on-map
 - type: heading
   label: Contact
 - type: directory
