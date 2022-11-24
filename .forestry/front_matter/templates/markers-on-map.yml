@@ -1,5 +1,5 @@
 ---
-label: markers on map
+label: markers_on_map
 hide_body: true
 fields:
 - name: center
@@ -38,12 +38,12 @@ fields:
   - name: base_name
     type: text
     config:
-      required: false
+      required: true
     label: Name of the Base
   - name: organisation
     type: text
     config:
-      required: false
+      required: true
     label: Name of the Organisation
   - name: logo
     type: file
