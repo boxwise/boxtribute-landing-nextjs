@@ -1,20 +1,61 @@
 ---
 label: markers on map
-hide_body: false
+hide_body: true
 fields:
-- name: map_pointers
+- name: center
+  type: field_group
+  config: {}
+  fields:
+  - name: lat
+    type: number
+    label: Latitude
+    description: 'to get the coordinates hold mouse/finger in the google maps on the
+      place you want to add and copy first of the number, an example: <strong>51.989464</strong><br>'
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+      required: true
+  - name: long
+    type: number
+    label: Longitude
+    description: the same like in the latitude but here paste the second value of
+      the GPS coordinates
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+      required: true
+  label: Default Center
+  description: Where should the map focus on by default when the page is loaded?
+- name: base_markers
   type: field_group_list
   fields:
-  - name: nameplace
+  - name: base_name
     type: text
     config:
       required: false
-    label: name of the place
-  - name: nameorganisation
+    label: Name of the Base
+  - name: organisation
     type: text
     config:
       required: false
-    label: name of the organisation
+    label: Name of the Organisation
+  - name: logo
+    type: file
+    config:
+      maxSize: 64
+    label: Logo
+  - name: url
+    type: text
+    config:
+      required: false
+    label: Url
+    description: Link to the organiation
   - name: description
     type: textarea
     default: ''
@@ -23,7 +64,7 @@ fields:
       wysiwyg: false
       schema:
         format: markdown
-    label: description of the project
+    label: Description of the Project
   - name: lat
     type: number
     label: 'GPS coordinates: latitude (first value)'
@@ -52,5 +93,4 @@ fields:
     min: 
     max: 
     labelField: nameplace
-  description: a form for placing a new pointer on the map
-  label: pointer on the map
+  label: Base Markers on Map
