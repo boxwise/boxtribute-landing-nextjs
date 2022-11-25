@@ -11,8 +11,8 @@ export const navLinks = [
     path: "/ourimpact",
   },
   {
-    name: "About Us",
-    path: "/aboutus",
+    name: "Partners",
+    path: "/partners",
   },
 
   {
