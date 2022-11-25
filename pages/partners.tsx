@@ -5,8 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getDataBySlug } from "../lib/api";
 import DynamicMap from "../components/Map";
-import { Marker, Popup } from "react-leaflet";
-import { icon } from "leaflet";
+import HeadingText3366 from "components/HeadingText3366";
 import Footer, { IFooterData } from "../components/Footer";
 import { ILatLng, IBaseMarker } from "../interfaces/global";
 
@@ -37,6 +36,20 @@ export const Partners = ({ mapData, footerData }: IProps) => {
         </div>
       </section>
       <DynamicMap center={mapData.center} baseMarkers={mapData.base_markers} />
+      <section className="bg-lightgray">
+        <HeadingText3366 />
+      </section>
+      <section className="bg-white">
+        <div className="container mx-auto py-4 md:py-12">
+          <TextBlock
+            text="<p>Interested in implementing Boxtribute’s solutions and partnering with us?</p>
+            <p>Contact us at <a href='mailto:hello@boxtribute.org'><strong>hello@boxtribute.org</strong></a></p>"
+            color="black"
+            bg_color="inherit"
+            align="center"
+          />
+        </div>
+      </section>
       <Footer footerData={footerData} />
     </>
   );
