@@ -4,19 +4,20 @@ import TextBlock from "../components/TextBlock";
 import Link from "next/link";
 import Image from "next/image";
 import { getDataBySlug } from "../lib/api";
-import DynamicMap, { ILatLng, IBaseMarker } from "../components/Map";
+import DynamicMap from "../components/Map";
 import { Marker, Popup } from "react-leaflet";
 import { icon } from "leaflet";
 import Footer, { IFooterData } from "../components/Footer";
+import { ILatLng, IBaseMarker } from "../interfaces/global";
 
 interface IMapData {
   center: ILatLng;
-  base_markers: IBaseMarker;
+  base_markers: IBaseMarker[];
 }
 
 interface IProps {
   mapData: IMapData;
-  footerData: I;
+  footerData: IFooterData;
 }
 
 export const Partners = ({ mapData, footerData }: IProps) => {
@@ -35,10 +36,7 @@ export const Partners = ({ mapData, footerData }: IProps) => {
           />
         </div>
       </section>
-      <DynamicMap
-        center={[mapData.center.lat, mapData.center.long]}
-        baseMarkers={mapData.base_markers}
-      />
+      <DynamicMap center={mapData.center} baseMarkers={mapData.base_markers} />
       <Footer footerData={footerData} />
     </>
   );

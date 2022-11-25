@@ -28,3 +28,17 @@ export interface IImageText5050Data {
   bg_color?: string;
   align?: "center" | "left" | "right" | "justify";
 }
+
+export interface ILatLng {
+  lat: number;
+  long: number;
+}
+
+export interface IBaseMarker {
+  base_name: string;
+  organisation: string;
+  url: string;
+  logo: string;
+  description: string;
+  position: ILatLng;
+}

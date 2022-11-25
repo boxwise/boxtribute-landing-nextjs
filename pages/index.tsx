@@ -28,7 +28,7 @@ interface IInfo {
 }
 
 interface IHomeData {
-  page_title: string;
+  main_heading: string;
   subtitles_hero: ITypewriterText[];
   hero_image_mobile: string;
   hero_image_desktop: string;

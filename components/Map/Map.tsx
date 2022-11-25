@@ -1,25 +1,14 @@
 import Link from "next/link";
 import { MapContainer, GeoJSON, Marker, Popup } from "react-leaflet";
 import { icon } from "leaflet";
-import earthLands10Km from "./earth-lands-10km.json";
-
-export interface ILatLng {
-  lat: number;
-  long: number;
-}
-
-export interface IBaseMarker {
-  base_name: string;
-  organisation: string;
-  url: string;
-  logo: string;
-  description: string;
-  position: ILatLng;
-}
+import { GeoJsonObject } from "geojson";
+import { ILatLng, IBaseMarker } from "../../interfaces/global";
+import _earthLands10Km from "./earth-lands-10km.json";
+const earthLands10Km = _earthLands10Km as GeoJsonObject;
 
 interface IMapContainerData {
   center: ILatLng;
-  baseMarkers: IBaseMarker;
+  baseMarkers: IBaseMarker[];
 }
 
 const Map = ({ center, baseMarkers }: IMapContainerData) => {
@@ -41,7 +30,7 @@ const Map = ({ center, baseMarkers }: IMapContainerData) => {
 
   return (
     <MapContainer
-      center={center}
+      center={[center.lat, center.long]}
       zoom={5}
       minZoom={3}
       maxZoom={9}
