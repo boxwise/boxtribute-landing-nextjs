@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getDataBySlug } from "../lib/api";
 import DynamicMap from "../components/Map";
-import HeadingText3366 from "components/HeadingText3366";
+import HeadingText3366 from "../components/HeadingText3366";
 import Footer, { IFooterData } from "../components/Footer";
 import { ILatLng, IBaseMarker } from "../interfaces/global";
 
