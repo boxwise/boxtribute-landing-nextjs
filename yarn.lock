@@ -219,6 +219,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@geo-maps/earth-lands-10km@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@geo-maps/earth-lands-10km/-/earth-lands-10km-0.6.0.tgz#8cc069aeed4c4ed86bf5d0841b83d2883cbf75a1"
+  integrity sha512-MKoQha+qFUG1MhC2opAaaSeRdN9+r72L0r+3D9mmMVVOtC5Z+KIEejtHjpOJLKCjBbSkXWpfx+FFr2npKsmgjg==
+
 "@googlemaps/js-api-loader@^1.14.3":
   version "1.14.3"
   resolved "https://registry.yarnpkg.com/@googlemaps/js-api-loader/-/js-api-loader-1.14.3.tgz#d7a161cd547be04ad46a1cb176e6c2647f6d74a7"
@@ -491,10 +496,10 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/leaflet@^1.7.8":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@types/leaflet/-/leaflet-1.8.0.tgz#dc92d3e868fb6d5067b4b59fa08cd4441f84fabe"
-  integrity sha512-+sXFmiJTFdhaXXIGFlV5re9AdqtAODoXbGAvxx02e5SHXL3ir7ClP5J7pahO8VmzKY3dth4RUS1nf2BTT+DW1A==
+"@types/leaflet@^1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@types/leaflet/-/leaflet-1.9.0.tgz#8caf452255e16cb15e0eabcb0d2a26793da0a6a2"
+  integrity sha512-7LeOSj7EloC5UcyOMo+1kc3S1UT3MjJxwqsMT1d2PTyvQz53w0Y0oSSk9nwZnOZubCmBvpSNGceucxiq+ZPEUw==
   dependencies:
     "@types/geojson" "*"
 
