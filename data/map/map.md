@@ -3,6 +3,14 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Würzburg
+  organisation: Hermine e.V.
+  logo: "/uploads/hermine-logo.svg"
+  url: https://hermine.global/hilfslieferungen/
+  description: ''
+  position:
+    lat: 49.775733
+    long: 9.94031
 - base_name: Nea Kavala
   organisation: A Drop In The Ocean
   logo: "/uploads/drapenihavet_logo.webp"
