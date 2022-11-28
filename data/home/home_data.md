@@ -1,8 +1,10 @@
 ---
 hero_image_description: children in a refugee camp
 subtitles_hero:
+- text_for_typing: supports the most vulnerable in any emergency and post-emergency
+    crisis
 - text_for_typing: gets the right aid to the right people at the right time
-- text_for_typing: 2By aid workers, for aid workers!
+- text_for_typing: empowers local communities and NGOs
 - text_for_typing: By aid workers, for aid workers!
 cta_button: Support Us
 short_description: Boxtribute is a digital system that works hand in hand with our
