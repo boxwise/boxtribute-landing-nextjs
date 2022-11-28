@@ -1,7 +1,7 @@
 ---
 hero_image_description: children in a refugee camp
 subtitles_hero:
-- text_for_typing: 3By aid workers, for aid workers!
+- text_for_typing: gets the right aid to the right people at the right time
 - text_for_typing: 2By aid workers, for aid workers!
 - text_for_typing: By aid workers, for aid workers!
 cta_button: Support Us
