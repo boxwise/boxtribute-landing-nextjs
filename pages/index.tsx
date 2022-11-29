@@ -51,7 +51,7 @@ const Index = ({ homeData, allNews, footerData }: Props) => {
     <>
       <HeroSection heroSectionData={homeData} />
       <section className="w-full px-4 md:px-16 max-w-[1200px] mx-auto">
-        <h6 className="my-8 text-center md:my-16">{homeData.short_description}</h6>
+        <div className="my-8 text-center md:my-16 lg-text">{homeData.short_description}</div>
         <FactInNumbersContainer factInNumbers={homeData.facts_in_numbers} />
       </section>
 

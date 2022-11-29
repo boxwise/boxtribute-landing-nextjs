@@ -22,11 +22,19 @@
   h6 {
     @apply text-lg md:text-2xl lg:text-3xl font-sans;
   }
-  p {
-    @apply font-sans;
+
+  
+  .lg-text {
+    @apply text-lg md:text-xl lg:text-2xl font-sans;
   }
   body {
     @apply text-base md:text-lg lg:text-xl font-sans;
+  }
+  .sm-text{
+    @apply text-sm md:text-base lg:text-lg font-sans;
+  }
+  .xs-text{
+    @apply text-sm md:text-base lg:text-lg font-sans;
   }
 }
 

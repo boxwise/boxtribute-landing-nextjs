@@ -10,21 +10,37 @@ export interface ITextBlockData {
 }
 
 interface IProps extends ITextBlockData {
+  markdownClassName?: string;
   className?: string;
   allowedTags?: string[];
+  htmlTag?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "div";
 }
 
-const TextBlock = ({ text, bg_color, color, align, className, allowedTags }: IProps) => {
+const TextBlock = ({
+  text,
+  bg_color,
+  color,
+  align,
+  markdownClassName,
+  allowedTags,
+  htmlTag,
+  className,
+}: IProps) => {
   const sanitizedText = allowedTags?.length
     ? DOMPurify.sanitize(text, { ALLOWED_TAGS: allowedTags })
     : DOMPurify.sanitize(text);
 
+  const _htmlTag = htmlTag ? htmlTag : "div";
+
   return (
-    <div
-      className={`${markdownStyles[className?.length ? className : "markdown"]} ${classNames({
+    <_htmlTag
+      className={`${
+        markdownStyles[markdownClassName?.length ? markdownClassName : "markdown"]
+      } ${classNames({
         [`bg-${bg_color}`]: bg_color,
         [`text-${color}`]: color,
         [`text-${align}`]: align,
+        [`${className}`]: className,
       })}`}
       dangerouslySetInnerHTML={{ __html: sanitizedText }}
     />

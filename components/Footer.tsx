@@ -63,7 +63,7 @@ export const Footer = ({ footerData }: IProps) => {
     <section>
       <div className="flex flex-col items-center gap-8 bg-navy text-white px-8 py-16">
         <img className="h-24 md:h-42" src={footerStaticData.boxtributeLogo} />
-        <div className="flex flex-wrap justify-center gap-x-2 text-sm md:text-base">
+        <div className="flex flex-wrap justify-center gap-x-2 sm-text">
           <Link href="contactus">Imprint</Link>
           <div>&middot;</div>
           <Link href={footerData.articles_of_association} passHref>
@@ -97,9 +97,9 @@ export const Footer = ({ footerData }: IProps) => {
             </Link>
           ))}
         </div>
-        <p className="text-xs md:text-sm">{footerStaticData.boxtributeTrademark}</p>
+        <p className="xs-text">{footerStaticData.boxtributeTrademark}</p>
       </div>
-      <p className="text-center text-sm md:text-base text-navy p-4">
+      <p className="text-center sm-text text-navy p-4">
         Data privacy: We store <b>no</b> data about your website visit.
       </p>
     </section>

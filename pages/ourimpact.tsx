@@ -35,12 +35,13 @@ export const OurImpact = ({ ourImpactData, footerData }: Props) => {
       <section className="my-8 md:my-12">
         <PageTitle title={ourImpactData.title} />
       </section>
-      <section className="container my-8 md:my-12 mx-auto px-4 md:px-16 md:text-2xl">
+      <section className="container my-8 md:my-12 mx-auto px-4 md:px-16">
         <TextBlock
           text={ourImpactData.section_1.text}
           color={ourImpactData.section_1.color}
           bg_color={ourImpactData.section_1.bg_color}
           align={ourImpactData.section_1.align}
+          className="lg-text"
         />
       </section>
 
@@ -58,6 +59,7 @@ export const OurImpact = ({ ourImpactData, footerData }: Props) => {
             bg_color={ourImpactData.section_2.image_text_50_50.bg_color}
             align={ourImpactData.section_2.image_text_50_50.align}
             allowedTags={["ul", "li", "strong"]}
+            className="lg-text"
           />
         </ImageText5050>
         <div className="bg-navy">
@@ -67,7 +69,8 @@ export const OurImpact = ({ ourImpactData, footerData }: Props) => {
               color="white"
               bg_color={ourImpactData.section_2.text.bg_color}
               align={ourImpactData.section_2.text.align}
-              className="markdownNoMY"
+              markdownClassName="markdownNoMY"
+              className="lg-text"
             />
           </div>
         </div>
@@ -88,6 +91,7 @@ export const OurImpact = ({ ourImpactData, footerData }: Props) => {
             bg_color={ourImpactData.section_3.image_text_50_50.bg_color}
             align={ourImpactData.section_3.image_text_50_50.align}
             allowedTags={["ul", "li", "strong"]}
+            className="lg-text"
           />
         </ImageText5050>
       </section>
