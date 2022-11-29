@@ -5,22 +5,28 @@
 /* typography */
 @layer base {
   h1 {
-    @apply uppercase text-3xl md:text-5xl font-black font-chivo;
+    @apply uppercase text-3xl md:text-5xl lg:text-6xl font-black font-chivo;
   }
   h2 {
-    @apply uppercase text-3xl md:text-5xl font-light font-chivo;
+    @apply uppercase text-3xl md:text-5xl lg:text-6xl font-light font-chivo;
   }
   h3 {
-    @apply capitalize text-xl md:text-3xl font-bold font-sans;
+    @apply capitalize text-xl md:text-3xl lg:text-4xl font-bold font-sans;
   }
   h4 {
-    @apply text-xl md:text-3xl font-sans;
+    @apply text-xl md:text-3xl lg:text-4xl font-sans;
   }
   h5 {
-    @apply text-lg md:text-2xl font-bold font-sans;
+    @apply text-lg md:text-2xl lg:text-3xl font-bold font-sans;
+  }
+  h6 {
+    @apply text-lg md:text-2xl lg:text-3xl font-sans;
   }
   p {
-    @apply text-base md:text-lg font-sans;
+    @apply font-sans;
+  }
+  body {
+    @apply text-base md:text-lg lg:text-xl font-sans;
   }
 }
 
