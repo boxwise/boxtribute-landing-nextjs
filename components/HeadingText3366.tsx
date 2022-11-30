@@ -1,7 +1,7 @@
 const HeadingText3366 = () => {
   return (
     <div className="container mx-auto py-8 md:py-16">
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg-text">
         <h3 className="px-4 pb-4 md:px-8 md:pb-0 lg:px-16 text-center md:text-left">
           Here Are The Values We Share With Our Partners
         </h3>
