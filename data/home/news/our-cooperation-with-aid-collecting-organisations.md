@@ -3,7 +3,7 @@ image: "/uploads/people_on_boat.png"
 image_description: Instagram post of a palette with face masks from our partner Grenzenlose
   Waerme in Dortmund
 title: Our cooperation with aid-collecting organisations
-headline: An Impact Highlight from 2021
+headline: An Impact Highlight from our 2021 Annual Report
 text: Sea-Eye is a civil rescue NGO working in the Mediterranean Sea and has been
   active since 2015. With the rescue organisation, Sophie assisted people on the move
   as a Rhib communicator, which essentially means she was the first point of contact
