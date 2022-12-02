@@ -3,8 +3,8 @@ position_in_preview: 2
 banner: "/uploads/free_shop_news_banner.webp"
 image_mobile: "/uploads/free_shop_news_mobile.webp"
 image_description: The Free Shop Lebanon Team
-title: A new Charity Shop Opens
-headline: An impact Highlight from 2021
+title: A New Charity Shop Opens
+headline: An Impact Highlight from our 2021 Annual Report
 short_text: In August 2021, The Free Shop Lebanon started their operations. Focused
   on distribution to refugee families in Lebanon with full freedom of choice, The
   Free Shop was completely set up around the technology offered by Boxtribute.
