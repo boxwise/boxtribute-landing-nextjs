@@ -3,6 +3,17 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Lebanon
+  organisation: The Free Shop
+  logo: "/uploads/logo-transparent-background.png"
+  url: https://www.instagram.com/thefreeshoplebanon/
+  description: |-
+    The Free Shop is a project which makes a difference. We do not only bring people these items, but provide them with the freedom to choose the specific items they need themselves. Without anyone deciding it for them.
+
+    Through The Free Shop we aspire to improve the quality of life in the Bekaa Valley, Lebanon. Everyone is different: each family has different needs. The Free Shop has been built with exactly this in mind.
+  position:
+    lat: 34.00803
+    long: 36.142531
 - base_name: Würzburg
   organisation: Hermine e.V.
   logo: "/uploads/hermine-logo.svg"

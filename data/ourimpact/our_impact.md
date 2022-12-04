@@ -15,10 +15,10 @@ section_2:
     banner: "/uploads/20171121-dsc_4692-edit.webp"
     image_mobile: "/uploads/20171121-dsc_4692-edit.webp"
     image_description: Man in warehouse
-    text: "<p><strong>Especially, we want to:</strong></p><ul><li><p>Get critical
-      help to people in crisis faster and more efficiently</p></li><li><p>Legitimize
-      dignity in aid for the most vulnerable</p></li><li><p>Increase responsiveness
-      and and resilience in the humanitarian sector</p></li></ul>"
+    text: "<p><strong>We want to especially:</strong></p><ul><li><p>Get critical help
+      to people in crisis faster and more efficiently</p></li><li><p>Legitimize dignity
+      in aid for the most vulnerable</p></li><li><p>Increase responsiveness and and
+      resilience in the humanitarian sector</p></li></ul>"
     bg_color: inherit
     color: black
     align: left

@@ -26,7 +26,7 @@ facts_in_numbers:
   description: partners on the field helping refugees
   number: 14
   image_description: heart on the hand
-cta_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url
+cta_link: https://donorbox.org/boxtribute-fundraising-campaign
 main_heading: Boxtribute
 title_of_news_section: News
 text_news_button: Next

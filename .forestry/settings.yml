@@ -18,13 +18,6 @@ sections:
   match: "*"
   templates:
   - news-snippet
-- type: directory
-  path: data/home/social
-  label: 'social media '
-  create: all
-  match: "*"
-  templates:
-  - social-media-snippet
 - type: heading
   label: Our Impact
 - type: directory
@@ -36,22 +29,8 @@ sections:
   - our-mission
 - type: heading
   label: About Us
-- type: directory
-  path: data/aboutus
-  label: about us
-  create: all
-  match: "*"
-  templates:
-  - about_us
 - type: heading
   label: Get Involved
-- type: directory
-  path: data/getinvolved
-  label: get involved
-  create: all
-  match: "**/*"
-  templates:
-  - get-involved
 - type: heading
   label: Partners
 - type: directory
@@ -79,6 +58,29 @@ sections:
   match: "*"
   templates:
   - footer
+- type: heading
+  label: not ready
+- type: directory
+  path: data/home/social
+  label: 'social media '
+  create: all
+  match: "*"
+  templates:
+  - social-media-snippet
+- type: directory
+  path: data/getinvolved
+  label: get involved
+  create: all
+  match: "**/*"
+  templates:
+  - get-involved
+- type: directory
+  path: data/aboutus
+  label: about us
+  create: all
+  match: "*"
+  templates:
+  - about_us
 upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''

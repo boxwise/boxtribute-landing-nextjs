@@ -4,12 +4,12 @@ banner: "/uploads/2108-samos-free-shop.jpg"
 image_mobile: "/uploads/2108-samos-free-shop-2.jpg"
 image_description: The Free Shop on Samos
 title: Samos Transitions
-headline: An Impact Highlight from 2021
-short_text: 'Twice in 2021, CRI distributions were handed over from one organisation
-  to another: in February 2021 from Refugee4Refugees to Drop in the Ocean, and in
-  August 2021 from Drop in the Ocean to Samos Volunteers. It was only because all
-  three of them were using Boxtribute that we were able to secure a continuous availability
-  of distributions without any interruptions.'
+headline: An Impact Highlight from our 2021 Annual Report
+short_text: 'Twice in 2021, core relief item distributions were handed over from one
+  organisation to another: in February 2021 from Refugee4Refugees to Drop in the Ocean,
+  and in August 2021 from Drop in the Ocean to Samos Volunteers. It was only because
+  all three of them were using Boxtribute that we were able to secure a continuous
+  availability of distributions without any interruptions.'
 blog_text: '<p>Samos is a Greek Islands, close to the Turkish coast, and therefore
   one of the biggest hotspots for arrivals of refugees in the EU by sea. The main
   camp on Samos was Vathy, which was set up to host about 650 people in 2015 and over
