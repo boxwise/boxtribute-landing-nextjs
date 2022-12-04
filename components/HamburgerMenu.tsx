@@ -20,7 +20,7 @@ export const HamburgerMenu = () => {
           <div className="w-12 h-1 rounded transition-all bg-black" />
         </div>
       ) : (
-        <div className="bg-navy w-screen h-screen z-20 absolute inset-0">
+        <div className="bg-navy w-screen h-screen z-[2000] absolute inset-0">
           <div onClick={toggleHamburger} className="flex justify-end px-2 py-6">
             <img src="/assets/svg/close_icon.svg" />
           </div>
