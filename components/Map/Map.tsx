@@ -1,4 +1,7 @@
 import Link from "next/link";
+import TextBlock from "../TextBlock";
+import { useMediaQuery } from "../MediaQuery";
+import L from "leaflet";
 import { MapContainer, GeoJSON, Marker, Popup } from "react-leaflet";
 import { icon } from "leaflet";
 import { GeoJsonObject } from "geojson";
@@ -27,6 +30,7 @@ const Map = ({ center, baseMarkers }: IMapContainerData) => {
     iconSize: [32, 46],
     iconAnchor: [16, 46],
   });
+  const isBreakpoint = useMediaQuery(768);
 
   return (
     <MapContainer
@@ -44,7 +48,11 @@ const Map = ({ center, baseMarkers }: IMapContainerData) => {
       />
       {baseMarkers.map((marker, i) => (
         <Marker key={i} icon={markerIcon} position={[marker.position.lat, marker.position.long]}>
-          <Popup>
+          <Popup
+            maxWidth={isBreakpoint ? 200 : 400}
+            maxHeight={400}
+            autoPanPadding={L.point(50, 50)}
+          >
             <Link href={marker.url}>
               <>
                 <img src={marker.logo} className="h-32" />
@@ -52,7 +60,7 @@ const Map = ({ center, baseMarkers }: IMapContainerData) => {
                 <h4 className="bg-lightblue">{marker.organisation}</h4>
               </>
             </Link>
-            <p>{marker.description}</p>
+            <TextBlock text={marker.description} htmlTag="p" className="sm-text" />
           </Popup>
         </Marker>
       ))}
