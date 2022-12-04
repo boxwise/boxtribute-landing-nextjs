@@ -40,7 +40,9 @@ const Map = ({ center, baseMarkers }: IMapContainerData) => {
       maxZoom={9}
       scrollWheelZoom={false}
       style={mapSize}
-      maxBounds={new L.LatLngBounds(L.latLng(63.259487, -14.909804), L.latLng(28.4738, 41.450418))}
+      maxBounds={
+        new L.LatLngBounds(L.latLng(73.259487, -24.909804), L.latLng(23.724612, 62.836341))
+      }
     >
       <GeoJSON
         style={landStyle}
