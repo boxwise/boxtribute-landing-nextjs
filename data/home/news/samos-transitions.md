@@ -1,7 +1,7 @@
 ---
 position_in_preview: 3
-banner: "/uploads/2108-samos-free-shop.jpg"
-image_mobile: "/uploads/2108-samos-free-shop-2.jpg"
+banner: "/uploads/whatsapp-image-2022-11-03-at-8-25-04-am-1.jpeg"
+image_mobile: "/uploads/untitled-design-2.png"
 image_description: The Free Shop on Samos
 title: Samos Transitions
 headline: An Impact Highlight from our 2021 Annual Report
