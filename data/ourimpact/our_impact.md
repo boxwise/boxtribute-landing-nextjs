@@ -41,8 +41,8 @@ section_3:
     align: left
     color: black
     bg_color: inherit
-    banner: "/uploads/two_men_buidling_together.webp"
-    image_mobile: "/uploads/two_men_buidling_together.webp"
+    banner: "/uploads/untitled-design-1.png"
+    image_mobile: "/uploads/14.jpeg"
     image_description: two man building a floor
 
 ---
