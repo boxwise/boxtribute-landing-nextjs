@@ -14,7 +14,7 @@ base_markers:
   position:
     lat: 41.088451
     long: 23.547711
-  logo: "/uploads/lhi_web_header_logo2.png"
+  logo: "/uploads/lhi_logo.webp"
   url: https://www.liftinghandsinternational.org/
 - base_name: Lebanon
   organisation: The Free Shop
