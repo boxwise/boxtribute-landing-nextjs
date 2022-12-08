@@ -4,6 +4,14 @@ center:
   long: 22.625296
 base_markers:
 - base_name: Lesvos
+  organisation: Movement On The Ground
+  logo: "/uploads/motg_logo.svg"
+  url: https://movementontheground.com/what-we-do
+  description: ''
+  position:
+    lat: 39.075391
+    long: 26.552429
+- base_name: Lesvos
   organisation: "#LeaveNoOneBehind"
   logo: "/uploads/lnob_logo.svg"
   url: https://lnob.net/en/our-own-projects/
