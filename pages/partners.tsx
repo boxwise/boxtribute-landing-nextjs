@@ -37,7 +37,7 @@ export const Partners = ({ mapData, footerData }: IProps) => {
       <section className="bg-white">
         <div className="container py-4 md:py-6 mx-auto px-4 md:px-16 ">
           <TextBlock
-            text="Find out where our partners use us"
+            text="Find out where our partners use us!"
             color="black"
             bg_color="inherit"
             align="left"

@@ -11,7 +11,7 @@
     @apply uppercase text-3xl md:text-5xl lg:text-6xl font-light font-chivo;
   }
   h3 {
-    @apply capitalize text-xl md:text-3xl lg:text-4xl font-bold font-sans;
+    @apply text-xl md:text-3xl lg:text-4xl font-bold font-sans;
   }
   h4 {
     @apply text-xl md:text-3xl lg:text-4xl font-sans;

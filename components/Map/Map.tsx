@@ -56,13 +56,19 @@ const Map = ({ center, baseMarkers }: IMapContainerData) => {
             maxHeight={400}
             autoPanPadding={L.point(50, 50)}
           >
-            <Link href={marker.url}>
-              <>
-                <img src={marker.logo} className="h-32" />
-                <h3>{marker.base_name}</h3>
-                <h4 className="bg-lightblue">{marker.organisation}</h4>
-              </>
-            </Link>
+            <a
+              href={marker.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                textDecoration: "inherit",
+                color: "inherit",
+              }}
+            >
+              <img src={marker.logo} className="h-32" />
+              <h3>{marker.base_name}</h3>
+              <h4 className="bg-lightblue">{marker.organisation}</h4>
+            </a>
             <TextBlock text={marker.description} htmlTag="p" className="sm-text" />
           </Popup>
         </Marker>

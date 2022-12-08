@@ -45,7 +45,6 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
             width="2400px"
             height="1350px"
             objectFit="cover"
-            objectPosition={"bottom"}
             priority
             className="blur z-0"
           />
