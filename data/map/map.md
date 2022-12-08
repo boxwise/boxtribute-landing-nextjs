@@ -3,6 +3,28 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Sarajevo
+  organisation: Collective Aid
+  logo: "/uploads/ca_logo.png"
+  url: https://www.collectiveaidngo.org/current-projects-1
+  description: |-
+    Since July 2018, Collective Aid has been supporting people on the move stuck in Bosnia and Herzegovina through multiple outlets and projects.
+
+    We are currently distributing essential aid like underwear, socks, hygiene packs, clothing, sleeping bags and shoes to people who are sleeping rough around Sarajevo. We collaborate closely with other organizations on the ground on identification and referral of potential cases for basic legal aid and medical interventions. In July 2021 we took over a Glasses Project from another organization. Collective Aid now works together in partnership with a local optician to help people on the move get fitting glasses for themselves
+  position:
+    lat: 43.850349
+    long: 18.283521
+- base_name: Subotica
+  organisation: Collective Aid
+  logo: "/uploads/ca_logo.png"
+  url: https://www.collectiveaidngo.org/current-projects-1
+  description: |-
+    Since November 2019, Collective Aid has been present in Subotica supporting the people on the move sleeping rough in the region around the Hungarian, Croatian and Romanian border. Due to the dangerously cold winters, it is essential that we are there to distribute much needed items.
+
+    We support the population in and around Subotica with clothing, blankets, sleeping bags, hygiene items, showers, laundry, food, and drinking water. We facilitate mobile showers near locations where people are sleeping rough.
+  position:
+    lat: 46.061587
+    long: 19.679582
 - base_name: Slovakia
   organisation: Blindspots
   logo: "/uploads/blindpots_logo.png"
