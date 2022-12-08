@@ -3,6 +3,21 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Slovakia
+  organisation: Blindspots
+  logo: "/uploads/blindpots_logo.png"
+  url: https://blindspots.support/en/the-situation-in-ukraine/
+  description: Blindspots has built a logistics center and a warehouse in the Slovakian
+    border towncenter and a warehouse in the Slovakian border town, which is accessed
+    by trucks of up to 40 tonnes. The logistics center is linked to a growing logistics
+    network of EU countries and imports donations in kind to Ukraine. These are delivered
+    by our Ukrainian drivers as needed. This system avoids that donations which are
+    not needed are distributed and take up storage capacity. The drivers are familiar
+    with the area and well networked, so that they are informed about the current
+    situation and can not only use humanitarian corridors, but also create them.
+  position:
+    lat: 48.646707
+    long: 22.189039
 - base_name: Samos
   organisation: Samos Volunteers
   logo: "/uploads/sv_logo.png"
