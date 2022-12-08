@@ -5,11 +5,16 @@ center:
 base_markers:
 - base_name: Serres
   organisation: Lifting Hands International
-  description: ''
+  description: Located just 100 meters from the refugee camps in Serres, Greece, LHI's
+    Refugee Center is a buzzing hive of education and healing. Classes are held on
+    a range of subjects including English, German, music, and much more. There’s a
+    Female-Friendly Space, a Child-Friendly Space, a computer space, and an aid distribution
+    warehouse that provides dry food, fresh produce, diapers, and an array of hygiene
+    supplies.
   position:
-    lat: 0
-    long: 0
-  logo: ''
+    lat: 41.088451
+    long: 23.547711
+  logo: "/uploads/lhi_web_header_logo2.png"
   url: https://www.liftinghandsinternational.org/
 - base_name: Lebanon
   organisation: The Free Shop
