@@ -8,22 +8,22 @@ cta_button: Support Us
 short_description: Boxtribute is a digital system that works hand in hand with our
   partners to deliver humanitarian aid quickly and fairly.
 facts_in_numbers:
-- icon: "/uploads/handshake.png"
-  description: beneficiaries thanks to collected aid
-  number: 334
-  image_description: handshake
-- icon: "/uploads/trolly.png"
-  description: goods distributed per month to give back dignity to vulnerable populations
-  number: 333
-  image_description: boxes on a trolly
-- icon: "/uploads/boxes.png"
-  description: items in storage donated to support conflicted area
-  number: 2930
-  image_description: boxes icon
 - icon: "/uploads/hearthand.png"
   description: partners on the field helping refugees
-  number: 14
+  number: 15
   image_description: heart on the hand
+- icon: "/uploads/trolly.png"
+  description: goods distributed per month to give back dignity to vulnerable populations
+  number: 6764
+  image_description: boxes on a trolly
+- icon: "/uploads/boxes.png"
+  description: items in storage donated to support people in need
+  number: 918507
+  image_description: boxes icon
+- icon: "/uploads/handshake.png"
+  description: 'beneficiaries supported by dignified distributions each month '
+  number: 809
+  image_description: handshake
 cta_link: https://donorbox.org/boxtribute-fundraising-campaign
 main_heading: Boxtribute
 title_of_news_section: News
