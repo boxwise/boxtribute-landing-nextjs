@@ -3,6 +3,14 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Lüdenscheid
+  organisation: Hardcore Help
+  logo: "/uploads/hardcorehelp_logo.svg"
+  url: https://www.hardcore-help.org/
+  description: ''
+  position:
+    lat: 51.213577
+    long: 7.621294
 - base_name: Dortmund
   organisation: Grenzenlose Wärme
   logo: "/uploads/gw_logo.webp"
