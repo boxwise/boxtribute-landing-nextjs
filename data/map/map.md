@@ -3,6 +3,20 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Lakadikia
+  organisation: IHA
+  logo: "/uploads/iha_logo.png"
+  url: https://www.iha.help/en/projects
+  description: 'Our warehouse in Thessaloniki serves as a logistical hub for humanitarian
+    aid, benefitting thousands of refugees in Northern Greece. We source supplies
+    locally and receive aid deliveries from abroad. Supplies are stocked in the warehouse
+    and distributed to refugees by our volunteer team and partner organisations. This
+    support network serves eleven camps and a number of urban projects in the region.
+    Our approach is needs-based and flexible. We focus on closing supply gaps, providing
+    for refugees who lack institutional support and on responding to emergencies.  '
+  position:
+    lat: 40.633982
+    long: 23.246257
 - base_name: Serres
   organisation: Lifting Hands International
   description: Located just 100 meters from the refugee camps in Serres, Greece, LHI's
