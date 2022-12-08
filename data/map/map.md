@@ -3,6 +3,20 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Frankfurt
+  organisation: EuropeCares
+  logo: "/uploads/europe_cares_logo.png"
+  url: https://www.europecares.org/what#active
+  description: "People on-the-move on the European borders are forced to live in inhumane
+    conditions. Governments and large organizations fail - in Greece, Bosnia, France
+    and beyond. People from across the continent decide to put their solidarity into
+    action and support with in-kind donations. \n\nFrom our hub in Frankfurt am Main,
+    we want to help other groups in their collection, sorting and logistics of humanitarian
+    aid. We regularly send transports with essential relief goods to groups on the
+    ground. "
+  position:
+    lat: 50.121128
+    long: 8.640676
 - base_name: Rome
   organisation: Dar bazar
   logo: "/uploads/darbazar_logo.jpg"
