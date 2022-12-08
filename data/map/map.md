@@ -3,6 +3,18 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Krakow
+  organisation: A Drop In The Ocean
+  logo: "/uploads/drapenihavet_logo.webp"
+  url: https://www.drapenihavet.no/en/our-work/poland/
+  description: Following Russias attacks on Ukraine, February 2022, millions of people
+    were forced to flee their country. A Drop in the Ocean was rapidly responsing
+    to the situation and offered our assistance towards local organisations. Four
+    days after the invasion we had a team, included a polish coordinator present in
+    Krakow, about two hours drive from the Ukrainian border.
+  position:
+    lat: 50.051198
+    long: 19.944459
 - base_name: Lakadikia
   organisation: IHA
   logo: "/uploads/iha_logo.png"
