@@ -3,6 +3,14 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Serres
+  organisation: Lifting Hands International
+  description: ''
+  position:
+    lat: 0
+    long: 0
+  logo: ''
+  url: https://www.liftinghandsinternational.org/
 - base_name: Lebanon
   organisation: The Free Shop
   logo: "/uploads/logo-transparent-background.png"
