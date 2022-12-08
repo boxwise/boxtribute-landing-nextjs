@@ -3,6 +3,20 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Lesvos
+  organisation: "#LeaveNoOneBehind"
+  logo: "/uploads/lnob_logo.svg"
+  url: https://lnob.net/en/our-own-projects/
+  description: Due to the extremely confusing and chaotic situation on Lesbos after
+    the fire of the Moria camp, Civilfleet-Support e.V. decided to set up a small
+    and agile team on Lesbos. This ensured that the collected donations reach the
+    people and partner organizations quickly and efficiently. Since then, a structure
+    has been created in cooperation with partner organizations, which today runs a
+    community center together with refugees and organizes, for example, various distributions
+    of donations in kind of clothing, hygiene items and food packages.
+  position:
+    lat: 39.151692
+    long: 26.480167
 - base_name: Lüdenscheid
   organisation: Hardcore Help
   logo: "/uploads/hardcorehelp_logo.svg"
@@ -103,7 +117,7 @@ base_markers:
     lat: 34.00803
     long: 36.142531
 - base_name: Würzburg
-  organisation: Hermine e.V.
+  organisation: Hermine
   logo: "/uploads/hermine-logo.svg"
   url: https://hermine.global/hilfslieferungen/
   description: ''
