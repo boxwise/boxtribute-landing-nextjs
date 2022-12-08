@@ -3,6 +3,14 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Rome
+  organisation: Dar bazar
+  logo: "/uploads/darbazar_logo.jpg"
+  url: https://www.facebook.com/DarBazarEmporioSociale/
+  description: ''
+  position:
+    lat: 41.897721
+    long: 12.510584
 - base_name: Ušivac
   organisation: A Drop In The Ocean
   logo: "/uploads/drapenihavet_logo.webp"
