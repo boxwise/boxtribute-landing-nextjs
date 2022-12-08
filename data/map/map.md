@@ -3,6 +3,14 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Dortmund
+  organisation: Grenzenlose Wärme
+  logo: "/uploads/gw_logo.webp"
+  url: https://grenzenlose-waerme.blog/
+  description: ''
+  position:
+    lat: 51.510793
+    long: 7.454463
 - base_name: Frankfurt
   organisation: EuropeCares
   logo: "/uploads/europe_cares_logo.png"
