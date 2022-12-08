@@ -3,6 +3,17 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Ušivac
+  organisation: A Drop In The Ocean
+  logo: "/uploads/drapenihavet_logo.webp"
+  url: https://www.drapenihavet.no/en/our-work/bosnia-and-herzegovina/
+  description: |-
+    Our main focus in the Sarajevo canton is distributing necessary items to and organising computer classes for people living in Ušivac refugee camp.
+
+    A Drop in the Ocean has a team on the ground consisting of experienced coordinators, local- and community volunteer field workers. We have been present in Bosnia and Herzegovina since December 2020, assisting with distributions and organising activities.
+  position:
+    lat: 44.700813
+    long: 16.074158
 - base_name: Krakow
   organisation: A Drop In The Ocean
   logo: "/uploads/drapenihavet_logo.webp"
