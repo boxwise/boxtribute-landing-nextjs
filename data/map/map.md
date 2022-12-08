@@ -3,6 +3,20 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Samos
+  organisation: Samos Volunteers
+  logo: "/uploads/sv_logo.png"
+  url: https://www.samosvolunteers.org/what-we-do
+  description: "Our free shop is located next to the Alpha Centre. People from the
+    Samos camp are invited to come to the shop and choose their own clothes and shoes.
+    This is a lifeline for many who have no form of income. We carry out two mass
+    distributions during the year: a summer distribution and winter distribution.
+    \n\nWe also use the shop to create emergency packs of dry clothing for Médecins
+    Sans Frontières who operate an emergency response team for new arrivals landing
+    on the island. "
+  position:
+    lat: 37.754389
+    long: 26.9804
 - base_name: Lebanon
   organisation: The Health Impact
   logo: "/uploads/healthimpact_logo.webp"
