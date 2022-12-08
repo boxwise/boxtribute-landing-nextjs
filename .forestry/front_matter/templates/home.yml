@@ -20,6 +20,7 @@ fields:
     config:
       required: false
     label: text for typing
+    description: not more than about 35 characters.
   config:
     min: 
     max: 
