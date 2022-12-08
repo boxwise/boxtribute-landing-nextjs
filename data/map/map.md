@@ -3,6 +3,18 @@ center:
   lat: 40.990602
   long: 22.625296
 base_markers:
+- base_name: Lebanon
+  organisation: The Health Impact
+  logo: "/uploads/healthimpact_logo.webp"
+  url: https://thehealthimpact.org/en/
+  description: 'Every family in our local community, both from the refugee and host
+    communities are invited to visit our Hygiene Free Shop following our health promotion
+    class. In this shop, families get the freedom to decide what they want to take
+    home. People choose from shelves filled with more than 30 different products including
+    cleaning supplies, hygiene products, accessories, and more. '
+  position:
+    lat: 33.879984
+    long: 35.628071
 - base_name: Lesvos
   organisation: Movement On The Ground
   logo: "/uploads/motg_logo.svg"
