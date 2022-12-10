@@ -6,8 +6,8 @@
     "start": "next start",
     "typecheck": "tsc",
     "lint": "next lint --fix",
-    "format:check": "prettier --check \"src/**/*.{js,jsx,json,scss,md,ts,tsx}\"",
-    "format:write": "prettier --write \"src/**/*.{js,jsx,json,scss,md,ts,tsx}\""
+    "format:check": "prettier --check \"./**/*.{js,jsx,json,scss,md,ts,tsx}\"",
+    "format:write": "prettier --write \"./**/*.{js,jsx,json,scss,md,ts,tsx}\""
   },
   "dependencies": {
     "@geo-maps/earth-lands-10km": "^0.6.0",
@@ -16,7 +16,7 @@
     "@types/geojson": "^7946.0.10",
     "@types/leaflet": "^1.9.0",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/parser": "^5.43.0",
+    "@typescript-eslint/parser": "^5.0.1",
     "axios": "^1.2.0",
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
@@ -37,7 +37,7 @@
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "tailwindcss": "^3.1.4",
-    "typescript": "^4.7.4",
+    "typescript": "^4.4.4",
     "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
@@ -47,9 +47,11 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.7",
-    "eslint": "^8.27.0",
+    "eslint": "^8.7.0",
     "eslint-config-next": "^13.0.3",
     "eslint-config-prettier": "^8.5.0",
-    "postcss": "^8.4.14"
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.14",
+    "prettier": "^2.5.1"
   }
 }

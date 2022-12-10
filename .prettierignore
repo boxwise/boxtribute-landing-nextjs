@@ -6,3 +6,5 @@ data
 js
 node_modules
 public
+components/TeamMemberModal.tsx
+components/TeamSection.tsx
