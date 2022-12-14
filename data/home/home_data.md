@@ -1,6 +1,7 @@
 ---
 hero_image_description: children in a refugee camp
 subtitles_hero:
+- text_for_typing: Streamlines aid delivery in the field
 - text_for_typing: By aid workers, for aid workers!
 - text_for_typing: Empowers local communities
 - text_for_typing: is looking for people like you!
