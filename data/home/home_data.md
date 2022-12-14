@@ -10,7 +10,7 @@ short_description: Boxtribute is a digital system that works hand in hand with o
   partners to deliver humanitarian aid quickly and fairly.
 facts_in_numbers:
 - icon: "/uploads/hearthand.png"
-  description: partners on the field helping refugees
+  description: partners on the field helping people in need
   number: 15
   image_description: heart on the hand
 - icon: "/uploads/trolly.png"
