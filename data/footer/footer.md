@@ -1,7 +1,7 @@
 ---
 articles_of_association: "/uploads/stichting-boxwise-articles-of-association.pdf"
-policy_plan: "/uploads/2021-2022-boxtribute-policy-plan.pdf"
-remuneration_policy: "/uploads/remuneration-policy-2021-2022.pdf"
+policy_plan: "/uploads/2021-2023-boxtribute-policy-plan.pdf"
+remuneration_policy: "/uploads/remuneration-policy-2021-2023.pdf"
 annual_reports:
 - year: "2021"
   report: "/uploads/annual-report-final-2021.pdf"
