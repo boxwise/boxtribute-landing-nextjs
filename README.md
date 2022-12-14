@@ -1,4 +1,4 @@
-#Note: The text below is boilerplate from Vercel and needs to be appropriately updated with all relevant information and links
+# Note: The text below is boilerplate from Vercel and needs to be appropriately updated with all relevant information and links
 
 # A statically generated blog example using Next.js, Markdown, and TypeScript
 
