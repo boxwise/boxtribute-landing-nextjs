@@ -14,7 +14,7 @@ facts_in_numbers:
   number: 15
   image_description: heart on the hand
 - icon: "/uploads/trolly.png"
-  description: goods distributed per month to give back dignity to vulnerable populations
+  description: goods distributed with dignity per month to vulnerable populations
   number: 6764
   image_description: boxes on a trolly
 - icon: "/uploads/boxes.png"
