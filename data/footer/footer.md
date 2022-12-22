@@ -1,5 +1,5 @@
 ---
-articles_of_association: "/uploads/stichting-boxwise-articles-of-association.pdf"
+articles_of_association: "/uploads/afschrift-akte-van-statutenwijziging-stichting-boxwise.pdf"
 policy_plan: "/uploads/2021-2023-boxtribute-policy-plan.pdf"
 remuneration_policy: "/uploads/remuneration-policy-2021-2023.pdf"
 annual_reports:
