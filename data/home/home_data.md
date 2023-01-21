@@ -25,7 +25,7 @@ facts_in_numbers:
   description: 'beneficiaries supported by dignified distributions each month '
   number: 809
   image_description: handshake
-cta_link: https://donorbox.org/boxtribute-fundraising-campaign
+cta_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url
 main_heading: Boxtribute
 title_of_news_section: News
 text_news_button: Next
