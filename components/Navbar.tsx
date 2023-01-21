@@ -47,8 +47,7 @@ export const Navbar = () => {
           <li className="list-none" key="CTA">
             <CTAButton
               ctaLink={
-                // This is the Donate URL for the Winter Fundraiser - needs to be changed back to Paypal afterwards
-                "https://donorbox.org/boxtribute-fundraising-campaign"
+                "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url"
               }
               ctaButton={"Donate"}
               noMdBreak={true}
