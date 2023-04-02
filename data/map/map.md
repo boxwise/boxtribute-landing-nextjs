@@ -138,14 +138,15 @@ base_markers:
     lat: 44.700813
     long: 16.074158
 - base_name: Krakow
-  organisation: A Drop In The Ocean
-  logo: "/uploads/drapenihavet_logo.webp"
-  url: https://www.drapenihavet.no/en/our-work/poland/
-  description: Following Russias attacks on Ukraine, February 2022, millions of people
-    were forced to flee their country. A Drop in the Ocean was rapidly responsing
-    to the situation and offered our assistance towards local organisations. Four
-    days after the invasion we had a team, included a polish coordinator present in
-    Krakow, about two hours drive from the Ukrainian border.
+  organisation: Internationaler Bund Polska
+  logo: "/uploads/ib-polska-logo_03.png"
+  url: https://ib-polska.pl/english/
+  description: Following Russia's attacks on Ukraine in February 2022, millions of
+    people were forced to flee their country. By March 2022, Internationaler Bund
+    Polska in partnership with Drop in the Ocean set up "Szafa Dobra" a.k.a the Wardrobe
+    for Good, out of a former shopping center in Krakow. There, people fleeing the
+    war with nothing to their name but the what they are wearing can select clothes
+    they need in dignified conditions.
   position:
     lat: 50.051198
     long: 19.944459
