@@ -139,7 +139,7 @@ base_markers:
     long: 16.074158
 - base_name: Krakow
   organisation: Internationaler Bund Polska
-  logo: "/uploads/ib-polska-logo_square.png"
+  logo: "/uploads/ib-polska-logo_square-1.png"
   url: https://ib-polska.pl/english/
   description: Following Russia's attacks on Ukraine in February 2022, millions of
     people were forced to flee their country. By March 2022, Internationaler Bund
