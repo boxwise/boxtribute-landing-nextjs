@@ -44,15 +44,17 @@ export default function Post({ newsData, allNews, footerData }: Props) {
               <div className="hidden md:block md:mb-12">
                 <Avatar name={newsData.author.name} picture={newsData.author.picture} />
               </div>
-              <div className="mb-8 md:mb-16 sm:mx-0 max-h-[640px] w-full">
-                <Image
-                  src={newsData.banner}
-                  alt={`Cover Image for ${newsData.title}`}
-                  width={1600}
-                  height={640}
-                  objectFit="cover"
-                />
-              </div>
+              {newsData.banner && (
+                <div className="mb-8 md:mb-16 sm:mx-0 max-h-[640px] w-full">
+                  <Image
+                    src={newsData.banner}
+                    alt={`Cover Image for ${newsData.title}`}
+                    width={1600}
+                    height={640}
+                    objectFit="cover"
+                  />
+                </div>
+              )}
               <div className="max-w-2xl mx-auto">
                 <div className="block md:hidden mb-6">
                   <Avatar name={newsData.author.name} picture={newsData.author.picture} />

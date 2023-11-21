@@ -56,6 +56,7 @@ export function getAllNews(fields: string[] = []) {
   const slugs = getNewsSlugs();
   const posts = slugs
     .map((slug) => getNewsBySlug(slug, fields))
+    .filter((post) => post.position_in_preview!="0")
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.position_in_preview < post2.position_in_preview ? -1 : 1));
   return posts;
