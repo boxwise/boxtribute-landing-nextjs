@@ -9,6 +9,6 @@ author:
   name: Sophie Bluestone
   picture: "/uploads/sophie_thumbnail.webp"
 created_date: 2023-12-23
-position_in_preview: 1
+position_in_preview: 0
 
 ---
