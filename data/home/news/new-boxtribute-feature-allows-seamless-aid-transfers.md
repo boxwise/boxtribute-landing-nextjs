@@ -1,6 +1,6 @@
 ---
-title: New Boxtribute feature allows seamless aid transfers between partners
-headline: 
+title: Boxtribute allows seamless aid transfers between partners
+headline: A New Boxtribute Feature
 button_text: Next
 button_image: "/uploads/arrow.svg"
 short_text: 'Boxtribute has been working with our partners to make aid transfers seamless and time effective by way of a new shipment feature. Using this, two aid organisations who are linked with each other on the platform, can send donations and receive it into their stock by simply scanning the attached bar codes.'
@@ -9,6 +9,8 @@ author:
   name: Sophie Bluestone
   picture: "/uploads/sophie_thumbnail.webp"
 created_date: 2023-12-23
-position_in_preview: 0
-
+position_in_preview: 1
+banner: "/uploads/thomas-kinto-bus.webp"
+image_mobile: "/uploads/thomas-kinto-bus.webp"
+image_description: Photo by Thomas Kinto Unsplash
 ---
