@@ -17,7 +17,7 @@ section_2:
     image_description: Man in warehouse
     text: "<p><strong>We want to especially:</strong></p><ul><li><p>Get critical help
       to people in crisis faster and more efficiently</p></li><li><p>Legitimize dignity
-      in aid for the most vulnerable</p></li><li><p>Increase responsiveness and and
+      in aid for the most vulnerable</p></li><li><p>Increase responsiveness and
       resilience in the humanitarian sector</p></li></ul>"
     bg_color: inherit
     color: black
