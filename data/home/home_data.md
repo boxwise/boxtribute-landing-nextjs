@@ -16,7 +16,7 @@ facts_in_numbers:
 - icon: "/uploads/trolly.png"
   description: goods distributed with dignity per month to vulnerable populations
   number: 12540
-  image_description: boxes on a trolly
+  image_description: boxes on a trolley
 - icon: "/uploads/boxes.png"
   description: items in storage donated to support people in need
   number: 2140206
