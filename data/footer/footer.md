@@ -1,7 +1,7 @@
 ---
 articles_of_association: "/uploads/afschrift-akte-van-statutenwijziging-stichting-boxwise.pdf"
-policy_plan: "/uploads/2021-2023-boxtribute-policy-plan.pdf"
-remuneration_policy: "/uploads/remuneration-policy-2021-2023.pdf"
+policy_plan: "https://docs.google.com/document/d/e/2PACX-1vSQY2G3BHxsZogM_UJxnoq5AZgsJKNwtLgMFgShswuFLVb0obDRQ0YWknaA2rPWCOP3SUcMObAvM4nj/pub"
+remuneration_policy: "https://docs.google.com/document/u/0/d/e/2PACX-1vTcRGNWnhVqOvC28ZVgbup_cdW-GGJOn106lJNNSJen0iarFMkiz4KF5vIV6TKeUXA2czcUTUm6Hm_H/pub"
 annual_reports:
 - year: "2023 (in progress)"
   report: "/uploads/annual-report-final-2022.pdf"
