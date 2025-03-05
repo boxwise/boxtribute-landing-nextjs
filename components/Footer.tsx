@@ -33,7 +33,7 @@ type IProps = {
 
 export const Footer = ({ footerData }: IProps) => {
   const footerStaticData: IFooterStaticData = {
-    boxtributeTrademark: "© 2023 Boxtribute, All rights reserved.",
+    boxtributeTrademark: "© 2025 Boxtribute, All rights reserved.",
     boxtributeLogo: "/assets/svg/boxtribute_white_vertical.svg",
     socialMediaIcons: [
       {
