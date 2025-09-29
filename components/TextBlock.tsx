@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 export interface ITextBlockData {
   text: string;
-  bg_color?: string;
+  bgColor?: string;
   color?: string;
   align?: "center" | "left" | "right" | "justify";
 }
@@ -18,7 +18,7 @@ interface IProps extends ITextBlockData {
 
 const TextBlock = ({
   text,
-  bg_color,
+  bgColor,
   color,
   align,
   markdownClassName,
@@ -37,7 +37,7 @@ const TextBlock = ({
       className={`${
         markdownStyles[markdownClassName?.length ? markdownClassName : "markdown"]
       } ${classNames({
-        [`bg-${bg_color}`]: bg_color,
+        [`bg-${bgColor}`]: bgColor,
         [`text-${color}`]: color,
         [`text-${align}`]: align,
         [`${className}`]: className,

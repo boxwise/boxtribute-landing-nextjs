@@ -18,7 +18,8 @@ export default function ContactForm() {
 
   const onSubmit: SubmitHandler<IContactUsFormData> = async (data) => {
     const webhookUrl =
-      "https://hooks.slack.com/workflows/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";
+      "https://hooks.slack.com/workflows/T99PBKNTU/A04C3Q4A1N1/" +
+      "435664467657755946/CacBs2VbEgUkhL7zD0KSmiOk";
     const res = await axios.post(webhookUrl, JSON.stringify(data), {
       withCredentials: false,
     });

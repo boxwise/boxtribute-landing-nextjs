@@ -47,7 +47,8 @@ export const Navbar = () => {
           <li className="list-none" key="CTA">
             <CTAButton
               ctaLink={
-                "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url"
+                "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick" +
+                "&hosted_button_id=A8P3SYKKUPMPN&source=url"
               }
               ctaButton={"Donate"}
               noMdBreak={true}

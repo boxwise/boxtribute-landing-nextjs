@@ -17,7 +17,7 @@ const FactInNumbersContainer = ({ factInNumbers }: Props) => {
       icon={e.icon}
       description={e.description}
       number={e.number}
-      image_description={e.image_description}
+      imageDescription={e.imageDescription}
     />
   ));
 

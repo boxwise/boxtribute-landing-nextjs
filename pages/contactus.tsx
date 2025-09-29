@@ -48,7 +48,7 @@ const ContactUs = ({ contactUsData, footerData }: Props) => {
             <TextBlock
               text={contactUsData.section_2.text.text}
               color={contactUsData.section_2.text.color}
-              bg_color={contactUsData.section_2.text.bg_color}
+              bgColor={contactUsData.section_2.text.bgColor}
               align={contactUsData.section_2.text.align}
             />
           </div>

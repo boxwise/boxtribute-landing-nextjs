@@ -28,7 +28,7 @@ export const Partners = ({ mapData, footerData }: IProps) => {
           <TextBlock
             text="Together we are stronger."
             color="white"
-            bg_color="inherit"
+            bgColor="inherit"
             align="center"
             htmlTag="h6"
           />
@@ -39,7 +39,7 @@ export const Partners = ({ mapData, footerData }: IProps) => {
           <TextBlock
             text="Find out where our partners use us!"
             color="black"
-            bg_color="inherit"
+            bgColor="inherit"
             align="left"
             htmlTag="h3"
           />
@@ -55,7 +55,7 @@ export const Partners = ({ mapData, footerData }: IProps) => {
             text="<p>Interested in implementing Boxtribute’s solutions and partnering with us?</p>
             <p>Contact us at <a href='mailto:hello@boxtribute.org'><strong>hello@boxtribute.org</strong></a></p>"
             color="black"
-            bg_color="inherit"
+            bgColor="inherit"
             align="center"
             className="lg-text"
           />
