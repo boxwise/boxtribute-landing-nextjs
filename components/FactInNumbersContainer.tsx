@@ -38,9 +38,10 @@ const FactInNumbersContainer = ({ factInNumbers }: Props) => {
                 className="absolute top-1/2 z-10"
               >
                 <Image
+                  alt="previous"
                   src="/assets/svg/arrow_red_bg.svg"
-                  width="40px"
-                  height="40px"
+                  width={40}
+                  height={40}
                   className="rotate-90"
                 />
               </button>
@@ -55,9 +56,10 @@ const FactInNumbersContainer = ({ factInNumbers }: Props) => {
                 className="absolute top-1/2 right-0 z-10"
               >
                 <Image
+                  alt="next"
                   src="/assets/svg/arrow_red_bg.svg"
-                  width="40px"
-                  height="40px"
+                  width={40}
+                  height={40}
                   className="-rotate-90"
                 />
               </button>
