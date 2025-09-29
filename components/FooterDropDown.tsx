@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 // import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { IReport } from "./Footer";
-import Link from "next/link";
 
 export interface IFooterDropDownData {
   title: string;
@@ -29,12 +28,19 @@ const FooterDropDown = ({ title, reports }: IFooterDropDownData) => {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute origin-top-right right-0 z-20 mt-2 bg-navy border-2 border-white">
+          <Menu.Items 
+            className="absolute origin-top-right right-0 z-20 mt-2 bg-navy border-2 border-white"
+          >
             <div className="p-2">
               {reports.map((e, i) => (
                 <Menu.Item key={i}>
                   {() => (
-                    <a target="_blank" href={e.report} rel="noopener noreferrer" className="block px-4 py-2">
+                    <a
+                      target="_blank"
+                      href={e.report}
+                      rel="noopener noreferrer"
+                      className="block px-4 py-2"
+                    >
                       {e.year}
                     </a>
                   )}

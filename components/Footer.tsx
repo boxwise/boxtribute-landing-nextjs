@@ -62,7 +62,7 @@ export const Footer = ({ footerData }: IProps) => {
   return (
     <section>
       <div className="flex flex-col items-center gap-8 bg-navy text-white px-8 py-16">
-        <img className="h-24 md:h-42" src={footerStaticData.boxtributeLogo} />
+        <img alt="Logo" className="h-24 md:h-42" src={footerStaticData.boxtributeLogo} />
         <div className="flex flex-wrap justify-center gap-x-2 sm-text">
           <Link href="contactus">Imprint</Link>
           <div>&middot;</div>

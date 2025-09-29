@@ -32,8 +32,8 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
         <Image
           src={heroSectionData.hero_image_mobile}
           alt={heroSectionData.hero_image_description}
-          width="800px"
-          height="800px"
+          width={800}
+          height={800}
           priority
           className="blur z-0"
         />
@@ -42,8 +42,8 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
           <Image
             src={heroSectionData.hero_image_desktop}
             alt={heroSectionData.hero_image_description}
-            width="2400px"
-            height="1350px"
+            width={2400}
+            height={1350}
             objectFit="cover"
             priority
             className="blur z-0"

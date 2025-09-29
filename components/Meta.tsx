@@ -16,7 +16,8 @@ const Meta = () => {
       <meta
         name="description"
         content={
-          "Boxtribute is a digital system  that works hand in hand with our partners to deliver humanitarian aid quickly and fairly."
+          "Boxtribute is a digital system that works hand in hand with our partners to deliver " +
+          "humanitarian aid quickly and fairly."
         }
       />
       {/* <meta property="og:image" content={HOME_OG_IMAGE_URL} /> */}

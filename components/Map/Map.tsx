@@ -1,4 +1,3 @@
-import Link from "next/link";
 import TextBlock from "../TextBlock";
 import { useMediaQuery } from "../MediaQuery";
 import L from "leaflet";
@@ -47,7 +46,12 @@ const Map = ({ center, baseMarkers }: IMapContainerData) => {
       <GeoJSON
         style={landStyle}
         data={earthLands10Km}
-        attribution='GeoJSON earth-lands from <a ref="https://github.com/simonepri/geo-maps">Geo-Maps</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution={
+          "GeoJSON earth-lands from <a ref=\"https://github.com/simonepri/geo-maps\">" +
+          "Geo-Maps</a> " +
+          "&mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">" +
+          "OpenStreetMap</a> contributors"
+        }
       />
       {baseMarkers.map((marker, i) => (
         <Marker key={i} icon={markerIcon} position={[marker.position.lat, marker.position.long]}>
