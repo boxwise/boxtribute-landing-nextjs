@@ -39,7 +39,7 @@ export const OurImpact = ({ ourImpactData, footerData }: Props) => {
         <TextBlock
           text={ourImpactData.section_1.text}
           color={ourImpactData.section_1.color}
-          bgColor={ourImpactData.section_1.bgColor}
+          bg_color={ourImpactData.section_1.bg_color}
           align={ourImpactData.section_1.align}
           className="lg-text"
         />
@@ -56,7 +56,7 @@ export const OurImpact = ({ ourImpactData, footerData }: Props) => {
           <TextBlock
             text={ourImpactData.section_2.image_text_50_50.text}
             color={ourImpactData.section_2.image_text_50_50.color}
-            bgColor={ourImpactData.section_2.image_text_50_50.bg_color}
+            bg_color={ourImpactData.section_2.image_text_50_50.bg_color}
             align={ourImpactData.section_2.image_text_50_50.align}
             allowedTags={["ul", "li", "strong"]}
             className="lg-text"
@@ -67,7 +67,7 @@ export const OurImpact = ({ ourImpactData, footerData }: Props) => {
             <TextBlock
               text={ourImpactData.section_2.text.text}
               color="white"
-              bgColor={ourImpactData.section_2.text.bgColor}
+              bg_color={ourImpactData.section_2.text.bg_color}
               align={ourImpactData.section_2.text.align}
               markdownClassName="markdownNoMY"
               className="lg-text"
@@ -88,7 +88,7 @@ export const OurImpact = ({ ourImpactData, footerData }: Props) => {
           <TextBlock
             text={ourImpactData.section_3.image_text_50_50.text}
             color={ourImpactData.section_3.image_text_50_50.color}
-            bgColor={ourImpactData.section_3.image_text_50_50.bg_color}
+            bg_color={ourImpactData.section_3.image_text_50_50.bg_color}
             align={ourImpactData.section_3.image_text_50_50.align}
             allowedTags={["ul", "li", "strong"]}
             className="lg-text"
