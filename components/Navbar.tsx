@@ -35,12 +35,10 @@ export const Navbar = () => {
         <ul className="flex justify-end items-center text-xl">
           {navLinks.map((link, i) => (
             <li className="list-none" key={i}>
-              <Link href={link.path}>
-                {router.pathname === link.path ? (
-                  <a className="font-bold m-2">{link.name}</a>
-                ) : (
-                  <a className="m-2">{link.name}</a>
-                )}
+              <Link 
+                href={link.path} 
+                className={`m-2 ${router.pathname === link.path ? "font-bold" : ""}`}>
+                {link.name}
               </Link>
             </li>
           ))}
@@ -50,7 +48,7 @@ export const Navbar = () => {
                 "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick" +
                 "&hosted_button_id=A8P3SYKKUPMPN&source=url"
               }
-              ctaButton={"Donate"}
+              ctaButton="Donate"
               noMdBreak={true}
             />
           </li>

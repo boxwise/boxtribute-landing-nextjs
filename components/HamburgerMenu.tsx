@@ -12,28 +12,26 @@ export const HamburgerMenu = () => {
     <div className="flex items-center">
       {!hamburgerOpen ? (
         <div
-          className="flex flex-col justify-between align-middle w-12 h-8"
+          className="flex flex-col justify-between align-middle w-[40px] h-[20px]"
           onClick={toggleHamburger}
         >
-          <div className="w-12 h-1 rounded transition-all bg-black" />
-          <div className="w-12 h-1 rounded transition-all bg-black" />
-          <div className="w-12 h-1 rounded transition-all bg-black" />
+          <div className="w-full h-1 rounded transition-all bg-black" />
+          <div className="w-full h-1 rounded transition-all bg-black" />
+          <div className="w-full h-1 rounded transition-all bg-black" />
         </div>
       ) : (
         <div className="bg-navy w-screen h-screen z-[2000] absolute inset-0">
-          <div onClick={toggleHamburger} className="flex justify-end px-2 py-6">
-            <img src="/assets/svg/close_icon.svg" />
+          <div onClick={toggleHamburger} className="flex justify-end px-6 py-6">
+            <img src="/assets/svg/close_icon.svg" className="w-[40px] h-[40px]" />
           </div>
           <div>
             <ul className="flex-col text-white text-xl text-center">
               {navLinks.map((link, i) => (
                 <li className="m-4 list-none" onClick={toggleHamburger} key={i}>
-                  <Link href={link.path}>
-                    {router.pathname === link.path ? (
-                      <a className="font-bold">{link.name}</a>
-                    ) : (
-                      <a>{link.name}</a>
-                    )}
+                  <Link 
+                    href={link.path} 
+                    className={router.pathname === link.path ? "font-bold" : ""}>
+                    {link.name}
                   </Link>
                 </li>
               ))}
