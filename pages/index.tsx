@@ -6,17 +6,14 @@ import SectionTitle from "../components/SectionTitle";
 import { HeroSection } from "../components/HeroSection";
 import { INewsData } from "../interfaces/global";
 import Footer, { IFooterData } from "../components/Footer";
+import { IFactInNumbers } from "../components/FactInNumbers";
 
 interface ITypewriterText {
   text_for_typing: string;
 }
 
-interface IFactCell {
-  icon: string;
-  description: string;
-  number: number;
+interface IFactCell extends IFactInNumbers {
   color: string;
-  image_description: string;
 }
 
 interface IInfo {

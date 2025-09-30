@@ -35,14 +35,14 @@ const FactInNumbersContainer = ({ factInNumbers }: Props) => {
                 type="button"
                 onClick={onClickHandler}
                 title={label}
-                className="absolute top-1/2 z-10"
+                className="absolute top-1/2 z-10 translate-y-[-50%]"
               >
                 <Image
                   alt="previous"
                   src="/assets/svg/arrow_red_bg.svg"
                   width={40}
                   height={40}
-                  className="rotate-90"
+                  className="rotate-90 w-[40px] h-[40px]"
                 />
               </button>
             )
@@ -53,14 +53,14 @@ const FactInNumbersContainer = ({ factInNumbers }: Props) => {
                 type="button"
                 onClick={onClickHandler}
                 title={label}
-                className="absolute top-1/2 right-0 z-10"
+                className="absolute top-1/2 right-0 z-10 translate-y-[-50%]"
               >
                 <Image
                   alt="next"
                   src="/assets/svg/arrow_red_bg.svg"
                   width={40}
                   height={40}
-                  className="-rotate-90"
+                  className="-rotate-90 w-[40px] h-[40px]"
                 />
               </button>
             )

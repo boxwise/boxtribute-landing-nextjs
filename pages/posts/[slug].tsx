@@ -45,12 +45,11 @@ export default function Post({ newsData, allNews, footerData }: Props) {
                 <Avatar name={newsData.author.name} picture={newsData.author.picture} />
               </div>
               {newsData.banner && (
-                <div className="mb-8 md:mb-16 sm:mx-0 max-h-[640px] w-full">
+                <div className="mb-8 md:mb-16 sm:mx-0 h-[640px] w-full relative mx-auto">
                   <Image
                     src={newsData.banner}
                     alt={`Cover Image for ${newsData.title}`}
-                    width={1600}
-                    height={640}
+                    layout="fill"
                     objectFit="cover"
                   />
                 </div>
