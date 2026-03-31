@@ -13,7 +13,6 @@ COPY interfaces ./interfaces
 COPY lib ./lib
 COPY styles ./styles
 COPY data ./data
-RUN yarn build
 
 # Set environment variable to avoid creating source maps for production builds.
 ENV GENERATE_SOURCEMAP=false

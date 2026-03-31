@@ -4,7 +4,7 @@
 
 ```bash
 docker build . -t boxtribute-landing:latest
-docker run --rm -it -p 3001:3000 --volume /app/node_modules --volume $(pwd):/app boxtribute-landing start
+docker run --rm -it -p 3001:3000 --volume /app/node_modules --volume $(pwd):/app boxtribute-landing dev
 ```
 
 Open your browser on `localhost:3001`.
