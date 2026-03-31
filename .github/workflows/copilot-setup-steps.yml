@@ -27,16 +27,16 @@ jobs:
     # If you do not check out your code, Copilot will do this for you.
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # - name: Install pnpm
       #   uses: pnpm/action-setup@v2
       #   with:
       #     version: 9
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: '23'
+          node-version: '24'
           cache: 'yarn'
 
       - name: Install FE dependencies
