@@ -1,5 +1,5 @@
 # Node version should match that of your production environment.
-FROM docker.io/node:23-alpine
+FROM docker.io/node:24-alpine
 
 WORKDIR /app
 
