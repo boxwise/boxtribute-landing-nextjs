@@ -5,17 +5,8 @@ WORKDIR /app
 
 COPY package.json ./
 COPY yarn.lock ./
-COPY pages ./pages
 
 RUN yarn install
-COPY components ./components
-COPY interfaces ./interfaces
-COPY lib ./lib
-COPY styles ./styles
-COPY data ./data
-
-# Set environment variable to avoid creating source maps for production builds.
-ENV GENERATE_SOURCEMAP=false
 
 ENTRYPOINT ["yarn"]
 CMD ["--help"]
