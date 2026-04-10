@@ -1,3 +1,25 @@
+# Boxtribute landing page
+
+## Build and run
+
+### Docker
+
+```bash
+docker build . -t boxtribute-landing:latest
+docker run --rm -it -p 3001:3000 --volume /app/node_modules --volume $(pwd):/app boxtribute-landing dev
+```
+
+Open your browser on `localhost:3001`.
+
+### Local node
+
+```bash
+yarn install
+yarn dev
+```
+
+Open your browser on `localhost:3000`.
+
 # Note: The text below is boilerplate from Vercel and needs to be appropriately updated with all relevant information and links.
 
 # A statically generated blog example using Next.js, Markdown, and TypeScript
