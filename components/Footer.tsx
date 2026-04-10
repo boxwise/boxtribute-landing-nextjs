@@ -66,22 +66,18 @@ export const Footer = ({ footerData }: IProps) => {
         <div className="flex flex-wrap justify-center gap-x-2 sm-text">
           <Link href="contactus">Imprint</Link>
           <div>&middot;</div>
-          <Link href={footerData.articles_of_association} passHref>
-            <a target="_blank" rel="noopener noreferrer">
-              Articles of Association
-            </a>
+          <Link 
+            href={footerData.articles_of_association} 
+            target="_blank" rel="noopener noreferrer">
+            Articles of Association
           </Link>
           <div>&middot;</div>
-          <Link href={footerData.policy_plan} passHref>
-            <a target="_blank" rel="noopener noreferrer">
-              Policy Plan
-            </a>
+          <Link href={footerData.policy_plan} target="_blank" rel="noopener noreferrer">
+            Policy Plan
           </Link>
           <div>&middot;</div>
-          <Link href={footerData.remuneration_policy} passHref>
-            <a target="_blank" rel="noopener noreferrer">
-              Remuneration Policy
-            </a>
+          <Link href={footerData.remuneration_policy} target="_blank" rel="noopener noreferrer">
+            Remuneration Policy
           </Link>
           <div>&middot;</div>
           <FooterDropDown title="Annual Reports" reports={footerData.annual_reports} />
@@ -91,9 +87,7 @@ export const Footer = ({ footerData }: IProps) => {
         <div className="flex gap-6">
           {footerStaticData.socialMediaIcons.map((e, i) => (
             <Link href={e.link} key={i}>
-              <a>
-                <img className="h-12 md:h-18" alt={e.description} src={e.image} />
-              </a>
+              <img className="h-12 md:h-18" alt={e.description} src={e.image} />
             </Link>
           ))}
         </div>

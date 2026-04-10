@@ -3,7 +3,7 @@ import { useMediaQuery } from "../MediaQuery";
 import L from "leaflet";
 import { MapContainer, GeoJSON, Marker, Popup } from "react-leaflet";
 import { icon } from "leaflet";
-import { GeoJsonObject } from "geojson";
+import type { GeoJsonObject } from "geojson";
 import { ILatLng, IBaseMarker } from "../../interfaces/global";
 import _earthLands10Km from "./earth-lands-10km.json";
 const earthLands10Km = _earthLands10Km as GeoJsonObject;

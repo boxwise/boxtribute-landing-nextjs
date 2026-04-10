@@ -29,21 +29,22 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
   return (
     <section className="w-screen h-auto relative">
       {isBreakpoint ? (
-        <Image
-          src={heroSectionData.hero_image_mobile}
-          alt={heroSectionData.hero_image_description}
-          width={800}
-          height={800}
-          priority
-          className="blur z-0"
-        />
+        <div className="w-full h-[400px] mx-auto">
+          <Image
+            src={heroSectionData.hero_image_mobile}
+            alt={heroSectionData.hero_image_description}
+            layout="fill"
+            objectFit="cover"
+            priority
+            className="blur z-0"
+          />
+        </div>
       ) : (
-        <div className="flex justify-center max-h-[675px] relative">
+        <div className="flex justify-center w-[2400px] h-[675px] relative mx-auto">
           <Image
             src={heroSectionData.hero_image_desktop}
             alt={heroSectionData.hero_image_description}
-            width={2400}
-            height={1350}
+            layout="fill"
             objectFit="cover"
             priority
             className="blur z-0"
