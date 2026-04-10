@@ -495,6 +495,806 @@
       "name": "Summer Jackets",
       "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
       "version": 1
+    },
+    {
+      "categoryName": "Jackets / Outerwear",
+      "gender": "Boy",
+      "id": "89",
+      "name": "Winter Jackets",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Jackets / Outerwear",
+      "gender": "Women",
+      "id": "90",
+      "name": "Summer Jackets",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Jackets / Outerwear",
+      "gender": "Women",
+      "id": "91",
+      "name": "Winter Jackets",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Jackets / Outerwear",
+      "gender": "Girl",
+      "id": "93",
+      "name": "Summer Jackets",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Jackets / Outerwear",
+      "gender": "Men",
+      "id": "94",
+      "name": "Summer Jackets",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Jackets / Outerwear",
+      "gender": "Men",
+      "id": "95",
+      "name": "Winter Jackets",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Jackets / Outerwear",
+      "gender": "UnisexAdult",
+      "id": "96",
+      "name": "Misc. Outer Protective Gear",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Jackets / Outerwear",
+      "gender": "UnisexBaby",
+      "id": "97",
+      "name": "Baby Jackets / Outerwear",
+      "sizeRangeName": "Baby by month (0-2, 3-6, 7-12, 13-18, 19-24)",
+      "version": 1
+    },
+    {
+      "categoryName": "Jackets / Outerwear",
+      "gender": "UnisexKid",
+      "id": "98",
+      "name": "Misc. Outer Protective Gear",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Jackets / Outerwear",
+      "gender": "Girl",
+      "id": "120",
+      "name": "Winter Jackets",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Baby",
+      "gender": "UnisexBaby",
+      "id": "1",
+      "name": "Baby Bibs",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Baby",
+      "gender": "UnisexBaby",
+      "id": "2",
+      "name": "Baby Blankets",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Other",
+      "gender": "none",
+      "id": "99",
+      "name": "Backpacks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Other",
+      "gender": "none",
+      "id": "100",
+      "name": "Suitcases and Bags",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "47",
+      "name": "Bleach",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "57",
+      "name": "ASTM 1 Masks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "58",
+      "name": "ASTM 2 Masks ",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "59",
+      "name": "ASTM 3/FFP2/FFP3/N95 Masks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "60",
+      "name": "Combs, Hair Ties, Brushes",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "61",
+      "name": "Condoms",
+      "sizeRangeName": "One size",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "62",
+      "name": "Deodorant",
+      "sizeRangeName": "One size",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "63",
+      "name": "Disposable Gloves",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "64",
+      "name": "Hand Sanitizer / Antibacterial Handgel",
+      "sizeRangeName": "One size",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "65",
+      "name": "Isopropryl Alcohol",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "66",
+      "name": "Lotion / Moisturizer",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "67",
+      "name": "Makeup",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "68",
+      "name": "Razors (Disposable)",
+      "sizeRangeName": "One size",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "69",
+      "name": "Reusable Masks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "70",
+      "name": "Shampoo",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "71",
+      "name": "Shaving Foam",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "72",
+      "name": "Shower Gel",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "73",
+      "name": "Soap",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "74",
+      "name": "Sunscreen",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "75",
+      "name": "Toothbrushes",
+      "sizeRangeName": "Singlepack, Multipack",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "76",
+      "name": "Toothpaste",
+      "sizeRangeName": "Singlepack, Multipack",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "none",
+      "id": "77",
+      "name": "Wet Wipes / Baby Wipes",
+      "sizeRangeName": "One size",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "Women",
+      "id": "78",
+      "name": "Sanitary Pads",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "UnisexAdult",
+      "id": "79",
+      "name": "Incontinence Pads",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Hygiene",
+      "gender": "UnisexBaby",
+      "id": "87",
+      "name": "Diapers",
+      "sizeRangeName": "Diaper sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Food & Kitchen",
+      "gender": "none",
+      "id": "46",
+      "name": "Basins",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Food & Kitchen",
+      "gender": "none",
+      "id": "48",
+      "name": "Bowls",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Food & Kitchen",
+      "gender": "none",
+      "id": "49",
+      "name": "Canned / Jarred Food",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Food & Kitchen",
+      "gender": "none",
+      "id": "50",
+      "name": "Dishes",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Food & Kitchen",
+      "gender": "none",
+      "id": "51",
+      "name": "Dry Food",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Food & Kitchen",
+      "gender": "none",
+      "id": "52",
+      "name": "Eating Utensils",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Food & Kitchen",
+      "gender": "none",
+      "id": "53",
+      "name": "Pots & pans",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Food & Kitchen",
+      "gender": "none",
+      "id": "54",
+      "name": "Sponges",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Food & Kitchen",
+      "gender": "none",
+      "id": "55",
+      "name": "Washing up liquid",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Food & Kitchen",
+      "gender": "none",
+      "id": "56",
+      "name": "Wooden cooking spoons",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Boy",
+      "id": "17",
+      "name": "Summer Hats",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Boy",
+      "id": "18",
+      "name": "Winter Hats",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Women",
+      "id": "19",
+      "name": "Abayas",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Women",
+      "id": "20",
+      "name": "Dresses / Skirts",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Women",
+      "id": "21",
+      "name": "Gloves",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Women",
+      "id": "22",
+      "name": "Hijabs ",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Women",
+      "id": "23",
+      "name": "Scarves",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Women",
+      "id": "24",
+      "name": "Summer Hats",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Women",
+      "id": "25",
+      "name": "Thick Socks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Women",
+      "id": "26",
+      "name": "Thin Socks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Women",
+      "id": "27",
+      "name": "Winter Hats",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Girl",
+      "id": "29",
+      "name": "Dresses / Skirts",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Girl",
+      "id": "30",
+      "name": "Summer Hats",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Men",
+      "id": "31",
+      "name": "Scarves",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Men",
+      "id": "32",
+      "name": "Summer Hats",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Men",
+      "id": "33",
+      "name": "Thick Socks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Men",
+      "id": "34",
+      "name": "Thin Socks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Men",
+      "id": "35",
+      "name": "Winter Hats",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexAdult",
+      "id": "36",
+      "name": "Gloves",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexBaby",
+      "id": "37",
+      "name": "Baby Gloves",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexBaby",
+      "id": "38",
+      "name": "Baby Hats",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexBaby",
+      "id": "39",
+      "name": "Baby Onesies",
+      "sizeRangeName": "Baby by month (0-2, 3-6, 7-12, 13-18, 19-24)",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexBaby",
+      "id": "40",
+      "name": "Baby Rompers / Bodies",
+      "sizeRangeName": "Baby by month (0-2, 3-6, 7-12, 13-18, 19-24)",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexBaby",
+      "id": "41",
+      "name": "Baby Socks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexKid",
+      "id": "42",
+      "name": "Gloves",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexKid",
+      "id": "43",
+      "name": "Scarves",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexKid",
+      "id": "44",
+      "name": "Thick Socks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexKid",
+      "id": "45",
+      "name": "Thin Socks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Girl",
+      "id": "92",
+      "name": "Winter Hats",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "Men",
+      "id": "166",
+      "name": "Gloves",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexAdult",
+      "id": "167",
+      "name": "Thick Socks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexAdult",
+      "id": "168",
+      "name": "Thin Socks",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Clothing",
+      "gender": "UnisexKid",
+      "id": "169",
+      "name": "Winter Hats",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Toys & Games",
+      "gender": "none",
+      "id": "101",
+      "name": "Toys",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Water",
+      "gender": "none",
+      "id": "158",
+      "name": "Bottled water",
+      "sizeRangeName": "Singlepack, Multipack",
+      "version": 1
+    },
+    {
+      "categoryName": "Water",
+      "gender": "none",
+      "id": "159",
+      "name": "Drinking Vessels",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Water",
+      "gender": "none",
+      "id": "160",
+      "name": "Water Storage Containers (>20L)",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Water",
+      "gender": "none",
+      "id": "161",
+      "name": "Water Storage Containers (<10L)",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Water",
+      "gender": "none",
+      "id": "162",
+      "name": "Water Storage Containers (10-20L)",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shelter",
+      "gender": "none",
+      "id": "102",
+      "name": "Umbrellas",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shelter",
+      "gender": "none",
+      "id": "103",
+      "name": "Bedsheets",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shelter",
+      "gender": "none",
+      "id": "104",
+      "name": "Blankets",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shelter",
+      "gender": "none",
+      "id": "105",
+      "name": "Duvet Covers",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shelter",
+      "gender": "none",
+      "id": "106",
+      "name": "Duvets",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shelter",
+      "gender": "none",
+      "id": "107",
+      "name": "Pillowcases",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shelter",
+      "gender": "none",
+      "id": "108",
+      "name": "Pillows",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shelter",
+      "gender": "none",
+      "id": "109",
+      "name": "Sleeping Bags",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shelter",
+      "gender": "none",
+      "id": "110",
+      "name": "Sleeping Mats",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shelter",
+      "gender": "none",
+      "id": "111",
+      "name": "Tarps",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shelter",
+      "gender": "none",
+      "id": "112",
+      "name": "Tents",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shelter",
+      "gender": "none",
+      "id": "113",
+      "name": "Towels",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
     }
   ]
 }
