@@ -1,0 +1,500 @@
+{
+  "standardProducts": [
+    {
+      "categoryName": "Underwear / Nightwear",
+      "gender": "Boy",
+      "id": "4",
+      "name": "Leggings",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Underwear / Nightwear",
+      "gender": "Girl",
+      "id": "11",
+      "name": "Leggings",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Underwear / Nightwear",
+      "gender": "Boy",
+      "id": "149",
+      "name": "Underwear",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Underwear / Nightwear",
+      "gender": "Women",
+      "id": "150",
+      "name": "Bras",
+      "sizeRangeName": "Bra sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Underwear / Nightwear",
+      "gender": "Women",
+      "id": "151",
+      "name": "Leggings",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Underwear / Nightwear",
+      "gender": "Women",
+      "id": "152",
+      "name": "Underwear",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Underwear / Nightwear",
+      "gender": "Girl",
+      "id": "154",
+      "name": "Undershirts / Tank Tops",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Underwear / Nightwear",
+      "gender": "Girl",
+      "id": "155",
+      "name": "Underwear",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Underwear / Nightwear",
+      "gender": "Men",
+      "id": "156",
+      "name": "Leggings",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Underwear / Nightwear",
+      "gender": "Men",
+      "id": "157",
+      "name": "Underwear",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "Boy",
+      "id": "3",
+      "name": "Joggers",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "Boy",
+      "id": "5",
+      "name": "Shorts",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "Boy",
+      "id": "6",
+      "name": "Trousers",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "Women",
+      "id": "7",
+      "name": "Joggers",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "Women",
+      "id": "8",
+      "name": "Shorts",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "Women",
+      "id": "9",
+      "name": "Trousers",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "Girl",
+      "id": "10",
+      "name": "Joggers",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "Girl",
+      "id": "12",
+      "name": "Shorts",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "Men",
+      "id": "13",
+      "name": "Joggers",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "Men",
+      "id": "14",
+      "name": "Shorts",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "Men",
+      "id": "15",
+      "name": "Trousers",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "UnisexBaby",
+      "id": "16",
+      "name": "Baby Trousers",
+      "sizeRangeName": "Baby by month (0-2, 3-6, 7-12, 13-18, 19-24)",
+      "version": 1
+    },
+    {
+      "categoryName": "Bottoms",
+      "gender": "Girl",
+      "id": "28",
+      "name": "Trousers",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Boy",
+      "id": "129",
+      "name": "Jumpers",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Boy",
+      "id": "130",
+      "name": "Long Sleeve Tops",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Boy",
+      "id": "131",
+      "name": "T-Shirts / Short Sleeves",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Boy",
+      "id": "132",
+      "name": "Undershirts / Tank Tops",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Women",
+      "id": "133",
+      "name": "Bodywarmers / Sleeveless Jumpers",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Women",
+      "id": "134",
+      "name": "Jumpers",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Women",
+      "id": "135",
+      "name": "Long Sleeve Tops",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Women",
+      "id": "136",
+      "name": "T-Shirts / Short Sleeves",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Women",
+      "id": "137",
+      "name": "Undershirts / Tank Tops",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Girl",
+      "id": "139",
+      "name": "Jumpers",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Girl",
+      "id": "140",
+      "name": "Long Sleeve Tops",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Men",
+      "id": "141",
+      "name": "Bodywarmers / Sleeveless Jumpers",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Men",
+      "id": "142",
+      "name": "Jumpers",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Men",
+      "id": "143",
+      "name": "Long Sleeve Tops",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Men",
+      "id": "144",
+      "name": "T-Shirts / Short Sleeves",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Men",
+      "id": "145",
+      "name": "Undershirts / Tank Tops",
+      "sizeRangeName": "XS, S, M, L, XL, XXL",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "UnisexBaby",
+      "id": "146",
+      "name": "Baby Jumpers",
+      "sizeRangeName": "Baby by month (0-2, 3-6, 7-12, 13-18, 19-24)",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "UnisexBaby",
+      "id": "147",
+      "name": "Baby Tops",
+      "sizeRangeName": "Baby by month (0-2, 3-6, 7-12, 13-18, 19-24)",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "UnisexKid",
+      "id": "148",
+      "name": "Bodywarmers / Sleeveless Jumpers",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Tops",
+      "gender": "Girl",
+      "id": "153",
+      "name": "T-Shirts / Short Sleeves",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "Boy",
+      "id": "114",
+      "name": "Light Shoes",
+      "sizeRangeName": "Shoe sizes children",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "Boy",
+      "id": "115",
+      "name": "Practical Shoes",
+      "sizeRangeName": "Shoe sizes children",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "Boy",
+      "id": "116",
+      "name": "Sandals & Flip Flops",
+      "sizeRangeName": "Shoe sizes children",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "Women",
+      "id": "117",
+      "name": "Light Shoes",
+      "sizeRangeName": "Shoe sizes Female",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "Women",
+      "id": "118",
+      "name": "Practical Shoes",
+      "sizeRangeName": "Shoe sizes Female",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "Women",
+      "id": "119",
+      "name": "Sandals & Flip Flops",
+      "sizeRangeName": "Shoe sizes Female",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "Girl",
+      "id": "121",
+      "name": "Light Shoes",
+      "sizeRangeName": "Shoe sizes children",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "Girl",
+      "id": "122",
+      "name": "Practical Shoes",
+      "sizeRangeName": "Shoe sizes children",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "Men",
+      "id": "123",
+      "name": "Light Shoes",
+      "sizeRangeName": "Shoe sizes Male",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "Men",
+      "id": "124",
+      "name": "Practical Shoes",
+      "sizeRangeName": "Shoe sizes Male",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "Men",
+      "id": "125",
+      "name": "Sandals & Flip Flops",
+      "sizeRangeName": "Shoe sizes Male",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "UnisexAdult",
+      "id": "126",
+      "name": "Rubber Rain Boots",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "UnisexBaby",
+      "id": "127",
+      "name": "Baby Shoes",
+      "sizeRangeName": "Baby by month (0-2, 3-6, 7-12, 13-18, 19-24)",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "UnisexKid",
+      "id": "128",
+      "name": "Rubber Rain Boots",
+      "sizeRangeName": "Mixed sizes",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "Girl",
+      "id": "138",
+      "name": "Sandals & Flip Flops",
+      "sizeRangeName": "Shoe sizes children",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "UnisexKid",
+      "id": "163",
+      "name": "Light Shoes",
+      "sizeRangeName": "Shoe sizes children",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "UnisexKid",
+      "id": "164",
+      "name": "Practical Shoes",
+      "sizeRangeName": "Shoe sizes children",
+      "version": 1
+    },
+    {
+      "categoryName": "Shoes",
+      "gender": "UnisexKid",
+      "id": "165",
+      "name": "Sandals & Flip Flops",
+      "sizeRangeName": "Shoe sizes children",
+      "version": 1
+    },
+    {
+      "categoryName": "Jackets / Outerwear",
+      "gender": "Boy",
+      "id": "88",
+      "name": "Summer Jackets",
+      "sizeRangeName": "Children by year (2-3, 4-5, 6-7, 8-9, 10-11, 12-13, 14-15)",
+      "version": 1
+    }
+  ]
+}
