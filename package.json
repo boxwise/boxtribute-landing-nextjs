@@ -1,5 +1,8 @@
 {
+  "name": "boxtribute-landing",
+  "version": "0.0.1",
   "private": true,
+  "description": "Homepage for Boxtribute",
   "scripts": {
     "dev": "next",
     "build": "next build",
