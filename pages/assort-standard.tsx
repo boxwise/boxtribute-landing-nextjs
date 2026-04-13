@@ -215,9 +215,10 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
             onChange={handleNameFilter}
             placeholder="Search by name"
             className={
-              "w-full border border-gray-300 rounded px-3 py-2 " +
-              "text-sm focus:outline-none focus:border-gray-400"
+              "w-full border border-gray-300 rounded px-3 " +
+              "focus:outline-none focus:border-gray-400"
             }
+            style={{ minHeight: "38px" }}
           />
         </div>
         <div>
@@ -269,14 +270,14 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
 
       <div className="overflow-x-auto border border-gray-200 rounded">
         <table className="min-w-full divide-y divide-gray-200 text-sm">
-          <thead className="bg-white">
+          <thead className="bg-lightgray">
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
                   <th
                     key={header.id}
                     className={
-                      "px-4 py-3 text-left font-semibold text-gray-900 " +
+                      "px-4 py-3 text-left font-bold text-gray-900 " +
                       "cursor-pointer select-none border-b border-gray-200"
                     }
                     onClick={header.column.getToggleSortingHandler()}
@@ -383,7 +384,7 @@ export const AssortStandard = ({ footerData }: IProps) => {
                 href="/uploads/assort-guide.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-red text-lg md:text-xl font-medium hover:underline"
+                className="text-red text-lg md:text-xl font-bold hover:underline"
               >
                 ASSORT Guide
               </a>
@@ -391,7 +392,7 @@ export const AssortStandard = ({ footerData }: IProps) => {
                 href="/uploads/assort-sizing-chart.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-red text-lg md:text-xl font-medium hover:underline"
+                className="text-red text-lg md:text-xl font-bold hover:underline"
               >
                 Sizing Chart
               </a>
