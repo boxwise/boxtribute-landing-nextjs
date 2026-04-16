@@ -27,7 +27,7 @@ interface IProps {
 export const HeroSection = ({ heroSectionData }: IProps) => {
   const isBreakpoint = useMediaQuery(768);
   return (
-    <section className="w-screen h-auto relative">
+    <section className="h-auto relative">
       {isBreakpoint ? (
         <div className="w-full h-[400px] mx-auto">
           <Image
@@ -40,7 +40,7 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
           />
         </div>
       ) : (
-        <div className="flex justify-center w-[2400px] h-[675px] relative mx-auto">
+        <div className="w-full h-[675px] relative mx-auto">
           <Image
             src={heroSectionData.hero_image_desktop}
             alt={heroSectionData.hero_image_description}
