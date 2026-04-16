@@ -342,8 +342,35 @@ export const AssortStandard = ({ footerData }: IProps) => {
             <ul className="list-disc pl-5 space-y-4 text-base md:text-lg">
               <li>
                 ASSORT is a standardized inventory classification system developed in partnership
-                with IHA, HERMINE and DistributeAid in full compliance with SPHERE and CHS
-                standards for easy and effective use even by small volunteer teams.
+                with{" "}
+                <a
+                  href="https://www.iha.help/en/home/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:opacity-80"
+                >
+                  IHA
+                </a>
+                ,{" "}
+                <a
+                  href="https://hermine.global"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:opacity-80"
+                >
+                  HERMINE
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://distributeaid.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:opacity-80"
+                >
+                  DistributeAid
+                </a>{" "}
+                in full compliance with SPHERE and CHS standards for easy and effective use even by
+                small volunteer teams.
               </li>
               <li>
                 The Boxtribute platform allows partners a one-click set up for products under the
