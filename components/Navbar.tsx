@@ -14,7 +14,10 @@ export const navLinks = [
     name: "Partners",
     path: "/partners",
   },
-
+  {
+    name: "ASSORT Standard",
+    path: "/assort-standard",
+  },
   {
     name: "Contact Us",
     path: "/contactus",
