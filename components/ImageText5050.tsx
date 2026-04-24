@@ -21,11 +21,14 @@ const ImageText5050 = ({
   imageGrowPosition: position,
 }: Props) => {
   const isBreakpoint = useMediaQuery(480);
+
+  const orderClass = order !== undefined ? `order-${order}` : '';
+
   return (
     <div
       className="bg-lightgray max-lg:flex max-lg:flex-col lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:auto-rows-min"
     >
-      <div className={`flex flex-row relative h-full w-full ${order ? `order-${order}` : ''} max-lg:order-first aspect-video`}>
+      <div className={`flex flex-row relative w-full ${orderClass} max-lg:order-first max-lg:aspect-video lg:h-full`}>
         {isBreakpoint ? (
           <Image
             src={imageMobile}

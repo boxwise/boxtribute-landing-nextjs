@@ -26,7 +26,7 @@ export const navLinks = [
 
 export const Navbar = () => {
   const router = useRouter();
-  const isBreakpoint = useMediaQuery(880);
+  const isBreakpoint = useMediaQuery(976);
   return (
     <nav className="flex justify-between my-4 mx-8 z-10">
       <Link href="/">
