@@ -8,6 +8,7 @@ type Props = {
   order?: number;
   children: React.ReactNode;
   imageGrowPosition?: string;
+  priority?: boolean;
 };
 
 const ImageText5050 = ({
@@ -16,30 +17,36 @@ const ImageText5050 = ({
   imageDescription,
   order,
   children,
+  priority,
   imageGrowPosition: position,
 }: Props) => {
   const isBreakpoint = useMediaQuery(480);
   return (
     <div
-      className="bg-lightgray max-lg:flex max-lg:flex-row lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:auto-rows-min"
+      className="bg-lightgray max-lg:flex max-lg:flex-col lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:auto-rows-min"
     >
-      <div className={`flex flex-row relative lg:max-h-[640px] w-full lg:order-${order}`}>
+      <div className={`flex flex-row relative h-full w-full ${order ? `order-${order}` : ''} max-lg:order-first aspect-video`}>
         {isBreakpoint ? (
           <Image
             src={imageMobile}
             alt={imageDescription}
-            layout="fill"
-            objectFit="cover"
-            priority
+            fill
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'center'
+            }}
+            priority={priority}
           />
         ) : (
           <Image
             src={banner}
             alt={imageDescription}
-            layout="fill"
-            objectFit="cover"
-            priority
-            objectPosition={position}
+            fill
+            style={{
+              objectFit: 'cover',
+              objectPosition: position ?? 'center'
+            }}
+            priority={priority}
           />
         )}
       </div>

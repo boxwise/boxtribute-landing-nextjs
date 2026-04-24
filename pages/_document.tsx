@@ -14,8 +14,10 @@ export default function Document() {
         />
       </Head>
       <body>
-        <Main />
-        <NextScript />
+        <div className="max-w-[1920px] m-auto">
+          <Main />
+          <NextScript />
+        </div>
       </body>
     </Html>
   );

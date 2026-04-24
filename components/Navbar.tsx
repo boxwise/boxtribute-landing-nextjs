@@ -26,7 +26,7 @@ export const navLinks = [
 
 export const Navbar = () => {
   const router = useRouter();
-  const isBreakpoint = useMediaQuery(768);
+  const isBreakpoint = useMediaQuery(880);
   return (
     <nav className="flex justify-between my-4 mx-8 z-10">
       <Link href="/">
@@ -38,8 +38,8 @@ export const Navbar = () => {
         <ul className="flex justify-end items-center text-xl">
           {navLinks.map((link, i) => (
             <li className="list-none" key={i}>
-              <Link 
-                href={link.path} 
+              <Link
+                href={link.path}
                 className={`m-2 ${router.pathname === link.path ? "font-bold" : ""}`}>
                 {link.name}
               </Link>
