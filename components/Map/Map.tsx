@@ -2,7 +2,6 @@ import TextBlock from "../TextBlock";
 import { useMediaQuery } from "../MediaQuery";
 import L from "leaflet";
 import { MapContainer, GeoJSON, Marker, Popup } from "react-leaflet";
-import { icon } from "leaflet";
 import type { GeoJsonObject } from "geojson";
 import { ILatLng, IBaseMarker } from "../../interfaces/global";
 import _earthLands10Km from "./earth-lands-10km.json";
@@ -24,10 +23,13 @@ const Map = ({ center, baseMarkers }: IMapContainerData) => {
     weight: 4,
   };
 
-  const markerIcon = icon({
-    iconUrl: "/assets/svg/logo_inverse_03.webp",
-    iconSize: [32, 46],
-    iconAnchor: [16, 46],
+  const markerIcon = L.divIcon({
+    html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#EF4049" width="36" height="36" aria-hidden="true">
+      <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+    </svg>`,
+    className: "",
+    iconSize: [36, 36],
+    iconAnchor: [18, 36],
   });
   const isBreakpoint = useMediaQuery(768);
 
