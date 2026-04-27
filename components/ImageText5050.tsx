@@ -8,6 +8,7 @@ type Props = {
   order?: number;
   children: React.ReactNode;
   imageGrowPosition?: string;
+  priority?: boolean;
 };
 
 const ImageText5050 = ({
@@ -16,35 +17,43 @@ const ImageText5050 = ({
   imageDescription,
   order,
   children,
+  priority,
   imageGrowPosition: position,
 }: Props) => {
   const isBreakpoint = useMediaQuery(480);
+
+  const orderClass = order !== undefined ? `order-${order}` : '';
+
   return (
     <div
-      className={`bg-lightgray max-lg:flex max-lg:flex-row lg:grid lg:grid-cols-2 
-      lg:grid-rows-1 lg:auto-rows-min`}
+      className="bg-lightgray max-lg:flex max-lg:flex-col lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:auto-rows-min"
     >
-      <div className={`flex flex-row relative max-h-[320px] lg:max-h-[640px] lg:order-${order}`}>
+      <div className={`flex flex-row relative w-full ${orderClass} max-lg:order-first max-lg:aspect-video lg:h-full`}>
         {isBreakpoint ? (
           <Image
             src={imageMobile}
             alt={imageDescription}
-            width={640}
-            height={640}
-            objectFit="cover"
+            fill
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'center'
+            }}
+            priority={priority}
           />
         ) : (
           <Image
             src={banner}
             alt={imageDescription}
-            width={1600}
-            height={640}
-            objectFit="cover"
-            objectPosition={position}
+            fill
+            style={{
+              objectFit: 'cover',
+              objectPosition: position ?? 'center'
+            }}
+            priority={priority}
           />
         )}
       </div>
-      <div className="h-fit p-4 md:p-16">{children}</div>
+      <div className="h-fit p-4 md:p-16 w-full">{children}</div>
     </div>
   );
 };

@@ -15,7 +15,7 @@ interface IMapContainerData {
 
 const Map = ({ center, baseMarkers }: IMapContainerData) => {
   const mapSize = {
-    width: "100vw",
+    width: "100%",
     height: "80vh",
   };
   const landStyle = {
