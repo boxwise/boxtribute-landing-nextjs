@@ -413,7 +413,7 @@ export const AssortStandard = ({ footerData }: IProps) => {
                 rel="noopener noreferrer"
                 className="text-red text-lg md:text-xl font-bold hover:underline"
               >
-                ASSORT Guide
+                ASSORT Guide <span aria-hidden="true">→</span>
               </a>
               <a
                 href="/uploads/assort-sizing-chart.pdf"
@@ -421,7 +421,7 @@ export const AssortStandard = ({ footerData }: IProps) => {
                 rel="noopener noreferrer"
                 className="text-red text-lg md:text-xl font-bold hover:underline"
               >
-                Sizing Chart
+                Sizing Chart <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
