@@ -108,7 +108,7 @@ export const Partners = ({ mapData, footerData }: IProps) => {
             </div>
             <div>
               <p className="text-base md:text-lg mb-6">
-                A robust but easy to deploy inventory classification system for all! Current and
+                A robust but easy way to deploy inventory classification system for all! Current and
                 future partners can enable this in part or in full for their warehouse.
               </p>
               <a
