@@ -61,6 +61,66 @@ export const Partners = ({ mapData, footerData }: IProps) => {
           />
         </div>
       </section>
+      <section className="bg-lightblue">
+        <div className="container mx-auto px-4 md:px-16 py-10 md:py-14">
+          <h2 className="mb-4">Partner Resources</h2>
+          <p className="text-lg md:text-xl mb-10 max-w-2xl">
+            As part of our work, we have developed some resources to support current and future
+            partners in their planning and field operations:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <a
+                href="https://sheets.boxtribute.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 text-red text-lg md:text-xl font-bold hover:underline mb-3"
+              >
+                Boxtribute Sheets <span aria-hidden="true">→</span>
+              </a>
+              <p className="text-sm md:text-base">
+                For current users, our browser add-on allows for easy bulk registration of new
+                beneficiaries or incoming stock.
+              </p>
+            </div>
+            <div>
+              <a
+                href="https://docs.google.com/spreadsheets/d/1GYFSQ4WbRfgODo4SoDzUGph8PdyTzHLhEOIxT24XvTo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 text-red text-lg md:text-xl font-bold hover:underline mb-3"
+              >
+                Boxtribute onboarding template <span aria-hidden="true">→</span>
+              </a>
+              <p className="text-sm md:text-base">
+                New and potential partners can check out our onboarding template, which we would use
+                work with the implementing field team to get you started!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-lightgray">
+        <div className="container mx-auto px-4 md:px-16 py-10 md:py-14">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="font-bold">ASSORT Standard</h2>
+            </div>
+            <div>
+              <p className="text-base md:text-lg mb-6">
+                A robust but easy way to deploy inventory classification system for all! Current and
+                future partners can enable this in part or in full for their warehouse.
+              </p>
+              <a
+                href="/assort-standard"
+                className="inline-flex items-center gap-3 text-red text-lg font-bold hover:underline"
+              >
+                Explore ASSORT <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer footerData={footerData} />
     </>
   );
