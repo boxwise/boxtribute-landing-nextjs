@@ -85,7 +85,7 @@ export const Partners = ({ mapData, footerData }: IProps) => {
             </div>
             <div>
               <a
-                href="https://sheets.boxtribute.org/"
+                href="https://docs.google.com/spreadsheets/d/1GYFSQ4WbRfgODo4SoDzUGph8PdyTzHLhEOIxT24XvTo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 text-red text-lg md:text-xl font-bold hover:underline mb-3"
