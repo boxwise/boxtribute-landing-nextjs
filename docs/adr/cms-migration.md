@@ -52,7 +52,7 @@ On the positive, there is a very handy migration guide that seems to cover all b
 
 Broad Implementation:
 
-The implementation here would require first running the CLI migration, which does a lot of the work (this has been tested on a [separate branch]()). Following this, further changes can be made to standardize the information, such as standardizing certain page types into collections (such as blog posts) and building out custom reusable components.
+The implementation here would require first running the CLI migration, which does a lot of the work (this has been tested on a [separate branch](https://github.com/boxwise/boxtribute-landing-nextjs/tree/tina-cms-test)). Following this, further changes can be made to standardize the information, such as standardizing certain page types into collections (such as blog posts) and building out custom reusable components.
 
 Following this, we would need to register the project on TinaCloud. This is where authentication is handled for the CMS's production portal, and therefore a required step in order to have non-technical users updating content without accessing the repository itself.
 
