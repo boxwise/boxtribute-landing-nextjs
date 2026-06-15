@@ -344,7 +344,7 @@ export const AssortStandard = ({ footerData }: IProps) => {
                 ASSORT is a standardized inventory classification system developed in partnership
                 with{" "}
                 <a
-                  href="https://www.iha.help/en/home/"
+                  href="https://www.iha.help"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:opacity-80"
