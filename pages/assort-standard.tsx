@@ -98,7 +98,7 @@ const multiSelectStyles: StylesConfig<ISelectOption, true> = {
   }),
   control: (base) => ({
     ...base,
-    minHeight: "38px",
+    minHeight: "42px",
     borderColor: "#d1d5db",
     boxShadow: "none",
     "&:hover": { borderColor: "#9ca3af" },
@@ -220,7 +220,7 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
               "w-full border border-gray-300 rounded px-3 " +
               "hover:border-gray-400 focus:outline-none focus:border-gray-400"
             }
-            style={{ minHeight: "44px", fontSize: "0.85em" }}
+            style={{ minHeight: "42px", fontSize: "0.85em" }}
           />
         </div>
         <div>
