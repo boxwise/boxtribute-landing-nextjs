@@ -94,6 +94,7 @@ const multiSelectStyles: StylesConfig<ISelectOption, true> = {
     backgroundColor: state.isFocused ? "#f0f7fc" : "#fff",
     color: "#000",
     cursor: "pointer",
+    fontSize: "0.85em",
   }),
   control: (base) => ({
     ...base,
@@ -101,6 +102,7 @@ const multiSelectStyles: StylesConfig<ISelectOption, true> = {
     borderColor: "#d1d5db",
     boxShadow: "none",
     "&:hover": { borderColor: "#9ca3af" },
+    fontSize: "0.85em",
   }),
 };
 
@@ -216,9 +218,9 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
             placeholder="Search by name"
             className={
               "w-full border border-gray-300 rounded px-3 " +
-              "focus:outline-none focus:border-gray-400"
+              "hover:border-gray-400 focus:outline-none focus:border-gray-400"
             }
-            style={{ minHeight: "38px" }}
+            style={{ minHeight: "44px", fontSize: "0.85em" }}
           />
         </div>
         <div>
