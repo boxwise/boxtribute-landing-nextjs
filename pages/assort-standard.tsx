@@ -268,6 +268,18 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
         </div>
       </div>
 
+      <div className="flex justify-end mt-4 mb-4">
+        <button
+          onClick={exportCsv}
+          className={
+            "bg-red text-white px-6 py-2 rounded-md text-sm " +
+            "font-medium hover:bg-opacity-90 transition-colors"
+          }
+        >
+          Export data
+        </button>
+      </div>
+
       <div className="overflow-x-auto border border-gray-200 rounded">
         <table className="min-w-full divide-y divide-gray-200 text-sm">
           <thead className="bg-lightgray">
@@ -309,18 +321,6 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
             ))}
           </tbody>
         </table>
-      </div>
-
-      <div className="flex justify-end mt-4">
-        <button
-          onClick={exportCsv}
-          className={
-            "bg-red text-white px-6 py-2 rounded-md text-sm " +
-            "font-medium hover:bg-opacity-90 transition-colors"
-          }
-        >
-          Export data
-        </button>
       </div>
     </div>
   );
