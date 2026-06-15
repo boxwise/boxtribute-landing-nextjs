@@ -94,13 +94,15 @@ const multiSelectStyles: StylesConfig<ISelectOption, true> = {
     backgroundColor: state.isFocused ? "#f0f7fc" : "#fff",
     color: "#000",
     cursor: "pointer",
+    fontSize: "0.85em",
   }),
   control: (base) => ({
     ...base,
-    minHeight: "38px",
+    minHeight: "42px",
     borderColor: "#d1d5db",
     boxShadow: "none",
     "&:hover": { borderColor: "#9ca3af" },
+    fontSize: "0.85em",
   }),
 };
 
@@ -216,9 +218,9 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
             placeholder="Search by name"
             className={
               "w-full border border-gray-300 rounded px-3 " +
-              "focus:outline-none focus:border-gray-400"
+              "hover:border-gray-400 focus:outline-none focus:border-gray-400"
             }
-            style={{ minHeight: "38px" }}
+            style={{ minHeight: "42px", fontSize: "0.85em" }}
           />
         </div>
         <div>
@@ -268,6 +270,18 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
         </div>
       </div>
 
+      <div className="flex justify-end mt-4 mb-4">
+        <button
+          onClick={exportCsv}
+          className={
+            "bg-red text-white px-6 py-2 rounded-md text-sm " +
+            "font-medium hover:bg-opacity-90 transition-colors"
+          }
+        >
+          Export data
+        </button>
+      </div>
+
       <div className="overflow-x-auto border border-gray-200 rounded">
         <table className="min-w-full divide-y divide-gray-200 text-sm">
           <thead className="bg-lightgray">
@@ -310,18 +324,6 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
           </tbody>
         </table>
       </div>
-
-      <div className="flex justify-end mt-4">
-        <button
-          onClick={exportCsv}
-          className={
-            "bg-red text-white px-6 py-2 rounded-md text-sm " +
-            "font-medium hover:bg-opacity-90 transition-colors"
-          }
-        >
-          Export data
-        </button>
-      </div>
     </div>
   );
 };
@@ -344,7 +346,7 @@ export const AssortStandard = ({ footerData }: IProps) => {
                 ASSORT is a standardized inventory classification system developed in partnership
                 with{" "}
                 <a
-                  href="https://www.iha.help/en/home/"
+                  href="https://www.iha.help"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:opacity-80"
@@ -396,7 +398,7 @@ export const AssortStandard = ({ footerData }: IProps) => {
       </section>
 
       <section className="bg-white">
-        <div className="container mx-auto px-4 md:px-16 py-10 md:py-14">
+        <div className="p-8 md:p-12 lg:p-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
               <h3 className="mb-4">Explore ASSORT</h3>
@@ -429,7 +431,7 @@ export const AssortStandard = ({ footerData }: IProps) => {
       </section>
 
       <section className="bg-white border-t border-gray-100">
-        <div className="container mx-auto px-4 md:px-16 py-8 md:py-12">
+        <div className="p-8 md:p-12 lg:p-16">
           <AssortTable products={products} />
         </div>
       </section>
