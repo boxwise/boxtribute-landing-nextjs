@@ -62,7 +62,7 @@ export const Partners = ({ mapData, footerData }: IProps) => {
         </div>
       </section>
       <section className="bg-lightblue">
-        <div className="container mx-auto px-4 md:px-16 py-10 md:py-14">
+        <div className="container mx-auto px-4 md:px-8 lg:px-16 py-10 md:py-14">
           <h3 className="mb-4">Partner Resources</h3>
           <p className="text-lg md:text-xl mb-10 max-w-2xl">
             As part of our work, we have developed some resources to support current and future
@@ -101,7 +101,7 @@ export const Partners = ({ mapData, footerData }: IProps) => {
         </div>
       </section>
       <section className="bg-lightgray">
-        <div className="container mx-auto px-4 md:px-16 py-10 md:py-14">
+        <div className="container mx-auto px-4 md:px-8 lg:px-16 py-10 md:py-14">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="font-bold">ASSORT Standard</h3>
