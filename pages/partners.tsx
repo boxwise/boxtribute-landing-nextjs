@@ -64,7 +64,7 @@ export const Partners = ({ mapData, footerData }: IProps) => {
       <section className="bg-lightblue">
         <div className="container mx-auto px-4 md:px-8 lg:px-16 py-10 md:py-14">
           <h3 className="mb-4">Partner Resources</h3>
-          <p className="text-lg md:text-xl mb-10 max-w-2xl">
+          <p className="text-base md:text-lg mb-10 max-w-2xl">
             As part of our work, we have developed some resources to support current and future
             partners in their planning and field operations:
           </p>
