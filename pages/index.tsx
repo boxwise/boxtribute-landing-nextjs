@@ -7,6 +7,7 @@ import { HeroSection } from "../components/HeroSection";
 import { INewsData } from "../interfaces/global";
 import Footer, { IFooterData } from "../components/Footer";
 import { IFactInNumbers } from "../components/FactInNumbers";
+import ChecklistTeaser from "../components/ChecklistTeaser";
 
 interface ITypewriterText {
   text_for_typing: string;
@@ -51,6 +52,8 @@ const Index = ({ homeData, allNews, footerData }: Props) => {
         <div className="my-8 text-center md:my-16 lg-text">{homeData.short_description}</div>
         <FactInNumbersContainer factInNumbers={homeData.facts_in_numbers} />
       </section>
+
+      <ChecklistTeaser />
 
       <SectionTitle title="News" color="lightblue" />
       {allNews.map((e, i) => (
