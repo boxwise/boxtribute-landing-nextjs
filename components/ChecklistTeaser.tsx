@@ -24,7 +24,7 @@ const ChecklistTeaser = () => {
             exactly where the platform fits into the work they already know.
           </p>
           <div>
-            <a href="/checklist.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/uploads/assort-guide.pdf" target="_blank" rel="noopener noreferrer">
               <button className="bg-red px-4 py-2 text-white text-xl rounded-md">
                 Download the checklist (PDF)
               </button>
