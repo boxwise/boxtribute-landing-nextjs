@@ -68,7 +68,8 @@ export const Footer = ({ footerData }: IProps) => {
           <div>&middot;</div>
           <Link 
             href={footerData.articles_of_association} 
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer"
+            data-umami-event="PDF Download - Articles of Association">
             Articles of Association
           </Link>
           <div>&middot;</div>
@@ -94,7 +95,7 @@ export const Footer = ({ footerData }: IProps) => {
         <p className="xs-text">{footerStaticData.boxtributeTrademark}</p>
       </div>
       <p className="text-center sm-text text-navy p-4">
-        Data privacy: We store <b>no</b> data about your website visit.
+        Data privacy: We use anonymous, cookieless analytics. No personal data is collected.
       </p>
     </section>
   );

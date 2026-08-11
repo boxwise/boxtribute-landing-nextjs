@@ -414,6 +414,7 @@ export const AssortStandard = ({ footerData }: IProps) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-red text-lg md:text-xl font-bold hover:underline"
+                data-umami-event="PDF Download - ASSORT Guide"
               >
                 ASSORT Guide <span aria-hidden="true">→</span>
               </a>
@@ -422,6 +423,7 @@ export const AssortStandard = ({ footerData }: IProps) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-red text-lg md:text-xl font-bold hover:underline"
+                data-umami-event="PDF Download - ASSORT Sizing Chart"
               >
                 Sizing Chart <span aria-hidden="true">→</span>
               </a>

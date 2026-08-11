@@ -40,6 +40,7 @@ const FooterDropDown = ({ title, reports }: IFooterDropDownData) => {
                       href={e.report}
                       rel="noopener noreferrer"
                       className="block px-4 py-2"
+                      data-umami-event={`PDF Download - ${title} ${e.year}`}
                     >
                       {e.year}
                     </a>
