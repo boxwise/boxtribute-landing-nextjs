@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 // import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { IReport } from "./Footer";
+import { usePostHog } from "posthog-js/react";
 
 export interface IFooterDropDownData {
   title: string;
@@ -9,6 +10,7 @@ export interface IFooterDropDownData {
 }
 
 const FooterDropDown = ({ title, reports }: IFooterDropDownData) => {
+  const posthog = usePostHog();
   return (
     <div className="bg-navy text-white">
       <Menu as="div" className="relative inline-block text-left">
@@ -28,9 +30,7 @@ const FooterDropDown = ({ title, reports }: IFooterDropDownData) => {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items 
-            className="absolute origin-top-right right-0 z-20 mt-2 bg-navy border-2 border-white"
-          >
+          <Menu.Items className="absolute origin-top-right right-0 z-20 mt-2 bg-navy border-2 border-white">
             <div className="p-2">
               {reports.map((e, i) => (
                 <Menu.Item key={i}>
@@ -40,6 +40,9 @@ const FooterDropDown = ({ title, reports }: IFooterDropDownData) => {
                       href={e.report}
                       rel="noopener noreferrer"
                       className="block px-4 py-2"
+                      onClick={() =>
+                        posthog?.capture("PDF Download", { report_type: title, year: e.year })
+                      }
                     >
                       {e.year}
                     </a>

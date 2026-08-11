@@ -1,5 +1,6 @@
 import Link from "next/link";
 import FooterDropDown from "../components/FooterDropDown";
+import { usePostHog } from "posthog-js/react";
 
 // TODO: Put correct links in
 type ISocialMedia = {
@@ -32,6 +33,7 @@ type IProps = {
 };
 
 export const Footer = ({ footerData }: IProps) => {
+  const posthog = usePostHog();
   const footerStaticData: IFooterStaticData = {
     boxtributeTrademark: "© 2026 Boxtribute, All rights reserved.",
     boxtributeLogo: "/assets/svg/boxtribute_white_vertical.svg",
@@ -66,9 +68,14 @@ export const Footer = ({ footerData }: IProps) => {
         <div className="flex flex-wrap justify-center gap-x-2 sm-text">
           <Link href="contactus">Imprint</Link>
           <div>&middot;</div>
-          <Link 
-            href={footerData.articles_of_association} 
-            target="_blank" rel="noopener noreferrer">
+          <Link
+            href={footerData.articles_of_association}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() =>
+              posthog?.capture("PDF Download", { report_type: "Articles of Association" })
+            }
+          >
             Articles of Association
           </Link>
           <div>&middot;</div>

@@ -20,6 +20,7 @@ This is a **Next.js** application built with **TypeScript**, **React**, and **Ta
 - **`@types/`** - Custom TypeScript type declarations
 
 The project uses:
+
 - **Leaflet** and **React Leaflet** for interactive maps
 - **Headless UI** and **Heroicons** for accessible UI components
 - **React Hook Form** for form handling

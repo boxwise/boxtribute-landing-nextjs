@@ -28,9 +28,10 @@ export const HamburgerMenu = () => {
             <ul className="flex-col text-white text-xl text-center">
               {navLinks.map((link, i) => (
                 <li className="m-4 list-none" onClick={toggleHamburger} key={i}>
-                  <Link 
-                    href={link.path} 
-                    className={router.pathname === link.path ? "font-bold" : ""}>
+                  <Link
+                    href={link.path}
+                    className={router.pathname === link.path ? "font-bold" : ""}
+                  >
                     {link.name}
                   </Link>
                 </li>

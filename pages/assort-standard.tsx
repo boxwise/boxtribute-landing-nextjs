@@ -15,6 +15,7 @@ import Footer, { IFooterData } from "../components/Footer";
 import PageTitle from "../components/PageTitle";
 import { getDataBySlug } from "../lib/api";
 import standardProductsData from "../data/assort/standard_products.json";
+import { usePostHog } from "posthog-js/react";
 
 interface IStandardProduct {
   id: string;
@@ -177,10 +178,7 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
     table.getColumn("name")?.setFilterValue(val || undefined);
   };
 
-  const handleMultiFilter = (
-    selectedOptions: MultiValue<ISelectOption>,
-    columnId: string,
-  ) => {
+  const handleMultiFilter = (selectedOptions: MultiValue<ISelectOption>, columnId: string) => {
     const values = selectedOptions.map((o) => o.value);
     table.getColumn(columnId)?.setFilterValue(values.length > 0 ? values : undefined);
   };
@@ -224,9 +222,7 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Filter by category
-          </label>
+          <label className="block text-sm font-medium text-gray-700 mb-1">Filter by category</label>
           <Select<ISelectOption, true>
             isMulti
             options={categoryOptions}
@@ -254,9 +250,7 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Filter by gender
-          </label>
+          <label className="block text-sm font-medium text-gray-700 mb-1">Filter by gender</label>
           <Select<ISelectOption, true>
             isMulti
             options={genderOptions}
@@ -302,8 +296,8 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
                         {header.column.getIsSorted() === "asc"
                           ? " ▲"
                           : header.column.getIsSorted() === "desc"
-                            ? " ▼"
-                            : " ▼"}
+                          ? " ▼"
+                          : " ▼"}
                       </span>
                     </div>
                   </th>
@@ -330,6 +324,7 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
 
 export const AssortStandard = ({ footerData }: IProps) => {
   const products = standardProductsData.standardProducts as IStandardProduct[];
+  const posthog = usePostHog();
 
   return (
     <>
@@ -414,6 +409,7 @@ export const AssortStandard = ({ footerData }: IProps) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-red text-lg md:text-xl font-bold hover:underline"
+                onClick={() => posthog?.capture("PDF Download", { report_type: "ASSORT Guide" })}
               >
                 ASSORT Guide <span aria-hidden="true">→</span>
               </a>
@@ -422,6 +418,9 @@ export const AssortStandard = ({ footerData }: IProps) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-red text-lg md:text-xl font-bold hover:underline"
+                onClick={() =>
+                  posthog?.capture("PDF Download", { report_type: "ASSORT Sizing Chart" })
+                }
               >
                 Sizing Chart <span aria-hidden="true">→</span>
               </a>

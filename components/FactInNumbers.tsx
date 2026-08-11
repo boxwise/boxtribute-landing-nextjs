@@ -9,7 +9,6 @@ export type IFactInNumbers = {
 };
 
 const FactInNumbers = ({ icon, number, description, image_description }: IFactInNumbers) => {
-
   const [num, setNum] = useState(0);
 
   useEffect(() => {
@@ -22,9 +21,9 @@ const FactInNumbers = ({ icon, number, description, image_description }: IFactIn
         <img src={icon} alt={image_description} />
       </div>
       <h1>
-        <NumberFlow 
+        <NumberFlow
           value={num}
-          transformTiming={{ duration: 1500 }} 
+          transformTiming={{ duration: 1500 }}
           format={(n: number) => n.toFixed(0)}
           willChange
         />

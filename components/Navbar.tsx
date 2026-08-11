@@ -40,7 +40,8 @@ export const Navbar = () => {
             <li className="list-none" key={i}>
               <Link
                 href={link.path}
-                className={`m-2 ${router.pathname === link.path ? "font-bold" : ""}`}>
+                className={`m-2 ${router.pathname === link.path ? "font-bold" : ""}`}
+              >
                 {link.name}
               </Link>
             </li>

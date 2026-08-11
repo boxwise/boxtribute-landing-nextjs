@@ -18,11 +18,12 @@ const SocialMediaSnippet = ({ socialMediaData }: IProps) => {
     <>
       <ul className="flex flex-col lg:flex-row lg:bg-blue lg:py-12">
         {socialMediaData.map((e, i) => (
-          <Link 
-            key={i} 
-            href={e.link} 
+          <Link
+            key={i}
+            href={e.link}
             className="flex flex-1 justify-between lg:flex-col py-12 lg:py-0 lg:mx-12 grow 
-                          bg-white border-b-2 lg:border-0 social-snippet">
+                          bg-white border-b-2 lg:border-0 social-snippet"
+          >
             <div className="order-2 lg:order-1 h-50 w-1/2 lg:w-1/3 lg:h-auto relative mx-4">
               <Image
                 src={e.image}

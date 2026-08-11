@@ -49,9 +49,9 @@ const Map = ({ center, baseMarkers }: IMapContainerData) => {
         style={landStyle}
         data={earthLands10Km}
         attribution={
-          "GeoJSON earth-lands from <a ref=\"https://github.com/simonepri/geo-maps\">" +
+          'GeoJSON earth-lands from <a ref="https://github.com/simonepri/geo-maps">' +
           "Geo-Maps</a> " +
-          "&mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">" +
+          '&mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">' +
           "OpenStreetMap</a> contributors"
         }
       />
