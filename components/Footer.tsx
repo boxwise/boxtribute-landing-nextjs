@@ -68,8 +68,7 @@ export const Footer = ({ footerData }: IProps) => {
           <div>&middot;</div>
           <Link 
             href={footerData.articles_of_association} 
-            target="_blank" rel="noopener noreferrer"
-            data-umami-event="PDF Download - Articles of Association">
+            target="_blank" rel="noopener noreferrer">
             Articles of Association
           </Link>
           <div>&middot;</div>
