@@ -284,7 +284,7 @@ const AssortTable = ({ products }: { products: IStandardProduct[] }) => {
 
       <div className="overflow-x-auto overflow-y-auto border border-gray-200 rounded" style={{ maxHeight: "800px" }}>
         <table className="min-w-full divide-y divide-gray-200 text-sm">
-          <thead className="bg-lightgray sticky top-0 z-10">
+          <thead className="bg-lightgray sticky top-0 z-[1]">
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
