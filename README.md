@@ -27,7 +27,7 @@ Open your browser on `localhost:3000`.
 SELECT o.label
 FROM organisations o
 JOIN camps c
-ON C.organisation_id = o.id
+ON c.organisation_id = o.id
 WHERE (c.deleted IS NULL OR NOT c.deleted)
 AND o.id != 1
 GROUP BY o.id

@@ -124,7 +124,7 @@ const Map = ({ center, baseMarkers }: IMapContainerData) => {
               }}
             >
               <img src={marker.logo} className="h-32" />
-              {marker.status === "inactive" && (<h5><em>Ended deployment</em></h5>)}
+              {marker.status === "inactive" && <p className="italic">Ended deployment</p>}
               <h3>{marker.base_name}</h3>
               <h4 className="bg-lightblue">{marker.organisation}</h4>
             </a>
