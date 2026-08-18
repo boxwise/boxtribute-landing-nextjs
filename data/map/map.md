@@ -27,22 +27,6 @@ base_markers:
   position:
     lat: 46.061587
     long: 19.679582
-- base_name: Slovakia
-  organisation: Blindspots
-  status: inactive
-  logo: "/uploads/blindpots_logo.png"
-  url: https://blindspots.support/en/the-situation-in-ukraine/
-  description: Blindspots has built a logistics center and a warehouse in the Slovakian
-    border towncenter and a warehouse in the Slovakian border town, which is accessed
-    by trucks of up to 40 tonnes. The logistics center is linked to a growing logistics
-    network of EU countries and imports donations in kind to Ukraine. These are delivered
-    by our Ukrainian drivers as needed. This system avoids that donations which are
-    not needed are distributed and take up storage capacity. The drivers are familiar
-    with the area and well networked, so that they are informed about the current
-    situation and can not only use humanitarian corridors, but also create them.
-  position:
-    lat: 48.646707
-    long: 22.189039
 - base_name: Samos
   organisation: Samos Volunteers
   status: inactive
@@ -94,15 +78,6 @@ base_markers:
   position:
     lat: 39.151692
     long: 26.480167
-- base_name: Lüdenscheid
-  organisation: Hardcore Help
-  status: inactive
-  logo: "/uploads/hardcorehelp_logo.svg"
-  url: https://www.hardcore-help.org/
-  description: ''
-  position:
-    lat: 51.213577
-    long: 7.621294
 - base_name: Dortmund
   organisation: Grenzenlose Wärme
   logo: "/uploads/gw_logo.webp"
@@ -138,7 +113,7 @@ base_markers:
   organisation: A Drop In The Ocean
   status: inactive
   logo: "/uploads/drapenihavet_logo.webp"
-  url: https://www.drapenihavet.no/en/our-work/bosnia-and-herzegovina/
+  url: https://www.drapenihavet.no/en/our-work
   description: |-
     Our main focus in the Sarajevo canton is distributing necessary items to and organising computer classes for people living in Ušivac refugee camp.
 
@@ -206,13 +181,49 @@ base_markers:
   position:
     lat: 49.775733
     long: 9.94031
+- base_name: Nea Kavala
+  organisation: A Drop In The Ocean
+  status: inactive
+  logo: "/uploads/drapenihavet_logo.webp"
+  url: https://www.drapenihavet.no/en/our-work/northern-greece/
+  description: |-
+    In the heart of Nea Kavala camp A Drop in the Ocean support displaced persons by organizing various activities such as non-formal education for adults, activities for women, and youth. We also support integration efforts through our InfoHub. The team distributes clothes, food and other non-food items to meet the needs of the camp residents.
+    Since September 2022, A Drop in the Ocean has started operating in Alexandria camp, distributing food and non-food items. Our main goal is further to expand our support with the implementation of activities.
+  position:
+    lat: 40.990602
+    long: 22.6253
+- base_name: Norway
+  organisation: A Drop In The Ocean
+  status: inactive
+  logo: "/uploads/drapenihavet_logo.webp"
+  url: https://www.drapenihavet.no/en/our-work/tromso/
+  description: ''
+  position:
+    lat: 59.649
+    long: 10.746
+- base_name: Elefsina
+  organisation: A Drop In The Ocean
+  status: inactive
+  logo: "/uploads/drapenihavet_logo.webp"
+  url: https://www.drapenihavet.no/en/our-work/
+  description: ''
+  position:
+    lat: 38.533
+    long: 23.533
+- base_name: Calais
+  organisation: Refugee Women's Centre
+  status: inactive
+  logo: "/uploads/RWC-logo.png"
+  url: https://refugeewomenscentre.com/
+  description: ''
+  position:
+    lat: 50.85
+    long: 1.8563
 - base_name: Crete
   organisation: A Drop In The Ocean
   logo: "/uploads/drapenihavet_logo.webp"
   url: https://www.drapenihavet.no/en/new-drop-distribution-hub-on-crete/
-  description: |-
-    In the heart of Nea Kavala camp A Drop in the Ocean support displaced persons by organizing various activities such as non-formal education for adults, activities for women, and youth. We also support integration efforts through our InfoHub. The team distributes clothes, food and other non-food items to meet the needs of the camp residents.
-    Since September 2022, A Drop in the Ocean has started operating in Alexandria camp, distributing food and non-food items. Our main goal is further to expand our support with the implementation of activities.
+  description: ''
   position:
     lat: 35.1
     long: 24.9
