@@ -71,7 +71,7 @@ const Map = ({ center, baseMarkers }: IMapContainerData) => {
                 color: "inherit",
               }}
             >
-              <img src={marker.logo} className="h-32" />
+              <img src={marker.logo} className="h-32 w-full object-contain" />
               <h3>{marker.base_name}</h3>
               <h4 className="bg-lightblue">{marker.organisation}</h4>
             </a>
