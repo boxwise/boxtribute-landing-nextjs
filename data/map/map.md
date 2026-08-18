@@ -1,6 +1,6 @@
 ---
 center:
-  lat: 40.990602
+  lat: 45.990602
   long: 22.625296
 base_markers:
 - base_name: Sarajevo
