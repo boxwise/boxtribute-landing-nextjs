@@ -272,4 +272,13 @@ base_markers:
     lat: 52.641246
     long: 13.644331
 
+- base_name: Chelmsford
+  organisation: Pachamama Project
+  logo: "/uploads/pachamama-logo.svg"
+  url: "https://www.thepachamamaproject.org/"
+  description: ''
+  position:
+    lat: 51.7371
+    long: 0.4736
+
 ---
