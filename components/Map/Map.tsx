@@ -84,7 +84,7 @@ const Map = ({ center, baseMarkers }: IMapContainerData) => {
   return (
     <MapContainer
       center={[center.lat, center.long]}
-      zoom={5}
+      zoom={4}
       minZoom={3}
       maxZoom={9}
       scrollWheelZoom={false}
