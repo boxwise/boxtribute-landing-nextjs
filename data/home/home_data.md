@@ -11,19 +11,19 @@ short_description: Boxtribute is a digital system that works hand in hand with o
 facts_in_numbers:
 - icon: "/uploads/hearthand.png"
   description: partners on the field helping people in need
-  number: 12
+  number: 15
   image_description: heart on the hand
 - icon: "/uploads/trolly.png"
   description: goods distributed with dignity per month to vulnerable populations
-  number: 3599
+  number: 1962
   image_description: boxes on a trolley
 - icon: "/uploads/boxes.png"
   description: items in storage donated to support people in need
-  number: 2160961
+  number: 4117247
   image_description: boxes icon
 - icon: "/uploads/handshake.png"
   description: 'beneficiaries supported by dignified distributions each month '
-  number: 594
+  number: 658
   image_description: handshake
 cta_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url
 main_heading: Boxtribute
