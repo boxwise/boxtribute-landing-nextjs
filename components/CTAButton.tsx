@@ -13,7 +13,7 @@ const CTAButton = ({ ctaLink, ctaButton, noMdBreak }: Props) => {
       <button
         className={`bg-red px-4 py-1 text-white text-xl rounded-md ${
           !noMdBreak ? "md:px-8 md:py-2 md:text-2xl md:rounded-lg lg:text-3xl" : ""
-        }`}
+        } plausible-event-name=Button+${ctaButton.replace(" ", "+")}`}
       >
         {ctaButton}
       </button>
