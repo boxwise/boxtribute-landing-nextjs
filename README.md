@@ -20,6 +20,12 @@ yarn dev
 
 Open your browser on `localhost:3000`.
 
+## Usage analytics
+
+We use [Plausible](https://plausible.io/docs/) to enable analytics of page usage.
+
+Page views, file downloads, external links, UTM tags are automatically tracked. Custom events, e.g. button clicks, have to be explicitly [registered](https://github.com/4lejandrito/next-plausible#send-custom-events).
+
 ## Data queries
 
 **partners on the field helping people in need**
