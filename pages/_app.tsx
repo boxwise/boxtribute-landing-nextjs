@@ -7,7 +7,7 @@ import "../styles/index.css";
 import "leaflet/dist/leaflet.css";
 import "../styles/map.css";
 
-const plausibleScriptId = process.env.NEXT_PLAUSIBLE_SCRIPT_ID;
+const plausibleScriptId = process.env.NEXT_PUBLIC_PLAUSIBLE_SCRIPT_ID;
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const content = (
