@@ -30,7 +30,7 @@ Page views, file downloads, external links, UTM tags are automatically tracked. 
 
 **partners on the field helping people in need**
 ```sql
-SELECT o.label
+SELECT o.label AS org, COUNT(c.id) AS nr_bases, GROUP_CONCAT(c.name) AS bases
 FROM organisations o
 JOIN camps c
 ON c.organisation_id = o.id

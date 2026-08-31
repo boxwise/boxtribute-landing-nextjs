@@ -11,7 +11,7 @@ short_description: Boxtribute is a digital system that works hand in hand with o
 facts_in_numbers:
 - icon: "/uploads/hearthand.png"
   description: partners on the field helping people in need
-  number: 15
+  number: 16
   image_description: heart on the hand
 - icon: "/uploads/trolly.png"
   description: goods distributed with dignity per month to vulnerable populations
