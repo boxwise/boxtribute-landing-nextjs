@@ -9,6 +9,7 @@ type Props = {
   children: React.ReactNode;
   imageGrowPosition?: string;
   priority?: boolean;
+  bgColor?: string;
 };
 
 const ImageText5050 = ({
@@ -19,24 +20,27 @@ const ImageText5050 = ({
   children,
   priority,
   imageGrowPosition: position,
+  bgColor = "lightgray",
 }: Props) => {
   const isBreakpoint = useMediaQuery(480);
 
-  const orderClass = order !== undefined ? `order-${order}` : '';
+  const orderClass = order !== undefined ? `order-${order}` : "";
 
   return (
     <div
-      className="bg-lightgray max-lg:flex max-lg:flex-col lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:auto-rows-min"
+      className={`bg-${bgColor} max-lg:flex max-lg:flex-col lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:auto-rows-min`}
     >
-      <div className={`flex flex-row relative w-full ${orderClass} max-lg:order-first max-lg:aspect-video lg:h-full`}>
+      <div
+        className={`flex flex-row relative w-full ${orderClass} max-lg:order-first max-lg:aspect-video lg:h-full`}
+      >
         {isBreakpoint ? (
           <Image
             src={imageMobile}
             alt={imageDescription}
             fill
             style={{
-              objectFit: 'cover',
-              objectPosition: 'center'
+              objectFit: "cover",
+              objectPosition: "center",
             }}
             priority={priority}
           />
@@ -46,8 +50,8 @@ const ImageText5050 = ({
             alt={imageDescription}
             fill
             style={{
-              objectFit: 'cover',
-              objectPosition: position ?? 'center'
+              objectFit: "cover",
+              objectPosition: position ?? "center",
             }}
             priority={priority}
           />
