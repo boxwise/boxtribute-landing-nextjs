@@ -38,7 +38,7 @@ export const HamburgerMenu = () => {
               <li className="m-4 list-none" onClick={toggleHamburger} key="CTA">
                 <CTAButton
                   ctaLink={
-                    "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url"
+                    "https://www.paypal.com/donate?campaign_id=THR8LVB3WTWU4"
                   }
                   ctaButton={"Donate"}
                   noMdBreak={true}
