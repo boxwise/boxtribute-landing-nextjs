@@ -92,7 +92,7 @@ case_studies:
       label: volunteers
     - value: "2024"
       label: integrated into municipal system
-    pdf_link: "/uploads/annual-report-final-2023.pdf"
+    pdf_link: "/uploads/case_study_poland.pdf"
     color: gold
     image_mobile: "/uploads/case_study_poland.png"
     banner: "/uploads/case_study_poland.png"
@@ -111,7 +111,7 @@ case_studies:
       label: traceable transactions
     - value: "4-6"
       label: staff, run independently
-    pdf_link: "/uploads/annual-report-final-2023.pdf"
+    pdf_link: "/uploads/case_study_lebanon.pdf"
     color: red
     image_mobile: "/uploads/case_study_lebanon.png"
     banner: "/uploads/case_study_lebanon.png"
@@ -130,7 +130,7 @@ case_studies:
       label: fund reconciliation
     - value: "12%"
       label: in additional aid surfaced
-    pdf_link: "/uploads/annual-report-final-2023.pdf"
+    pdf_link: "/uploads/case_study_greece.pdf"
     color: navy
     image_mobile: "/uploads/case_study_greece.png"
     banner: "/uploads/case_study_greece.png"
