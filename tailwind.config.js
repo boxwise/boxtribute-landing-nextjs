@@ -2,7 +2,10 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: ["./components/**/*.tsx", "./pages/**/*.tsx"],
-  safelist: [{ pattern: /^order-\d+$/ }],
+  safelist: [
+    { pattern: /^order-\d+$/ },
+    { pattern: /^(bg|text|border)-(red|navy|lightblue|yellow|gold|lightgray|white|black)$/ },
+  ],
   theme: {
     extend: {
       colors: {
@@ -12,6 +15,7 @@ module.exports = {
         black: "#000000",
         white: "#FFFFFF",
         yellow: "#F4E6A0",
+        gold: "#F2A900",
         lightgray: "#EAEBED",
       },
       screens: {
