@@ -3,8 +3,8 @@ hero:
   eyebrow: Leading tech for localisation
   main_heading: "Localisation isn't the problem. Delivering on it is."
   subtitle_text: "Three organisations, in Poland, Lebanon and Greece, show what's possible with the right systems in place - fast, accountable aid, led entirely by local teams, without the infrastructure of a large international NGO."
-  hero_image_mobile: "/uploads/man_with_box.png"
-  hero_image_desktop: "/uploads/man_with_box.png"
+  hero_image_mobile: "/uploads/boxes_with_hearts.png"
+  hero_image_desktop: "/uploads/boxes_with_hearts.png"
   hero_image_description: Volunteer sorting donation boxes
   cta_button: Read the case studies
   cta_link: "#case-studies"
@@ -29,9 +29,9 @@ problem:
     is the industry-wide push to flip that: let local and national organisations lead
     the response themselves, with international actors playing a supporting role - funding,
     tools, backup - instead of running the show.</p>"
-  image_mobile: "/uploads/sorting_clothes.png"
-  banner: "/uploads/sorting_clothes.png"
-  image_description: Volunteer sorting clothes
+  image_mobile: "/uploads/woman_with_eggs.png"
+  banner: "/uploads/woman_with_eggs.png"
+  image_description: Woman with eggs
 built_to_close_gap:
   label: Boxtribute + Boxwise
   title: Built to close exactly that gap.
@@ -44,8 +44,8 @@ built_to_close_gap:
   - digital public good
   - open-source
   - 10+ years experience
-  image_mobile: "/uploads/freeshop.png"
-  banner: "/uploads/freeshop.png"
+  image_mobile: "/uploads/phone_in_hand.png"
+  banner: "/uploads/phone_in_hand.png"
   image_description: Free shop supported by Boxtribute
 structural_gap:
   title: The Structural Gap
@@ -94,8 +94,8 @@ case_studies:
       label: integrated into municipal system
     pdf_link: "/uploads/annual-report-final-2023.pdf"
     color: gold
-    image_mobile: "/uploads/building_freeshop.png"
-    banner: "/uploads/building_freeshop.png"
+    image_mobile: "/uploads/case_study_poland.png"
+    banner: "/uploads/case_study_poland.png"
     image_description: Volunteers in Poland
   - case_number: "02"
     theme: Risk-Sharing
@@ -113,8 +113,8 @@ case_studies:
       label: staff, run independently
     pdf_link: "/uploads/annual-report-final-2023.pdf"
     color: red
-    image_mobile: "/uploads/shoes_close_up.png"
-    banner: "/uploads/shoes_close_up.png"
+    image_mobile: "/uploads/case_study_lebanon.png"
+    banner: "/uploads/case_study_lebanon.png"
     image_description: Aid distribution in Lebanon
   - case_number: "03"
     theme: Efficiency
@@ -132,8 +132,8 @@ case_studies:
       label: in additional aid surfaced
     pdf_link: "/uploads/annual-report-final-2023.pdf"
     color: navy
-    image_mobile: "/uploads/man_with_box.png"
-    banner: "/uploads/man_with_box.png"
+    image_mobile: "/uploads/case_study_greece.png"
+    banner: "/uploads/case_study_greece.png"
     image_description: Local shop supporting aid distribution in Greece
 cta_final:
   title: What could this look like for your organisation?
