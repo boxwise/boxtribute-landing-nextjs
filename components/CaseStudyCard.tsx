@@ -30,7 +30,7 @@ const CaseStudyCard = ({ caseStudy }: Props) => {
       <p className="uppercase font-bold sm-text tracking-wider">
         Case Study {caseStudy.case_number} - {caseStudy.theme}
       </p>
-      <h3 className="mt-2">{caseStudy.country}</h3>
+      <h3 className="uppercase font-bold mt-2">{caseStudy.country}</h3>
       <p className="uppercase sm-text mb-4">{caseStudy.subtitle}</p>
       <div className="relative w-full aspect-video mb-4">
         <Image

@@ -48,7 +48,6 @@ built_to_close_gap:
   banner: "/uploads/freeshop.png"
   image_description: Free shop supported by Boxtribute
 structural_gap:
-  label: The Structural Gap
   title: The Structural Gap
   text: Localisation doesn't fall short only because of capacity, or because funders
     and INGOs don't believe it's the way forward. One major, addressable cause is
@@ -141,8 +140,8 @@ cta_final:
   text: Whether you're a local organisation building accountable systems from day
     one, or a funder exploring what direct, traceable local-led aid could look like
     at scale - we welcome the conversation.
-  cta_button: Talk to us
-  cta_link: "/contactus"
-  cta_button_2: Book a demo
-  cta_link_2: "https://calendar.google.com/calendar/appointments/schedules/PLACEHOLDER"
+  cta_button: Book a demo
+  cta_link: "https://calendar.google.com/calendar/appointments/schedules/PLACEHOLDER"
+  cta_button_2: Talk to us
+  cta_link_2: "/contactus"
 ---

@@ -90,21 +90,21 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
         >
           {ourWorkData.stats.map((stat, i) => (
             <div key={i} className="text-center">
-              <h3>{stat.number}</h3>
+              <h3 className="font-bold">{stat.number}</h3>
               <p className="sm-text">{stat.label}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="max-w-[1200px] mx-auto">
+      <section>
         <ImageText5050
           imageMobile={ourWorkData.problem.image_mobile}
           banner={ourWorkData.problem.banner}
           imageDescription={ourWorkData.problem.image_description}
           order={0}
         >
-          <p className="uppercase text-red font-bold tracking-wider sm-text">
+          <p className="text-red font-bold tracking-wider sm-text">
             {ourWorkData.problem.label}
           </p>
           <h2 className="mt-2">{ourWorkData.problem.title}</h2>
@@ -120,7 +120,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           order={2}
           bgColor="gold"
         >
-          <p className="uppercase text-navy font-bold tracking-wider sm-text">
+          <p className="text-navy font-bold tracking-wider sm-text">
             {ourWorkData.built_to_close_gap.label}
           </p>
           <h2 className="mt-2 text-navy">{ourWorkData.built_to_close_gap.title}</h2>
@@ -140,9 +140,6 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
       </section>
 
       <section className="max-w-[1200px] mx-auto px-4 md:px-16 py-8 md:py-16 text-center">
-        <p className="uppercase text-red font-bold tracking-wider sm-text">
-          {ourWorkData.structural_gap.label}
-        </p>
         <h2 className="mt-2">{ourWorkData.structural_gap.title}</h2>
         <p className="lg-text mt-4 max-w-[800px] mx-auto">{ourWorkData.structural_gap.text}</p>
       </section>

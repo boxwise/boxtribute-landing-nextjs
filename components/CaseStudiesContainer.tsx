@@ -62,7 +62,7 @@ const CaseStudiesContainer = ({ caseStudies }: Props) => {
       {allCards}
     </Carousel>
   ) : (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-0">{allCards}</div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-2">{allCards}</div>
   );
 };
 
