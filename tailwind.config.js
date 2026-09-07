@@ -1,17 +1,22 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./components/**/*.tsx", "./pages/**/*.tsx"],
-  safelist: [{ pattern: /^order-\d+$/ }],
+  content: ["./components/**/*.tsx", "./pages/**/*.tsx"],
+  safelist: [
+    { pattern: /^order-\d+$/ },
+    { pattern: /^(bg|text|border)-(red|navy|darknavy|lightblue|yellow|gold|lightgray|white|black)$/ },
+  ],
   theme: {
     extend: {
       colors: {
-        red: "#EF4049",
-        navy: "#29335F",
+        red: "#EF404A",
+        navy: "#315C88",
+        darknavy: "#29335F",
         lightblue: "#AACFE3",
         black: "#000000",
         white: "#FFFFFF",
-        yellow: "#F4E6A0",
+        yellow: "#E4AA4F",
+        gold: "#D89016",
         lightgray: "#EAEBED",
       },
       screens: {
@@ -26,13 +31,10 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
-      // TODO: unify with styles/index.css definitions
-      fontSize: {
-        md: "1rem",
-      },
       fontFamily: {
         sans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
         chivo: ["Chivo", '"Open Sans"', ...defaultTheme.fontFamily.sans],
+        mono: ['"Roboto Mono"', ...defaultTheme.fontFamily.mono],
       },
     },
   },

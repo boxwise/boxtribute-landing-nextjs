@@ -30,6 +30,9 @@
   body {
     @apply text-base md:text-lg lg:text-xl font-sans;
   }
+  .md-text {
+    @apply text-base md:text-lg lg:text-xl font-sans;
+  }
   .sm-text{
     @apply text-sm md:text-base lg:text-lg font-sans;
   }
@@ -38,7 +41,11 @@
   }
 }
 
-
+@layer components {
+  .mono-text {
+    @apply font-mono;
+  }
+}
 
 /* make the map full screen */
 #map {
