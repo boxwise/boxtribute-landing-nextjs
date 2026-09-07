@@ -141,7 +141,7 @@ cta_final:
     one, or a funder exploring what direct, traceable local-led aid could look like
     at scale - we welcome the conversation.
   cta_button: Book a demo
-  cta_link: "https://calendar.google.com/calendar/appointments/schedules/PLACEHOLDER"
+  cta_link: "https://calendar.app.google/8NS4YTxbhSGX3dUk62"
   cta_button_2: Talk to us
   cta_link_2: "/contactus"
 ---
