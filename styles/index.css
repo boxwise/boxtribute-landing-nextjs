@@ -30,6 +30,9 @@
   body {
     @apply text-base md:text-lg lg:text-xl font-sans;
   }
+  .md-text {
+    @apply text-base
+  }
   .sm-text{
     @apply text-sm md:text-base lg:text-lg font-sans;
   }
