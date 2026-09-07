@@ -95,7 +95,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
                 (i === 0 || i === 3) ? "bg-lightblue md:bg-transparent" : "bg-navy md:bg-transparent"
               }`}
             >
-              <h3 className="font-extrabold">{stat.number}</h3>
+              <h3 className="font-black">{stat.number}</h3>
               <p className="sm-text">{stat.label}</p>
             </div>
           ))}
@@ -112,7 +112,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           <p className="text-red font-bold tracking-wider sm-text">
             {ourWorkData.problem.label}
           </p>
-          <h2 className="mt-2 normal-case">{ourWorkData.problem.title}</h2>
+          <h2 className="mt-2 text-navy normal-case">{ourWorkData.problem.title}</h2>
           <TextBlock text={ourWorkData.problem.text} className="lg-text mt-4" />
         </ImageText5050>
       </section>
@@ -153,7 +153,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
         {ourWorkData.structural_gap.items.map((item, i) => (
           <div key={i} className={`bg-${item.color} text-white p-8 md:p-12`}>
             <p className="sm-text">{item.number}</p>
-            <h4 className="mt-2 font-extrabold">{item.title}</h4>
+            <h4 className="mt-2 font-black">{item.title}</h4>
             <p className="lg-text mt-4">{item.text}</p>
           </div>
         ))}
