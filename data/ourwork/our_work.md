@@ -71,7 +71,7 @@ structural_gap:
     title: Efficiency
     text: In a tighter funding climate, accountability isn't paperwork. Done well, it
       directly affects how much aid actually reaches the people its meant for.
-    color: navy
+    color: darknavy
 case_studies:
   label: Three Case Studies
   title: What delivering on localisation actually looks like.
