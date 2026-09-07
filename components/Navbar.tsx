@@ -18,11 +18,11 @@ export interface INavLink {
 export const navLinks: INavLink[] = [
   { name: "Home", path: "/" },
   {
-    name: "Our work",
+    name: "Our Work",
     path: "/ourwork",
     children: [
-      { name: "Our mission", path: "/ourimpact" },
-      { name: "Case studies", path: "/ourwork#case-studies" },
+      { name: "Our Mission", path: "/ourimpact" },
+      { name: "Case Studies", path: "/ourwork#case-studies" },
     ],
   },
   {
