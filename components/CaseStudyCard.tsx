@@ -44,7 +44,7 @@ const CaseStudyCard = ({ caseStudy }: Props) => {
       <div className="flex flex-col gap-2 border-t border-white/30 my-4">
         {caseStudy.stats.map((stat, i) => (
           <div key={i} className="pt-2 sm-text">
-            <span className="font-extrabold">{stat.value}</span> <span className="font-normal">{stat.label}</span>
+            <span className="font-bold">{stat.value}</span> <span className="font-normal">{stat.label}</span>
           </div>
         ))}
       </div>
