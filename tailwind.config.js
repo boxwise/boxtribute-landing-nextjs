@@ -1,7 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./components/**/*.tsx", "./pages/**/*.tsx"],
+  content: ["./components/**/*.tsx", "./pages/**/*.tsx"],
   safelist: [
     { pattern: /^order-\d+$/ },
     { pattern: /^(bg|text|border)-(red|navy|darknavy|lightblue|yellow|gold|lightgray|white|black)$/ },
