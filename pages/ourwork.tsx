@@ -148,7 +148,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
         {ourWorkData.structural_gap.items.map((item, i) => (
           <div key={i} className={`bg-${item.color} text-white p-8 md:p-12`}>
             <p className="sm-text">{item.number}</p>
-            <h4 className="mt-2 font-black">{item.title}</h4>
+            <h2 className="mt-2 font-black">{item.title}</h2>
             <p className="lg-text mt-4">{item.text}</p>
           </div>
         ))}

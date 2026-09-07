@@ -30,8 +30,8 @@ const CaseStudyCard = ({ caseStudy }: Props) => {
       <p className="uppercase font-bold sm-text tracking-wider">
         Case Study {caseStudy.case_number} - {caseStudy.theme}
       </p>
-      <h3 className="uppercase font-extrabold mt-2">{caseStudy.country}</h3>
-      <p className="uppercase sm-text mb-4">{caseStudy.subtitle}</p>
+      <h2 className="uppercase font-extrabold mt-2">{caseStudy.country}</h2>
+      <p className="uppercase font-bold sm-text mb-4">{caseStudy.subtitle}</p>
       <div className="relative w-full aspect-video mb-4">
         <Image
           src={caseStudy.banner}
@@ -44,7 +44,7 @@ const CaseStudyCard = ({ caseStudy }: Props) => {
       <div className="flex flex-col gap-2 border-t border-white/30 my-4">
         {caseStudy.stats.map((stat, i) => (
           <div key={i} className="pt-2 sm-text">
-            <span className="font-black">{stat.value}</span> {stat.label}
+            <span style={{ fontWeight: "bold" }}>{stat.value}</span> {stat.label}
           </div>
         ))}
       </div>
