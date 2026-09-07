@@ -140,7 +140,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
       </section>
 
       <section className="max-w-[1200px] mx-auto px-4 md:px-16 py-8 md:py-16 text-center">
-        <h2 className="mt-2 normal-case">{ourWorkData.structural_gap.title}</h2>
+        <h2 className="mt-2 text-red normal-case">{ourWorkData.structural_gap.title}</h2>
         <p className="lg-text mt-4 max-w-[800px] mx-auto">{ourWorkData.structural_gap.text}</p>
       </section>
 
