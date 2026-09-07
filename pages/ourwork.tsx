@@ -155,12 +155,12 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
       </section>
 
       <section id="case-studies" className="scroll-mt-20">
-        <div className="max-w-[1200px] mx-auto px-4 md:px-16 py-8 md:py-16 text-center">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-16 py-8 md:py-16 text-left">
           <p className="uppercase text-red font-bold tracking-wider sm-text">
             {ourWorkData.case_studies.label}
           </p>
-          <h2 className="mt-2 normal-case">{ourWorkData.case_studies.title}</h2>
-          <p className="lg-text mt-4 max-w-[800px] mx-auto">{ourWorkData.case_studies.text}</p>
+          <h2 className="mt-2 text-navy normal-case">{ourWorkData.case_studies.title}</h2>
+          <p className="lg-text text-navy mt-4 max-w-[800px] mx-auto">{ourWorkData.case_studies.text}</p>
         </div>
         <div className="max-w-[1200px] mx-auto px-4 md:px-16 pb-8 md:pb-16">
           <CaseStudiesContainer caseStudies={ourWorkData.case_studies.items} />
