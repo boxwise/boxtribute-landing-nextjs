@@ -107,8 +107,8 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           <p className="text-red font-bold tracking-wider sm-text">
             {ourWorkData.problem.label}
           </p>
-          <h1 className="mt-2 text-navy normal-case">{ourWorkData.problem.title}</h1>
-          <TextBlock text={ourWorkData.problem.text} className="lg-text mt-4" />
+          <h1 className="mt-2 text-navy text-xl normal-case">{ourWorkData.problem.title}</h1>
+          <TextBlock text={ourWorkData.problem.text} className="md-text mt-4" />
         </ImageText5050>
       </section>
 
@@ -126,7 +126,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           <h1 className="mt-2 normal-case text-navy">{ourWorkData.built_to_close_gap.title}</h1>
           <TextBlock
             text={ourWorkData.built_to_close_gap.text}
-            className="lg-text mt-4"
+            className="md-text mt-4"
             color="navy"
           />
           <div className="flex flex-wrap gap-2 mt-6">
@@ -141,14 +141,14 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
 
       <section className="max-w-[1200px] mx-auto px-4 md:px-16 py-8 md:py-16 text-center">
         <h1 className="mt-2 text-red normal-case">{ourWorkData.structural_gap.title}</h1>
-        <p className="lg-text mt-4 max-w-[800px] mx-auto">{ourWorkData.structural_gap.text}</p>
+        <p className="md-text mt-4 max-w-[800px] mx-auto">{ourWorkData.structural_gap.text}</p>
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-3">
         {ourWorkData.structural_gap.items.map((item, i) => (
           <div key={i} className={`bg-${item.color} text-white p-8 md:p-12`}>
             <p className="sm-text">{item.number}</p>
-            <h1 className="mt-2 font-black">{item.title}</h1>
+            <h2 className="mt-2 font-black">{item.title}</h2>
             <p className="lg-text mt-4">{item.text}</p>
           </div>
         ))}
@@ -169,7 +169,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
 
       <section className="max-w-[1200px] mx-auto px-4 md:px-16 py-8 md:py-16 text-center">
         <h1 text-navy>{ourWorkData.cta_final.title}</h1>
-        <p className="lg-text mt-4 max-w-[800px] mx-auto">{ourWorkData.cta_final.text}</p>
+        <p className="md-text mt-4 max-w-[800px] mx-auto">{ourWorkData.cta_final.text}</p>
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           <CTAButton
             ctaButton={ourWorkData.cta_final.cta_button}

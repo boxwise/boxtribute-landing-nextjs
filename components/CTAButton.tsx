@@ -23,7 +23,7 @@ const CTAButton = ({
       {/* move styling in variables to also put CTA button in navbar */}
       <button
         className={`bg-${bgColor} text-${textColor} px-4 py-1 text-xl rounded-md ${
-          !noMdBreak ? "md:px-8 md:py-2 sm:text-xl md:text-2xl md:rounded-lg lg:text-3xl" : ""
+          !noMdBreak ? "md:px-8 md:py-2 sm:text-lg md:text-xl md:rounded-lg lg:text-2xl" : ""
         }`}
         onClick={() =>
           plausible("button-click", { props: { id: ctaButton.toLowerCase().replace(" ", "-") } })
