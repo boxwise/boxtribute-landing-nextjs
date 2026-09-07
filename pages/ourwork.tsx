@@ -91,7 +91,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           {ourWorkData.stats.map((stat, i) => (
             <div
               key={i}
-              className={`text-center p-0 md:p-0 ${
+              className={`text-center p-0 md:p-0 aspect-square flex items-center justify-center ${
                 (i === 0 || i === 3) ? "bg-lightblue md:bg-transparent" : "bg-navy md:bg-transparent"
               }`}
             >
