@@ -107,7 +107,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           <p className="text-red font-bold tracking-wider sm-text">
             {ourWorkData.problem.label}
           </p>
-          <h2 className="mt-2">{ourWorkData.problem.title}</h2>
+          <h2 className="mt-2 normal-case">{ourWorkData.problem.title}</h2>
           <TextBlock text={ourWorkData.problem.text} className="lg-text mt-4" />
         </ImageText5050>
       </section>
@@ -123,7 +123,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           <p className="text-navy font-bold tracking-wider sm-text">
             {ourWorkData.built_to_close_gap.label}
           </p>
-          <h2 className="mt-2 text-navy">{ourWorkData.built_to_close_gap.title}</h2>
+          <h2 className="mt-2 normal-case text-navy">{ourWorkData.built_to_close_gap.title}</h2>
           <TextBlock
             text={ourWorkData.built_to_close_gap.text}
             className="lg-text mt-4"
@@ -140,7 +140,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
       </section>
 
       <section className="max-w-[1200px] mx-auto px-4 md:px-16 py-8 md:py-16 text-center">
-        <h2 className="mt-2">{ourWorkData.structural_gap.title}</h2>
+        <h2 className="mt-2 normal-case">{ourWorkData.structural_gap.title}</h2>
         <p className="lg-text mt-4 max-w-[800px] mx-auto">{ourWorkData.structural_gap.text}</p>
       </section>
 
@@ -159,7 +159,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           <p className="uppercase text-red font-bold tracking-wider sm-text">
             {ourWorkData.case_studies.label}
           </p>
-          <h2 className="mt-2">{ourWorkData.case_studies.title}</h2>
+          <h2 className="mt-2 normal-case">{ourWorkData.case_studies.title}</h2>
           <p className="lg-text mt-4 max-w-[800px] mx-auto">{ourWorkData.case_studies.text}</p>
         </div>
         <div className="max-w-[1200px] mx-auto px-4 md:px-16 pb-8 md:pb-16">
