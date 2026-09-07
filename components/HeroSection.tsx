@@ -42,7 +42,7 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
         layout="fill"
         objectFit="cover"
         priority
-        className="blur z-0"
+        className={heroSectionData.overlay ? "" : "blur z-0"}
       />
       {heroSectionData.overlay && (
         <div className="absolute inset-0 bg-gray-900/40 z-5" />
@@ -56,7 +56,7 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
         layout="fill"
         objectFit="cover"
         priority
-        className="blur z-0"
+        className={heroSectionData.overlay ? "" : "blur z-0"}
       />
       {heroSectionData.overlay && (
         <div className="absolute inset-0 bg-gray-900/40 z-5" />
