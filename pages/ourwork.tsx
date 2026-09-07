@@ -131,7 +131,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           />
           <div className="flex flex-wrap gap-2 mt-6">
             {ourWorkData.built_to_close_gap.badges.map((badge, i) => (
-              <span key={i} className="border border-navy text-navy rounded-full px-4 py-1 sm-text">
+              <span key={i} className="border border-navy text-navy rounded-full px-4 py-1 sm-text mono-text">
                 {badge}
               </span>
             ))}

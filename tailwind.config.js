@@ -34,6 +34,7 @@ module.exports = {
       fontFamily: {
         sans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
         chivo: ["Chivo", '"Open Sans"', ...defaultTheme.fontFamily.sans],
+        mono: ['"Roboto Mono"', ...defaultTheme.fontFamily.mono],
       },
     },
   },

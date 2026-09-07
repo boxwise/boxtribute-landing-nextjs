@@ -41,7 +41,11 @@
   }
 }
 
-
+@layer components {
+  .mono-text {
+    @apply font-mono;
+  }
+}
 
 /* make the map full screen */
 #map {
