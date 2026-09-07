@@ -26,7 +26,7 @@ const CTAButton = ({
           !noMdBreak ? "md:px-8 md:py-2 sm:text-lg md:text-xl md:rounded-lg lg:text-2xl" : ""
         }`}
         onClick={() =>
-          plausible("button-click", { props: { id: ctaButton.toLowerCase().replace(" ", "-") } })
+          plausible("button-click", { props: { id: ctaButton.trim().toLowerCase().replace(/\s+/g, "-") } })
         }
       >
         {ctaButton}

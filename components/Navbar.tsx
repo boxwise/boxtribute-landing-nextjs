@@ -63,7 +63,7 @@ export const Navbar = () => {
                 <ul
                   className={
                     "hidden group-hover:block absolute left-0 top-full pt-2 min-w-[200px] " +
-                    "bg-white shadow-md z-20"
+                    "bg-white shadow-md z-20 group-focus-within:block"
                   }
                 >
                   {link.children.map((child, j) => (

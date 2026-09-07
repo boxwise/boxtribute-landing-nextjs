@@ -168,7 +168,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
       </section>
 
       <section className="max-w-[1200px] mx-auto px-4 md:px-16 py-8 md:py-16 text-center">
-        <h1 text-navy>{ourWorkData.cta_final.title}</h1>
+        <h1 className="text-navy">{ourWorkData.cta_final.title}</h1>
         <p className="md-text mt-4 max-w-[800px] mx-auto">{ourWorkData.cta_final.text}</p>
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           <CTAButton
