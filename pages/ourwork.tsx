@@ -85,14 +85,14 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
         <div
           className={
             "max-w-[1200px] mx-auto px-4 md:px-16 py-8 md:py-12 " +
-            "grid grid-cols-2 md:grid-cols-4 gap-8"
+            "grid grid-cols-2 md:grid-cols-4"
           }
         >
           {ourWorkData.stats.map((stat, i) => (
             <div
               key={i}
               className={`text-center p-4 md:p-0 ${
-                i % 2 === 0 ? "bg-lightblue md:bg-transparent" : "bg-navy md:bg-transparent"
+                (i === 0 || i === 3) ? "bg-lightblue md:bg-transparent" : "bg-navy md:bg-transparent"
               }`}
             >
               <h3 className="font-extrabold">{stat.number}</h3>
