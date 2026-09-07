@@ -22,6 +22,7 @@ export interface IHeroSectionData {
   cta_button_2?: string;
   cta_link_2?: string;
   align?: "center" | "left";
+  overlay?: boolean;
 }
 
 interface IProps {
@@ -34,7 +35,7 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
   const align = heroSectionData.align ?? "center";
 
   const heroImage = isBreakpoint ? (
-    <div className="w-full h-[400px] mx-auto">
+    <div className="w-full h-[400px] mx-auto relative">
       <Image
         src={heroSectionData.hero_image_mobile}
         alt={heroSectionData.hero_image_description}
@@ -43,6 +44,9 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
         priority
         className="blur z-0"
       />
+      {heroSectionData.overlay && (
+        <div className="absolute inset-0 bg-gray-900/40 z-5" />
+      )}
     </div>
   ) : (
     <div className="w-full h-[675px] relative mx-auto">
@@ -54,6 +58,9 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
         priority
         className="blur z-0"
       />
+      {heroSectionData.overlay && (
+        <div className="absolute inset-0 bg-gray-900/40 z-5" />
+      )}
     </div>
   );
 

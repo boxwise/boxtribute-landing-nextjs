@@ -79,7 +79,7 @@ type Props = {
 export const OurWork = ({ ourWorkData, footerData }: Props) => {
   return (
     <>
-      <HeroSection heroSectionData={{ ...ourWorkData.hero, align: "left" }} />
+      <HeroSection heroSectionData={{ ...ourWorkData.hero, overlay: true, align: "left" }} />
 
       <section className="bg-navy text-white">
         <div
