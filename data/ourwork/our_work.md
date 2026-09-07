@@ -126,7 +126,7 @@ case_studies:
     stats:
     - value: "€74,474"
       label: reviewed locally
-    - value: "0% > 100%"
+    - value: "0% → 100%"
       label: fund reconciliation
     - value: "12%"
       label: in additional aid surfaced
