@@ -165,7 +165,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
             {ourWorkData.case_studies.label}
           </p>
           <h2 className="mt-2 text-navy normal-case">{ourWorkData.case_studies.title}</h2>
-          <p className="lg-text text-navy mt-4 max-w-[800px] mx-auto">{ourWorkData.case_studies.text}</p>
+          <p className="lg-text text-navy mt-4 max-w-[1200px] mx-auto">{ourWorkData.case_studies.text}</p>
         </div>
         <div className="max-w-[1200px] mx-auto px-4 md:px-16 pb-8 md:pb-16">
           <CaseStudiesContainer caseStudies={ourWorkData.case_studies.items} />
