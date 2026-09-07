@@ -107,7 +107,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           <p className="text-red font-bold tracking-wider sm-text">
             {ourWorkData.problem.label}
           </p>
-          <h1 className="mt-2 text-navy text-3xl normal-case">{ourWorkData.problem.title}</h1>
+          <h1 className="mt-2 text-navy text-4xl normal-case">{ourWorkData.problem.title}</h1>
           <TextBlock text={ourWorkData.problem.text} className="md-text mt-4" />
         </ImageText5050>
       </section>
@@ -148,7 +148,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
         {ourWorkData.structural_gap.items.map((item, i) => (
           <div key={i} className={`bg-${item.color} text-white p-8 md:p-12`}>
             <p className="sm-text">{item.number}</p>
-            <h2 className="mt-2 font-black">{item.title}</h2>
+            <h2 className="mt-2 normal-case font-black">{item.title}</h2>
             <p className="md-text mt-4">{item.text}</p>
           </div>
         ))}
@@ -160,7 +160,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
             {ourWorkData.case_studies.label}
           </p>
           <h1 className="mt-2 text-navy normal-case">{ourWorkData.case_studies.title}</h1>
-          <p className="lg-text text-navy mt-4 max-w-[1200px] mx-auto">{ourWorkData.case_studies.text}</p>
+          <p className="md-text text-navy mt-4 max-w-[1200px] mx-auto">{ourWorkData.case_studies.text}</p>
         </div>
         <div className="max-w-[1200px] mx-auto px-4 md:px-16 pb-8 md:pb-16">
           <CaseStudiesContainer caseStudies={ourWorkData.case_studies.items} />
