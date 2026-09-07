@@ -30,7 +30,7 @@ const CaseStudyCard = ({ caseStudy }: Props) => {
       <p className="uppercase font-bold sm-text tracking-wider">
         Case Study {caseStudy.case_number} - {caseStudy.theme}
       </p>
-      <h3 className="uppercase font-bold mt-2">{caseStudy.country}</h3>
+      <h3 className="uppercase font-extrabold mt-2">{caseStudy.country}</h3>
       <p className="uppercase sm-text mb-4">{caseStudy.subtitle}</p>
       <div className="relative w-full aspect-video mb-4">
         <Image
@@ -44,7 +44,7 @@ const CaseStudyCard = ({ caseStudy }: Props) => {
       <div className="flex flex-col gap-2 my-4">
         {caseStudy.stats.map((stat, i) => (
           <div key={i} className="border-t border-white/30 pt-2 sm-text">
-            <span className="font-bold">{stat.value}</span> {stat.label}
+            <span className="font-extrabold">{stat.value}</span> {stat.label}
           </div>
         ))}
       </div>
