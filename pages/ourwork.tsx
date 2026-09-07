@@ -107,7 +107,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           <p className="text-red font-bold tracking-wider sm-text">
             {ourWorkData.problem.label}
           </p>
-          <h1 className="mt-2 text-navy text-xl normal-case">{ourWorkData.problem.title}</h1>
+          <h1 className="mt-2 text-navy text-3xl normal-case">{ourWorkData.problem.title}</h1>
           <TextBlock text={ourWorkData.problem.text} className="md-text mt-4" />
         </ImageText5050>
       </section>
@@ -149,7 +149,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           <div key={i} className={`bg-${item.color} text-white p-8 md:p-12`}>
             <p className="sm-text">{item.number}</p>
             <h2 className="mt-2 font-black">{item.title}</h2>
-            <p className="lg-text mt-4">{item.text}</p>
+            <p className="md-text mt-4">{item.text}</p>
           </div>
         ))}
       </section>
