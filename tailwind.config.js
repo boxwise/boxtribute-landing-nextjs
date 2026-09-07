@@ -9,14 +9,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        red: "#EF4049",
-        navy: "#32477B",
-        darknavy: "#2F3E62",
+        red: "#EF404A",
+        navy: "#315C88",
+        darknavy: "#29335F",
         lightblue: "#AACFE3",
         black: "#000000",
         white: "#FFFFFF",
-        yellow: "#F4E6A0",
-        gold: "#F2A900",
+        yellow: "#E4AA4F",
+        gold: "#D89016",
         lightgray: "#EAEBED",
       },
       screens: {
