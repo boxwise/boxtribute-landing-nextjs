@@ -93,7 +93,7 @@ case_studies:
     - value: "2024"
       label: integrated into municipal system
     pdf_link: "/uploads/case_study_poland.pdf"
-    color: gold
+    color: yellow
     image_mobile: "/uploads/case_study_poland.png"
     banner: "/uploads/case_study_poland.png"
     image_description: Volunteers in Poland

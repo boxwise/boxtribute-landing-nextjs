@@ -118,7 +118,7 @@ export const OurWork = ({ ourWorkData, footerData }: Props) => {
           banner={ourWorkData.built_to_close_gap.banner}
           imageDescription={ourWorkData.built_to_close_gap.image_description}
           order={2}
-          bgColor="gold"
+          bgColor="yellow"
         >
           <p className="text-navy font-bold tracking-wider sm-text">
             {ourWorkData.built_to_close_gap.label}
