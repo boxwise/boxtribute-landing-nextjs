@@ -71,7 +71,7 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
         <div className="absolute inset-0 flex items-center">
           <div className="w-full max-w-[1200px] mx-auto px-4 md:px-16">
             {heroSectionData.eyebrow && (
-              <p className="z-10 text-white font-bold uppercase tracking-wider sm-text mb-2">
+              <p className="z-10 text-white font-bold uppercase tracking-wider xs:xs-text sm-text mb-2">
                 {heroSectionData.eyebrow}
               </p>
             )}
