@@ -77,7 +77,7 @@ export const HeroSection = ({ heroSectionData }: IProps) => {
             )}
             <h1 className="z-10 text-left text-white">{heroSectionData.main_heading}</h1>
             {heroSectionData.subtitle_text && (
-              <p className="z-10 text-white sm:sm-text md:lg-text mt-4 max-w-[600px]">
+              <p className="z-10 text-white sm:xs-text md:lg-text mt-4 max-w-[600px]">
                 {heroSectionData.subtitle_text}
               </p>
             )}
