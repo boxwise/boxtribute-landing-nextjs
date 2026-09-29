@@ -7,6 +7,6 @@
   "files.autoSave": "onFocusChange",
   "eslint.packageManager": "yarn", // optional but recommended
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   }
 }
