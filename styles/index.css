@@ -5,10 +5,10 @@
 /* typography */
 @layer base {
   h1 {
-    @apply uppercase text-3xl md:text-5xl lg:text-6xl font-black font-chivo;
+    @apply uppercase xs:text-xl sm:text-3xl md:text-5xl lg:text-6xl font-black font-chivo;
   }
   h2 {
-    @apply uppercase text-3xl md:text-5xl lg:text-6xl font-light font-chivo;
+    @apply uppercase xs:text-xl sm:text-3xl md:text-5xl lg:text-6xl font-light font-chivo;
   }
   h3 {
     @apply text-xl md:text-3xl lg:text-4xl font-bold font-sans;
@@ -30,6 +30,9 @@
   body {
     @apply text-base md:text-lg lg:text-xl font-sans;
   }
+  .md-text {
+    @apply text-base md:text-lg lg:text-xl font-sans;
+  }
   .sm-text{
     @apply text-sm md:text-base lg:text-lg font-sans;
   }
@@ -38,7 +41,11 @@
   }
 }
 
-
+@layer components {
+  .mono-text {
+    @apply font-mono;
+  }
+}
 
 /* make the map full screen */
 #map {

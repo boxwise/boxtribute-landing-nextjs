@@ -41,4 +41,5 @@ export interface IBaseMarker {
   logo: string;
   description: string;
   position: ILatLng;
+  status?: "active" | "inactive";
 }

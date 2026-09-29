@@ -1,10 +1,11 @@
 ---
 center:
-  lat: 40.990602
+  lat: 45.990602
   long: 22.625296
 base_markers:
 - base_name: Sarajevo
   organisation: Collective Aid
+  status: inactive
   logo: "/uploads/ca_logo.png"
   url: https://www.collectiveaidngo.org/current-projects-1
   description: |-
@@ -16,6 +17,7 @@ base_markers:
     long: 18.283521
 - base_name: Subotica
   organisation: Collective Aid
+  status: inactive
   logo: "/uploads/ca_logo.png"
   url: https://www.collectiveaidngo.org/current-projects-1
   description: |-
@@ -25,23 +27,9 @@ base_markers:
   position:
     lat: 46.061587
     long: 19.679582
-- base_name: Slovakia
-  organisation: Blindspots
-  logo: "/uploads/blindpots_logo.png"
-  url: https://blindspots.support/en/the-situation-in-ukraine/
-  description: Blindspots has built a logistics center and a warehouse in the Slovakian
-    border towncenter and a warehouse in the Slovakian border town, which is accessed
-    by trucks of up to 40 tonnes. The logistics center is linked to a growing logistics
-    network of EU countries and imports donations in kind to Ukraine. These are delivered
-    by our Ukrainian drivers as needed. This system avoids that donations which are
-    not needed are distributed and take up storage capacity. The drivers are familiar
-    with the area and well networked, so that they are informed about the current
-    situation and can not only use humanitarian corridors, but also create them.
-  position:
-    lat: 48.646707
-    long: 22.189039
 - base_name: Samos
   organisation: Samos Volunteers
+  status: inactive
   logo: "/uploads/sv_logo.png"
   url: https://www.samosvolunteers.org/what-we-do
   description: "Our free shop is located next to the Alpha Centre. People from the
@@ -53,9 +41,10 @@ base_markers:
     on the island. "
   position:
     lat: 37.754389
-    long: 26.9804
+    long: 27.0804
 - base_name: Lebanon
   organisation: The Health Impact
+  status: inactive
   logo: "/uploads/healthimpact_logo.webp"
   url: https://thehealthimpact.org/en/
   description: 'Every family in our local community, both from the refugee and host
@@ -68,6 +57,7 @@ base_markers:
     long: 35.628071
 - base_name: Lesvos
   organisation: Movement On The Ground
+  status: inactive
   logo: "/uploads/motg_logo.svg"
   url: https://movementontheground.com/what-we-do
   description: ''
@@ -88,14 +78,6 @@ base_markers:
   position:
     lat: 39.151692
     long: 26.480167
-- base_name: Lüdenscheid
-  organisation: Hardcore Help
-  logo: "/uploads/hardcorehelp_logo.svg"
-  url: https://www.hardcore-help.org/
-  description: ''
-  position:
-    lat: 51.213577
-    long: 7.621294
 - base_name: Dortmund
   organisation: Grenzenlose Wärme
   logo: "/uploads/gw_logo.webp"
@@ -106,6 +88,7 @@ base_markers:
     long: 7.454463
 - base_name: Frankfurt
   organisation: EuropeCares
+  status: inactive
   logo: "/uploads/europe_cares_logo.png"
   url: https://www.europecares.org/what#active
   description: "People on-the-move on the European borders are forced to live in inhumane
@@ -128,8 +111,9 @@ base_markers:
     long: 12.510584
 - base_name: Ušivac
   organisation: A Drop In The Ocean
+  status: inactive
   logo: "/uploads/drapenihavet_logo.webp"
-  url: https://www.drapenihavet.no/en/our-work/bosnia-and-herzegovina/
+  url: https://www.drapenihavet.no/en/our-work
   description: |-
     Our main focus in the Sarajevo canton is distributing necessary items to and organising computer classes for people living in Ušivac refugee camp.
 
@@ -139,6 +123,7 @@ base_markers:
     long: 16.074158
 - base_name: Krakow
   organisation: Internationaler Bund Polska
+  status: inactive
   logo: "/uploads/ib-polska-logo_square-1.png"
   url: https://ib-polska.pl/english/
   description: Following Russia's attacks on Ukraine in February 2022, millions of
@@ -198,15 +183,102 @@ base_markers:
     long: 9.94031
 - base_name: Nea Kavala
   organisation: A Drop In The Ocean
+  status: inactive
   logo: "/uploads/drapenihavet_logo.webp"
   url: https://www.drapenihavet.no/en/our-work/northern-greece/
   description: |-
     In the heart of Nea Kavala camp A Drop in the Ocean support displaced persons by organizing various activities such as non-formal education for adults, activities for women, and youth. We also support integration efforts through our InfoHub. The team distributes clothes, food and other non-food items to meet the needs of the camp residents.
     Since September 2022, A Drop in the Ocean has started operating in Alexandria camp, distributing food and non-food items. Our main goal is further to expand our support with the implementation of activities.
-  lat: '40.990602'
-  long: '22.625296'
   position:
     lat: 40.990602
-    long: 22.625296
+    long: 22.6253
+- base_name: Norway
+  organisation: A Drop In The Ocean
+  status: inactive
+  logo: "/uploads/drapenihavet_logo.webp"
+  url: https://www.drapenihavet.no/en/our-work/tromso/
+  description: ''
+  position:
+    lat: 59.649
+    long: 10.746
+- base_name: Elefsina
+  organisation: A Drop In The Ocean
+  status: inactive
+  logo: "/uploads/drapenihavet_logo.webp"
+  url: https://www.drapenihavet.no/en/our-work/
+  description: ''
+  position:
+    lat: 38.533
+    long: 23.533
+- base_name: Calais
+  organisation: Refugee Women's Centre
+  status: inactive
+  logo: "/uploads/RWC-logo.png"
+  url: https://refugeewomenscentre.com/
+  description: ''
+  position:
+    lat: 50.85
+    long: 1.8563
+- base_name: Crete
+  organisation: A Drop In The Ocean
+  logo: "/uploads/drapenihavet_logo.webp"
+  url: https://www.drapenihavet.no/en/new-drop-distribution-hub-on-crete/
+  description: ''
+  position:
+    lat: 35.1
+    long: 24.9
+- base_name: Ioannina
+  organisation: Be Aware And Share
+  logo: "/uploads/be-aware-and-share-logo.png"
+  url: "https://beawareandshare.ch/en/projects/"
+  description: ''
+  position:
+    lat: 39.663611
+    long: 20.852222
+
+- base_name: Athens
+  organisation: Christian Refugee Relief
+  logo: "/uploads/crr-logo.png"
+  url: "https://christianrefugeerelief.com/en/athene/"
+  description: ''
+  position:
+    lat: 37.9795
+    long: 23.2162
+
+- base_name: Samos
+  organisation: Eurorelief
+  logo: "/uploads/eurorelief-logo.png"
+  url: "https://www.eurorelief.net/our-work"
+  description: ''
+  position:
+    lat: 37.754389
+    long: 26.3804
+
+- base_name: Athens
+  organisation: Human Aid Collective
+  logo: "/uploads/human-aid-collective-logo.png"
+  url: "https://www.human-aid-collective.de/projekte/griechenland/"
+  description: ''
+  position:
+    lat: 37.9795
+    long: 24.0162
+
+- base_name: Biesenthal
+  organisation: Wir Packen's An
+  logo: "/uploads/wir-packens-an-logo.png"
+  url: "https://wir-packens-an.info/"
+  description: ''
+  position:
+    lat: 52.641246
+    long: 13.644331
+
+- base_name: Chelmsford
+  organisation: Pachamama Project
+  logo: "/uploads/pachamama-logo.svg"
+  url: "https://www.thepachamamaproject.org/"
+  description: ''
+  position:
+    lat: 51.7371
+    long: 0.4736
 
 ---

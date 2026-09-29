@@ -12,6 +12,8 @@ annual_reports:
 - year: "2020"
   report: "/uploads/stichting-boxwise-2020-report-of-activities.pdf"
 financial_reports:
+- year: "2025 (preliminary)"
+  report: "/uploads/stichting-boxwise-preliminary-financial-report-2025.pdf"
 - year: "2024"
   report: "/uploads/stichting-boxwise-financial-report-2024.pdf"
 - year: "2023"
