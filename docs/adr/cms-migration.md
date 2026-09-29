@@ -52,13 +52,22 @@ On the positive, there is a very handy migration guide that seems to cover all b
 
 Broad Implementation:
 
-The implementation here would require first running the CLI migration, which does a lot of the work (this has been tested on a [separate branch](https://github.com/boxwise/boxtribute-landing-nextjs/tree/tina-cms-test)). Following this, further changes can be made to standardize the information, such as standardizing certain page types into collections (such as blog posts) and building out custom reusable components.
+The implementation here would require first running the CLI migration, which does a lot of the work (this has been tested on a [separate branch](https://github.com/boxwise/boxtribute-landing-nextjs/tree/tina-cms-test)). Following this, further changes can be made to standardize the information, such as standardizing certain page types into collections (such as blog posts) and building out custom reusable components. This is still a significant investment of time, however this will be a required step for whatever CMS we choose, as it is important to split the site into blocks to make content management flexible enough to be useful.
 
 Following this, we would need to register the project on TinaCloud. This is where authentication is handled for the CMS's production portal, and therefore a required step in order to have non-technical users updating content without accessing the repository itself.
 
 Once the project is set up and content editors are added as collaborators, they would be able to build new pages and blogs using currently implemented blocks, and technical staff would only need to be involved in case new custom components are needed.
 
 On a pricing note, this option remains free for only 2 distinct users on the project and 2 separate roles. There are [various paid tiers](https://tina.io/pricing) with different benefits.
+
+#### Pros
+
+- Direct and well documented migration path from Forestry.
+- Strong editing experience. This can be tried in [their own official demo](https://demo.tina.io) (add /admin to url to enter the portal)
+- Git based edits, requiring no new infrastructure.
+
+#### Cons
+- Requires Tina Cloud for authentication
 
 ### Statamic
 
@@ -74,11 +83,27 @@ In essence, the end result of a Statamic website would be similar to TinaCMS, wi
 
 The implementation here is far more involved than the TinaCMS one, as it involves a full re-write. That said, given the scale of the website, this should not be a huge undertaking.
 
+#### Pros
+- Fully self-contained
+- Complete flexibility within the infrastructure provided (still built with blocks)
+- Best in class editing experience. [This is a cool demo](https://demo.statamic.com) (add /cp to url to enter the portal). 
+
+#### Cons
+- Requires a full re-write into Laravel PHP
+- Requires changing server stack to PHP, including the added infrastructure of a Postgres Database
+
 ### Keystatic
 
-- [Keystatic](https://keystatic.com/) - After further research into this CMS, it was found to be way more developer-forward than is ideal for the requirements of this change. While Keystatic does also provide a portal from which to edit the pages in a no-code way, authentication to this Admin Portal would depend on GitHub accounts and repository permissions, therefore requiring non-technical staff to need GitHub accounts just to use this CMS.
+- [Keystatic](https://keystatic.com/) - Keystatic is a direct competitor to TinaCMS, being a significantly newer project however, it has less system maturity and a smaller community of users. That said, it is a fully self-contained system, requiring only Github authentication for users. It is still Git based, requiring no new infrastructure to run.
 
-Furthermore, the customizability on Keystatic is fairly limited, simply because Keystatic is layered on top of the code. The only parts of the site that would be changeable by non-technical staff would be the copy, as anything further from this would still need development time to change and restructure.
+#### Pros
+- Fully self-contained and only requires Github for authentication
+- Git based
+- Integrates easily with current codebase as it is built specifically for NextJs and React
+
+#### Cons
+- Relatively new and small next to other options
+- Very developer focused, meaning it lacks certain features in its Editing experience. An online demo of this does not exist, but this is a [short video](https://www.youtube.com/watch?v=N3pywDv-0Tg) with glimpses of this editing portal.
 
 ### Fruition/Notion
 
@@ -88,6 +113,14 @@ The main points of note for Fruition are it's seeming focus on using a Cloudflar
 
 That said, Notion does provide a way for non-technical people to build and support a website built on top of it, but it will still require a fair bit of training, as Notion is not a basic CMS, but rather a fully fledged system-building platform, which necessarily means that it must handle higher levels of complexity to a CMS, at the added benefit of more flexibility. Implementing this option might be a relatively high effort approach as Notion will have to be learned before any of the implementation can be tackled confidently. This learning curve can be softened with AI assistance.
 
+#### Pros
+- The most flexibility possible for non-technical people, within the confines of what Notion can support
+
+#### Cons
+- Requires a full re-write to be built with Notion/Fruition based data
+- More training of non-technical staff for use of Notion
+- Possibility of needing Cloudflare specific hosting, or further work to figure out alternatives
+
 ### DecapCMS
 
 - [DecapCMS](https://decapcms.org/) - This is a fully open source and locally hosted competitor of TinaCMS. It provides all the same features as TinaCMS, while being fully self-hosted and not requiring any authentication information to be set up on an external service (unlike TinaCMS with TineCloud). Unfortunately, this self-hosting comes with a number of other caveats that would require further work to solve elegantly:
@@ -96,14 +129,29 @@ That said, Notion does provide a way for non-technical people to build and suppo
 
     - While being framework agnostic, DecapCMS will run into problems when attempting to render live previews of pages at it is designed to work on static pages. This can be remedied using setups referenced in the DecapCMS documentation (for example this one is for [NextJs](https://decapcms.org/docs/nextjs)), however these documentation do seem to be relatively old, as they reference legacy packages like webpack and NextJs 11 (currently at 16), pointing to a possible lack of modern support for these frameworks.
 
+In essence, this is an older Keystatic, with more legacy software targeted and possibility slower performance traded for a more battle-tested system.
+
+#### Pros
+- Fully self-contained and only requires Github for authentication
+- Git based
+
+#### Cons
+- Older and targets older versions of software
+- Is framework agnostic, meaning more complexity during setup
+- Performance suffers when sites scale
+- Editing experience offers the same features as Keystatic, which is relatively limited. This can be seen in [this video](https://www.youtube.com/watch?v=jJDGNbfuMVs). 
+
 ### Payload CMS
 - TODO
+
+
+
 
 ## Decision
 
 | Option          | Non-Technical Customizability | Cost                                     | Implementation Effort     | External Registration |
 |-----------------|-------------------------------|------------------------------------------|---------------------------|-----------------------|
-| Tina CMS        | High                          | Free Tier (monthly pro options)          | Low                       | Required              |
+| Tina CMS        | High                          | Free Tier (monthly pro options)          | Medium                    | Required              |
 | Statamic        | Unlimited                     | Free Tier (one time pro option)          | High                      | Not Required          |
 | Keystatic       | Low                           | Fully Free                               | Medium                    | Not Required          |
 | Fruition/Notion | High                          | Free Tier (multiple monthly pro options) | High                      | Required              |
@@ -113,10 +161,12 @@ Given the options above, I believe the best call at this point is to attempt mig
 
 The biggest issue with TinaCMS is the project registration on TinaCloud, required for CMS Portal access on production. If this hurdle can be overcome, TinaCMS should tick all our boxes in the shortest time.
 
-## Consequences
-
-Pros:
+## Final Consequences
 
 - A website that can be updated and maintained by non-technical staff, requiring only technical people when creating new custom blocks and sections.
 
 - The removal of an outdated system (Forestry) which has been deprecated since 2023.
+
+- Fresher content on the website.
+
+- 
