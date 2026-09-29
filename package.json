@@ -4,8 +4,8 @@
   "private": true,
   "description": "Homepage for Boxtribute",
   "scripts": {
-
     "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
+    "dev:prod": "TINA_PUBLIC_IS_LOCAL=false tinacms dev -c \"next dev\"",
     "build": "tinacms build && next build",
     "start": "tinacms build && next start",
     "typecheck": "tsc",
@@ -19,7 +19,7 @@
     "@heroicons/react": "^2.0.13",
     "@number-flow/react": "^0.5.10",
     "@tanstack/react-table": "^8.21.3",
-    "axios": "^1.12.0",
+    "axios": "^1.18.0",
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
@@ -29,6 +29,7 @@
     "leaflet-defaulticon-compatibility": "^0.1.1",
     "leaflet-geosearch": "^3.6.0",
     "next": "latest",
+    "next-plausible": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.39.5",
@@ -42,7 +43,7 @@
     "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.5",
+    "@babel/core": "^7.29.6",
     "@tinacms/cli": "^2.3.0",
     "@types/geojson": "^7946.0.10",
     "@types/jest": "^26.0.23",

@@ -33,7 +33,7 @@ type IProps = {
 
 export const Footer = ({ footerData }: IProps) => {
   const footerStaticData: IFooterStaticData = {
-    boxtributeTrademark: "© 2025 Boxtribute, All rights reserved.",
+    boxtributeTrademark: "© 2026 Boxtribute, All rights reserved.",
     boxtributeLogo: "/assets/svg/boxtribute_white_vertical.svg",
     socialMediaIcons: [
       {
@@ -94,7 +94,7 @@ export const Footer = ({ footerData }: IProps) => {
         <p className="xs-text">{footerStaticData.boxtributeTrademark}</p>
       </div>
       <p className="text-center sm-text text-navy p-4">
-        Data privacy: We store <b>no</b> data about your website visit.
+        Data privacy: We use anonymous, cookieless analytics. No personal data is collected.
       </p>
     </section>
   );

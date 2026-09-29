@@ -12,16 +12,19 @@ annual_reports:
   - year: '2020'
     report: /uploads/stichting-boxwise-2020-report-of-activities.pdf
 financial_reports:
-  - year: '2024'
-    report: /uploads/stichting-boxwise-financial-report-2024.pdf
-  - year: '2023'
-    report: /uploads/stichting-boxwise-financial-report-2023.pdf
-  - year: '2022'
-    report: /uploads/stichting-boxwise-financial-report-2022.pdf
-  - year: '2021'
-    report: /uploads/stichting-boxwise-financial-report-2021-v3.pdf
-  - year: '2020'
-    report: /uploads/stichting-boxwise-2020-financial-report.pdf
+- year: "2025 (preliminary)"
+  report: "/uploads/stichting-boxwise-preliminary-financial-report-2025.pdf"
+- year: "2024"
+  report: "/uploads/stichting-boxwise-financial-report-2024.pdf"
+- year: "2023"
+  report: "/uploads/stichting-boxwise-financial-report-2023.pdf"
+- year: "2022"
+  report: "/uploads/stichting-boxwise-financial-report-2022.pdf"
+- year: "2021"
+  report: "/uploads/stichting-boxwise-financial-report-2021-v3.pdf"
+- year: "2020"
+  report: "/uploads/stichting-boxwise-2020-financial-report.pdf"
 _template: footer
+
 ---
 
