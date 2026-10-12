@@ -26,6 +26,8 @@ We use [Plausible](https://plausible.io/docs/) to enable analytics of page usage
 
 Page views, file downloads, external links, UTM tags are automatically tracked. Custom events, e.g. button clicks, have to be explicitly [registered](https://github.com/4lejandrito/next-plausible#send-custom-events).
 
+We also use [Matomo](https://matomo.org/) via [`matomo-tracker-for-react`](https://github.com/JonasKenke/matomo-tracker-for-react). Tracking is cookieless to keep analytics anonymous. Page views are tracked automatically on route change via the `path` prop; custom events use `useMatomo().trackEvent()`.
+
 ## Data queries
 
 **partners on the field helping people in need**
