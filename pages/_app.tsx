@@ -22,18 +22,20 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     </Layout>
   );
 
-  if (matomoUrlBase && matomoSiteId) {
-    content = (
-      <MatomoProvider
-        urlBase={matomoUrlBase}
-        siteId={matomoSiteId}
-        path={router.asPath}
-        trackCookies={false}
-      >
-        {content}
-      </MatomoProvider>
-    );
-  }
+  // Always render MatomoProvider so useMatomo() never throws,
+  // even when env vars are missing (e.g. during build/prerender)
+  // or when tracking should be off (e.g. local dev).
+  content = (
+    <MatomoProvider
+      urlBase={matomoUrlBase}
+      siteId={matomoSiteId ?? ""}
+      path={router.asPath}
+      trackCookies={false}
+      disabled={!matomoSiteId}
+    >
+      {content}
+    </MatomoProvider>
+  );
 
   if (plausibleScriptId) {
     content = (
