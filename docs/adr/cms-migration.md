@@ -46,9 +46,7 @@ There are a couple of possible replacements that I have found up till now:
 
 - [TinaCMS](https://tina.io/) - This is the natural replacement of Forestry, as it is its direct descendant. While completely different, TinaCMS should offer the exact same feature set that Forestry offers, with as little change as possible.
 
-The main issue with this process is that the migration guide does not seem to be in place, casting into doubt how mature the TinaCMS project is, and if it is very well maintained. That said, the GitHub seems very active.
-
-On the positive, there is a very handy migration guide that seems to cover all bases, from initial migration to redeployment. The process seems fairly straightforward, including the deployment, which should only require a slight modification to the current build command.
+There is a very handy migration guide that seems to cover all bases, from initial migration to redeployment. The process seems fairly straightforward, including the deployment, which should only require a slight modification to the current build command.
 
 Broad Implementation:
 
@@ -163,16 +161,18 @@ This would result in a bigger implementation requirement, as new infrastucture w
 
 ## Decision
 
-| Option          | Non-Technical Customizability | Cost                                     | Implementation Effort     | External Registration | More Infrustructure 
-|-----------------|-------------------------------|------------------------------------------|---------------------------|-----------------------|---------------------|
-| Tina CMS        | High                          | Free Tier (monthly pro options)          | Medium                    | Required              | Not Required        |
-| Statamic        | High                          | Free Tier (one time pro option)          | Re-write                  | Not Required          | Required            |
-| Keystatic       | Medium                        | Fully Free                               | Medium                    | Not Required          | Not Required        |
-| Fruition/Notion | Medium                        | Free Tier (multiple monthly pro options) | Re-write                  | Required              | Not Required        |
-| Decap CMS       | High                          | Fully Free                               | Medium                    | Not Required          | Not Required        |
-| Payload CMS     | High                          | Fully Free                               | High                      | Not Required          | Required            |
+| Option          | Non-Technical Customizability | Cost                                     | Implementation Effort     | External Registration* | More Infrustructure 
+|-----------------|-------------------------------|------------------------------------------|---------------------------|------------------------|---------------------|
+| Tina CMS        | High                          | Free Tier (monthly pro options)          | Medium                    | Required               | Not Required        |
+| Statamic        | High                          | Free Tier (one time pro option)          | Re-write                  | Not Required           | Required            |
+| Keystatic       | Medium                        | Fully Free                               | Medium                    | Not Required           | Not Required        |
+| Fruition/Notion | Medium                        | Free Tier (multiple monthly pro options) | Re-write                  | Required               | Not Required        |
+| Decap CMS       | High                          | Fully Free                               | Medium                    | Not Required           | Not Required        |
+| Payload CMS     | High                          | Fully Free                               | High                      | Not Required           | Required            |
 
 With the options mentioned, I believe Keystatic is our best option currently. With Github accounts for Content Managers not being a problem, Keystatic offers the simplest migration path, with the most flexibility. While there are other options with better flexibility or editing experiences, all of them either required far larger migrations (or in some cases, re-writes) or have non-ideal third party dependancies (in the case of TinaCMS, authentication needing TinaCloud). Some other options also require more infrustructure, namely new databases and/or specific hosting requirements. These all would require much more time for integration.
+
+* External Registration here points to systems that by default require external registration. For TinaCMS this can be self-hosted, however infrastructure would have to take its place (for Databases and such). Notion does not have a self-host option.
 
 ## Final Consequences
 
