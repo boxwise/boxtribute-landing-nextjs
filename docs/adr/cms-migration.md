@@ -96,6 +96,8 @@ The implementation here is far more involved than the TinaCMS one, as it involve
 
 - [Keystatic](https://keystatic.com/) - Keystatic is a direct competitor to TinaCMS, being a significantly newer project however, it has less system maturity and a smaller community of users. That said, it is a fully self-contained system, requiring only Github authentication for users. It is still Git based, requiring no new infrastructure to run.
 
+Broadly, the implementation here will be simply setting up Keystatic and mapping the current configs and YAML files which Forestry uses to how Keystatic stores content (as mentioned [here](https://keystatic.com/docs/installation-next-js)), however regardless of which CMS options we'd choose, further work would be required to convert as much of the website to blocks, which can be re-used and customised as required. Most of the time here would be spent on this 2nd, more important phase.
+
 #### Pros
 - Fully self-contained and only requires Github for authentication
 - Git based
@@ -113,6 +115,8 @@ The main points of note for Fruition are it's seeming focus on using a Cloudflar
 
 That said, Notion does provide a way for non-technical people to build and support a website built on top of it, but it will still require a fair bit of training, as Notion is not a basic CMS, but rather a fully fledged system-building platform, which necessarily means that it must handle higher levels of complexity to a CMS, at the added benefit of more flexibility. Implementing this option might be a relatively high effort approach as Notion will have to be learned before any of the implementation can be tackled confidently. This learning curve can be softened with AI assistance.
 
+As with Statamic, implementation here means a full re-write of the website within this different tech stack.
+
 #### Pros
 - The most flexibility possible for non-technical people, within the confines of what Notion can support
 
@@ -125,11 +129,13 @@ That said, Notion does provide a way for non-technical people to build and suppo
 
 - [DecapCMS](https://decapcms.org/) - This is a fully open source and locally hosted competitor of TinaCMS. It provides all the same features as TinaCMS, while being fully self-hosted and not requiring any authentication information to be set up on an external service (unlike TinaCMS with TineCloud). Unfortunately, this self-hosting comes with a number of other caveats that would require further work to solve elegantly:
 
-    - Having authentication not dependant on an external service means needing to set up an in-house service to handle OAuth services on Github users (which DecapCMS uses). This means that once again, any users that will be making changes to the site will require Github users, which might be a relative roadblock for non-technical users. Moreover, depending on where the website is hosted, OAuth proxies will have to be set up to handle this authentication effectively.
+Having authentication not dependant on an external service means needing to set up an in-house service to handle OAuth services on Github users (which DecapCMS uses). Moreover, depending on where the website is hosted, OAuth proxies will have to be set up to handle this authentication effectively. This might be significantly more involving when compared with Keystatic, which offers the same feature, however signficantly more tailored for our tech stack specifically (React, Nextjs).
 
-    - While being framework agnostic, DecapCMS will run into problems when attempting to render live previews of pages at it is designed to work on static pages. This can be remedied using setups referenced in the DecapCMS documentation (for example this one is for [NextJs](https://decapcms.org/docs/nextjs)), however these documentation do seem to be relatively old, as they reference legacy packages like webpack and NextJs 11 (currently at 16), pointing to a possible lack of modern support for these frameworks.
+While being framework agnostic, DecapCMS will run into problems when attempting to render live previews of pages at it is designed to work on static pages. This can be remedied using setups referenced in the DecapCMS documentation (for example this one is for [NextJs](https://decapcms.org/docs/nextjs)), however these documentation do seem to be relatively old, as they reference legacy packages like webpack and NextJs 11 (currently at 16), pointing to a possible lack of modern support for these frameworks.
 
 In essence, this is an older Keystatic, with more legacy software targeted and possibility slower performance traded for a more battle-tested system.
+
+Implementation here would follow the same idea as Keystatic, which more time spent ensuring that Decap is configured to work with our specific tech stack, as Decap is by nature, framework agnostic.
 
 #### Pros
 - Fully self-contained and only requires Github for authentication
@@ -142,24 +148,31 @@ In essence, this is an older Keystatic, with more legacy software targeted and p
 - Editing experience offers the same features as Keystatic, which is relatively limited. This can be seen in [this video](https://www.youtube.com/watch?v=jJDGNbfuMVs). 
 
 ### Payload CMS
-- TODO
+While starting out as a headless CMS, Payload CMS is now more akin to a NextJS eco-system, providing users with more intricate offerings such as native app building and e-commerce. This is only possible as Payload uses database backed information, making it more akin to Statamic with further SaaS offerings.
 
+This would result in a bigger implementation requirement, as new infrastucture would need to be procured, as movement from YAML based content to Database data would also have to take place.
 
+#### Pros
+- Is a fully fledged eco-system, with many features we might be able to use later
+- [Editor experience](https://youtu.be/ftohATkHBi0?t=362) is somewhat more fully fledged.
 
+#### Cons
+- Requires Database infrastructure
+- Significantly more complicated migration process, due to data migrations required.
+- Far more complicated than what Boxtribute requires now, will not use 80% of the features provided by PayloadCMS.
 
 ## Decision
 
-| Option          | Non-Technical Customizability | Cost                                     | Implementation Effort     | External Registration |
-|-----------------|-------------------------------|------------------------------------------|---------------------------|-----------------------|
-| Tina CMS        | High                          | Free Tier (monthly pro options)          | Medium                    | Required              |
-| Statamic        | Unlimited                     | Free Tier (one time pro option)          | High                      | Not Required          |
-| Keystatic       | Low                           | Fully Free                               | Medium                    | Not Required          |
-| Fruition/Notion | High                          | Free Tier (multiple monthly pro options) | High                      | Required              |
-| Decap CMS       | High                          | Fully Free                               | Medium                    | Not Required          |
+| Option          | Non-Technical Customizability | Cost                                     | Implementation Effort     | External Registration | More Infrustructure 
+|-----------------|-------------------------------|------------------------------------------|---------------------------|-----------------------|---------------------|
+| Tina CMS        | High                          | Free Tier (monthly pro options)          | Medium                    | Required              | Not Required        |
+| Statamic        | High                          | Free Tier (one time pro option)          | Re-write                  | Not Required          | Required            |
+| Keystatic       | Medium                        | Fully Free                               | Medium                    | Not Required          | Not Required        |
+| Fruition/Notion | Medium                        | Free Tier (multiple monthly pro options) | Re-write                  | Required              | Not Required        |
+| Decap CMS       | High                          | Fully Free                               | Medium                    | Not Required          | Not Required        |
+| Payload CMS     | High                          | Fully Free                               | High                      | Not Required          | Required            |
 
-Given the options above, I believe the best call at this point is to attempt migrating to TinaCMS, simply because Keystatic is not fully fledged enough (with respect to its competition here) and Statamic, while offering the most, is a significantly bigger implementation than TinaCMS.
-
-The biggest issue with TinaCMS is the project registration on TinaCloud, required for CMS Portal access on production. If this hurdle can be overcome, TinaCMS should tick all our boxes in the shortest time.
+With the options mentioned, I believe Keystatic is our best option currently. With Github accounts for Content Managers not being a problem, Keystatic offers the simplest migration path, with the most flexibility. While there are other options with better flexibility or editing experiences, all of them either required far larger migrations (or in some cases, re-writes) or have non-ideal third party dependancies (in the case of TinaCMS, authentication needing TinaCloud). Some other options also require more infrustructure, namely new databases and/or specific hosting requirements. These all would require much more time for integration.
 
 ## Final Consequences
 
@@ -167,6 +180,4 @@ The biggest issue with TinaCMS is the project registration on TinaCloud, require
 
 - The removal of an outdated system (Forestry) which has been deprecated since 2023.
 
-- Fresher content on the website.
-
-- 
+- Better third-party visibility for Boxtribute through the website.
