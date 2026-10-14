@@ -1,0 +1,183 @@
+# ADR: Migrating Website CMS from discontinued Forestry
+
+Trello-card: [Link to Task](https://trello.com/c/wWlojmI5/1985-website-find-forestryio-replacement-for-cms-and-write-adr)
+
+Decision Deadline: N/A
+
+Author: [Maurovic Cachia](https://github.com/MomoRazor)
+
+Participants: [Philipp Metzner](https://github.com/pylipp), [Hans Peter Gürtner](https://github.com/HaGuesto), [Roanna Kong](https://github.com/aerinsol)
+
+## Status
+
+Discussion
+
+## Context or Problem Statement
+
+The CMS currently in use on this website is no longer maintained, and therefore requires migrating from. Apart from this, it has also become clear that the current CMS situation is not ideal, as non-technical personnel find it hard to interact with the content, resulting in needing technical staff to update it.
+
+This means that content management is bottlenecked by technical staff availability and by a lack of flexibility in the types of content that can be created.
+
+Therefore, this migration provides an opportunity not only to move away from Forestry, but also to move away from headless CMS as a concept, and towards a more holistic approach to content management for the website.
+
+## Decision Drivers
+
+1. Support and End of Life (EoL)
+
+- The main issue here is Forestry's EoL. Its replacement must be a CMS with a solid community, and an active development team working to support its functionality long term.
+
+2. Ease of use
+
+- Whether going for a Headless CMS or not, ease of use is at the forefront of the decision, in order to decrease the friction required to create and publish new content more regularly on the website.
+
+3. Price
+
+- Fully fledged CMSs are rarely free. In these cases, we must find the best bang for buck, preferably keeping it free, as it has been before.
+
+4. Development Time
+
+- Some CMS options might require the use of completely new technologies, such as moving away from the current React. Given the scale of the website, this should not be an immediate deal breaker, but development time should be considered regardless.
+
+## Considered Options
+
+There are a couple of possible replacements that I have found up till now:
+
+### TinaCMS
+
+- [TinaCMS](https://tina.io/) - This is the natural replacement of Forestry, as it is its direct descendant. While completely different, TinaCMS should offer the exact same feature set that Forestry offers, with as little change as possible.
+
+There is a very handy migration guide that seems to cover all bases, from initial migration to redeployment. The process seems fairly straightforward, including the deployment, which should only require a slight modification to the current build command.
+
+Broad Implementation:
+
+The implementation here would require first running the CLI migration, which does a lot of the work (this has been tested on a [separate branch](https://github.com/boxwise/boxtribute-landing-nextjs/tree/tina-cms-test)). Following this, further changes can be made to standardize the information, such as standardizing certain page types into collections (such as blog posts) and building out custom reusable components. This is still a significant investment of time, however this will be a required step for whatever CMS we choose, as it is important to split the site into blocks to make content management flexible enough to be useful.
+
+Following this, we would need to register the project on TinaCloud. This is where authentication is handled for the CMS's production portal, and therefore a required step in order to have non-technical users updating content without accessing the repository itself.
+
+Once the project is set up and content editors are added as collaborators, they would be able to build new pages and blogs using currently implemented blocks, and technical staff would only need to be involved in case new custom components are needed.
+
+On a pricing note, this option remains free for only 2 distinct users on the project and 2 separate roles. There are [various paid tiers](https://tina.io/pricing) with different benefits.
+
+#### Pros
+
+- Direct and well documented migration path from Forestry.
+- Strong editing experience. This can be tried in [their own official demo](https://demo.tina.io) (add /admin to url to enter the portal)
+- Git based edits, requiring no new infrastructure.
+
+#### Cons
+- Requires Tina Cloud for authentication
+
+### Statamic
+
+- [Statamic](https://statamic.com/) - This is a PHP and Laravel based CMS, built with specific focus on customizability and ease of use. It provides a free tier with one super user account, but can be upgraded to a [pro version license](https://statamic.com/pricing).
+
+In essence, the end result of a Statamic website would be similar to TinaCMS, with a few differences:
+
+    - The site would have to be rebuilt in PHP as well as redeployed in a completely different environment.
+
+    - Due to its Laravel roots, the CMS portal can be expanded to hold fully custom sections if the need arises.
+
+    - Authentication is managed locally on the site itself, removing the need to register the project off-site (unlike TinaCMS).
+
+The implementation here is far more involved than the TinaCMS one, as it involves a full re-write. That said, given the scale of the website, this should not be a huge undertaking.
+
+#### Pros
+- Fully self-contained
+- Complete flexibility within the infrastructure provided (still built with blocks)
+- Best in class editing experience. [This is a cool demo](https://demo.statamic.com) (add /cp to url to enter the portal). 
+
+#### Cons
+- Requires a full re-write into Laravel PHP
+- Requires changing server stack to PHP, including the added infrastructure of a Postgres Database
+
+### Keystatic
+
+- [Keystatic](https://keystatic.com/) - Keystatic is a direct competitor to TinaCMS, being a significantly newer project however, it has less system maturity and a smaller community of users. That said, it is a fully self-contained system, requiring only Github authentication for users. It is still Git based, requiring no new infrastructure to run.
+
+Broadly, the implementation here will be simply setting up Keystatic and mapping the current configs and YAML files which Forestry uses to how Keystatic stores content (as mentioned [here](https://keystatic.com/docs/installation-next-js)), however regardless of which CMS options we'd choose, further work would be required to convert as much of the website to blocks, which can be re-used and customised as required. Most of the time here would be spent on this 2nd, more important phase.
+
+#### Pros
+- Fully self-contained and only requires Github for authentication
+- Git based
+- Integrates easily with current codebase as it is built specifically for NextJs and React
+
+#### Cons
+- Relatively new and small next to other options
+- Very developer focused, meaning it lacks certain features in its Editing experience. An online demo of this does not exist, but this is a [short video](https://www.youtube.com/watch?v=N3pywDv-0Tg) with glimpses of this editing portal.
+
+### Fruition/Notion
+
+- [Fruition](https://stephenou.notion.site/Fruition-Free-Open-Source-Toolkit-for-Building-Websites-with-Notion-771ef38657244c27b9389734a9cbff44) - This is a toolkit built on top of [Notion](https://www.notion.com/), an all-in-one productivity app focused on building custom workflows and tools with through no-code means. Fruition is an open-source community-backed toolkit that provides an easy way to build a public facing website with Notion itself.
+
+The main points of note for Fruition are it's seeming focus on using a Cloudflare for hosting, which would mean either a new tool requirement (unless Boxtribute already uses Cloudflare) or further research required in order to make Fruition work with other hosting services that provide similar options to Cloudflare.
+
+That said, Notion does provide a way for non-technical people to build and support a website built on top of it, but it will still require a fair bit of training, as Notion is not a basic CMS, but rather a fully fledged system-building platform, which necessarily means that it must handle higher levels of complexity to a CMS, at the added benefit of more flexibility. Implementing this option might be a relatively high effort approach as Notion will have to be learned before any of the implementation can be tackled confidently. This learning curve can be softened with AI assistance.
+
+As with Statamic, implementation here means a full re-write of the website within this different tech stack.
+
+#### Pros
+- The most flexibility possible for non-technical people, within the confines of what Notion can support
+
+#### Cons
+- Requires a full re-write to be built with Notion/Fruition based data
+- More training of non-technical staff for use of Notion
+- Possibility of needing Cloudflare specific hosting, or further work to figure out alternatives
+
+### DecapCMS
+
+- [DecapCMS](https://decapcms.org/) - This is a fully open source and locally hosted competitor of TinaCMS. It provides all the same features as TinaCMS, while being fully self-hosted and not requiring any authentication information to be set up on an external service (unlike TinaCMS with TineCloud). Unfortunately, this self-hosting comes with a number of other caveats that would require further work to solve elegantly:
+
+Having authentication not dependant on an external service means needing to set up an in-house service to handle OAuth services on Github users (which DecapCMS uses). Moreover, depending on where the website is hosted, OAuth proxies will have to be set up to handle this authentication effectively. This might be significantly more involving when compared with Keystatic, which offers the same feature, however signficantly more tailored for our tech stack specifically (React, Nextjs).
+
+While being framework agnostic, DecapCMS will run into problems when attempting to render live previews of pages at it is designed to work on static pages. This can be remedied using setups referenced in the DecapCMS documentation (for example this one is for [NextJs](https://decapcms.org/docs/nextjs)), however these documentation do seem to be relatively old, as they reference legacy packages like webpack and NextJs 11 (currently at 16), pointing to a possible lack of modern support for these frameworks.
+
+In essence, this is an older Keystatic, with more legacy software targeted and possibility slower performance traded for a more battle-tested system.
+
+Implementation here would follow the same idea as Keystatic, which more time spent ensuring that Decap is configured to work with our specific tech stack, as Decap is by nature, framework agnostic.
+
+#### Pros
+- Fully self-contained and only requires Github for authentication
+- Git based
+
+#### Cons
+- Older and targets older versions of software
+- Is framework agnostic, meaning more complexity during setup
+- Performance suffers when sites scale
+- Editing experience offers the same features as Keystatic, which is relatively limited. This can be seen in [this video](https://www.youtube.com/watch?v=jJDGNbfuMVs). 
+
+### Payload CMS
+While starting out as a headless CMS, Payload CMS is now more akin to a NextJS eco-system, providing users with more intricate offerings such as native app building and e-commerce. This is only possible as Payload uses database backed information, making it more akin to Statamic with further SaaS offerings.
+
+This would result in a bigger implementation requirement, as new infrastucture would need to be procured, as movement from YAML based content to Database data would also have to take place.
+
+#### Pros
+- Is a fully fledged eco-system, with many features we might be able to use later
+- [Editor experience](https://youtu.be/ftohATkHBi0?t=362) is somewhat more fully fledged.
+
+#### Cons
+- Requires Database infrastructure
+- Significantly more complicated migration process, due to data migrations required.
+- Far more complicated than what Boxtribute requires now, will not use 80% of the features provided by PayloadCMS.
+
+## Decision
+
+| Option          | Non-Technical Customizability | Cost                                     | Implementation Effort     | External Registration* | More Infrustructure 
+|-----------------|-------------------------------|------------------------------------------|---------------------------|------------------------|---------------------|
+| Tina CMS        | High                          | Free Tier (monthly pro options)          | Medium                    | Required               | Not Required        |
+| Statamic        | High                          | Free Tier (one time pro option)          | Re-write                  | Not Required           | Required            |
+| Keystatic       | Medium                        | Fully Free                               | Medium                    | Not Required           | Not Required        |
+| Fruition/Notion | Medium                        | Free Tier (multiple monthly pro options) | Re-write                  | Required               | Not Required        |
+| Decap CMS       | High                          | Fully Free                               | Medium                    | Not Required           | Not Required        |
+| Payload CMS     | High                          | Fully Free                               | High                      | Not Required           | Required            |
+
+With the options mentioned, I believe Keystatic is our best option currently. With Github accounts for Content Managers not being a problem, Keystatic offers the simplest migration path, with the most flexibility. While there are other options with better flexibility or editing experiences, all of them either required far larger migrations (or in some cases, re-writes) or have non-ideal third party dependancies (in the case of TinaCMS, authentication needing TinaCloud). Some other options also require more infrustructure, namely new databases and/or specific hosting requirements. These all would require much more time for integration.
+
+* External Registration here points to systems that by default require external registration. For TinaCMS this can be self-hosted, however infrastructure would have to take its place (for Databases and such). Notion does not have a self-host option.
+
+## Final Consequences
+
+- A website that can be updated and maintained by non-technical staff, requiring only technical people when creating new custom blocks and sections.
+
+- The removal of an outdated system (Forestry) which has been deprecated since 2023.
+
+- Better third-party visibility for Boxtribute through the website.
